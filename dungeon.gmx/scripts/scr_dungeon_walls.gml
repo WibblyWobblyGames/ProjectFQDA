@@ -18,4 +18,4 @@ with (argument0) { //with all floor objects
     }
 }
 
-instance_create(room_width/2,room_height/2,obj_player); //spawn the player in the middle of the room
+instance_create((room_width/2)+16,(room_height/2)+16,obj_player); //spawn the player in the middle of the room
