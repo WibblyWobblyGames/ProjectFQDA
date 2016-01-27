@@ -14,6 +14,7 @@
     <sprite>sprites\spr_crawler</sprite>
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_chest</sprite>
+    <sprite>sprites\sprite8</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -29,6 +30,7 @@
     <object>objects\obj_controller</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_chest</object>
+    <object>objects\obj_grid</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
