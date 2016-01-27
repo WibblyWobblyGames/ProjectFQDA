@@ -86,7 +86,7 @@ else if(keyboard_check(vk_right)){
 }
 
 if (vert &amp;&amp; horiz){
-    //do nothing
+    //do nothing - disables diagonal movement
 } else {
     x +=dx;
     y += dy;

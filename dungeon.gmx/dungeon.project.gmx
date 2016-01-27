@@ -19,7 +19,6 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_dungeon_walls.gml</script>
-    <script>scripts\grid_move.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_wall</object>
