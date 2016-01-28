@@ -17,21 +17,17 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts">
-    <script>scripts\scr_dungeon_walls.gml</script>
-  </scripts>
+  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\obj_wall</object>
     <object>objects\obj_door</object>
     <object>objects\obj_player</object>
-    <object>objects\obj_dungeon_carver</object>
     <object>objects\obj_floor</object>
-    <object>objects\obj_controller</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_chest</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room2</room>
+    <room>rooms\StartRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
