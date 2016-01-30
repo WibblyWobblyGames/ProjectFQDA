@@ -6,28 +6,22 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\spr_player_idle</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_floor</sprite>
-    <sprite>sprites\spr_door</sprite>
-    <sprite>sprites\spr_enemy</sprite>
-    <sprite>sprites\sprite7</sprite>
-    <sprite>sprites\spr_crawler</sprite>
-    <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_chest</sprite>
+    <sprite>sprites\spr_player_right</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\Dungeon_Tileset</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_wall</object>
-    <object>objects\obj_door</object>
-    <object>objects\old_obj_player</object>
-    <object>objects\obj_floor</object>
-    <object>objects\obj_enemy</object>
-    <object>objects\obj_chest</object>
     <object>objects\obj_player</object>
+    <object>objects\obj_wall</object>
+    <object>objects\obj_floor</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\StartRoom</room>
+    <room>rooms\room0</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
