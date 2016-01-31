@@ -24,6 +24,7 @@
     <object>objects\obj_controller</object>
     <object>objects\obj_door</object>
     <object>objects\obj_boss</object>
+    <object>objects\obj_spawn</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_Room</room>
