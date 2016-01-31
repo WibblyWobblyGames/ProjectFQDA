@@ -11,6 +11,7 @@
     <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spr_player_right</sprite>
     <sprite>sprites\spr_player_attack</sprite>
+    <sprite>sprites\spr_boss</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Dungeon_Tileset</background>
@@ -22,9 +23,11 @@
     <object>objects\obj_enemy</object>
     <object>objects\obj_controller</object>
     <object>objects\obj_door</object>
+    <object>objects\obj_boss</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_Room</room>
+    <room>rooms\room_boss</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
