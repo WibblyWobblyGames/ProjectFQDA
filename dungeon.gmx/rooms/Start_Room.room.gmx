@@ -96,6 +96,7 @@
     <instance objName="obj_wall" x="32" y="352" name="inst_D3D2B176" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="32" y="384" name="inst_A82D3A20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="30" y="218" name="inst_1DC68A69" locked="0" code="" scaleX="1.59375" scaleY="1.48000001907349" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shadow" x="320" y="192" name="inst_004FD957" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Dungeon_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10000003" name="inst_EE6DB164" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
