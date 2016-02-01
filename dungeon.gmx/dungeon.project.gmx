@@ -12,7 +12,13 @@
     <sprite>sprites\spr_player_right</sprite>
     <sprite>sprites\spr_player_attack</sprite>
     <sprite>sprites\spr_boss</sprite>
-    <sprite>sprites\spr_shadow</sprite>
+    <sprites name="Enemies">
+      <sprites name="Shadow">
+        <sprite>sprites\spr_shadow_front</sprite>
+        <sprite>sprites\spr_shadow_left</sprite>
+        <sprite>sprites\spr_shadow_right</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Dungeon_Tileset</background>
