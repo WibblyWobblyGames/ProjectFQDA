@@ -60,30 +60,31 @@ direction = choose(0, 270, 180, 90);
 switch (direction) {
     //right
     case 0:
+        sprite_index = spr_boss_right;
         if place_meeting(x+16, y, obj_player){
             health_player -=10;
-            //show_message('RIGHT');
+            
         }
         break;
     //down    
     case 270:
+        sprite_index = spr_boss_idle;
         if place_meeting(x, y-16, obj_player){
             health_player -=10;
-            //show_message('down');
         }
         break;
     //left    
     case 180:
+        sprite_index = spr_boss_left;
         if place_meeting(x-16, y, obj_player){
             health_player -=10;
-            //show_message('left');
         }
         break;
     //up
     case 90:
+            sprite_index = spr_boss_idle;
         if place_meeting(x, y+16, obj_player){
             health_player -=10;
-            //show_message('up');
         }
         break;    
 }
@@ -133,7 +134,8 @@ alarm[0] = 15;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>health_player -=10;
+</string>
           </argument>
         </arguments>
       </action>

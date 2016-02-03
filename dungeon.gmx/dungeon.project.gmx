@@ -19,6 +19,8 @@
         <sprite>sprites\spr_shadow_right</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\spr_boss_left</sprite>
+    <sprite>sprites\spr_boss_right</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Dungeon_Tileset</background>
