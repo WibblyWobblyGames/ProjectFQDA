@@ -11,29 +11,21 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>119</id>
+        <id>301</id>
         <kind>0</kind>
-        <userelative>0</userelative>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_path</functionname>
+        <functionname>action_set_alarm</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>8</kind>
-            <path>path_boss_down</path>
-          </argument>
-          <argument>
             <kind>0</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>2</string>
+            <string>15</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -42,7 +34,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -59,8 +51,89 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//mods for side
+            <string>//attacking - attacks to one side randomly
+//pick random side
+direction = choose(0, 270, 180, 90);
+
+//if there is a collision on square to the randomly chosen side, deal damage
+//otherwise do nothing - later add in animation
+switch (direction) {
+    //right
+    case 0:
+        if place_meeting(x+16, y, obj_player){
+            health_player -=10;
+            //show_message('RIGHT');
+        }
+        break;
+    //down    
+    case 270:
+        if place_meeting(x, y-16, obj_player){
+            health_player -=10;
+            //show_message('down');
+        }
+        break;
+    //left    
+    case 180:
+        if place_meeting(x-16, y, obj_player){
+            health_player -=10;
+            //show_message('left');
+        }
+        break;
+    //up
+    case 90:
+        if place_meeting(x, y+16, obj_player){
+            health_player -=10;
+            //show_message('up');
+        }
+        break;    
+}
+
+alarm[0] = 15;
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_wall">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_player">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>

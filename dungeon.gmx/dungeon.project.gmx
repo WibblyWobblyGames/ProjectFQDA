@@ -23,10 +23,7 @@
   <backgrounds name="background">
     <background>background\Dungeon_Tileset</background>
   </backgrounds>
-  <paths name="paths">
-    <path>paths\path_boss_down</path>
-    <path>paths\path_boss_right</path>
-  </paths>
+  <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_wall</object>
