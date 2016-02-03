@@ -11,7 +11,7 @@
     <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spr_player_right</sprite>
     <sprite>sprites\spr_player_attack</sprite>
-    <sprite>sprites\spr_boss</sprite>
+    <sprite>sprites\spr_boss_idle</sprite>
     <sprites name="Enemies">
       <sprites name="Shadow">
         <sprite>sprites\spr_shadow_front</sprite>
@@ -23,7 +23,10 @@
   <backgrounds name="background">
     <background>background\Dungeon_Tileset</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path_boss_down</path>
+    <path>paths\path_boss_right</path>
+  </paths>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_wall</object>
