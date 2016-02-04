@@ -32,7 +32,6 @@
     <object>objects\obj_wall</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_controller</object>
-    <object>objects\obj_door</object>
     <object>objects\obj_boss</object>
     <object>objects\obj_spawn</object>
     <objects name="Enemies">
@@ -40,10 +39,12 @@
     </objects>
     <object>objects\InitialMusic</object>
     <object>objects\BossMusic</object>
+    <object>objects\obj_player_attack</object>
+    <object>objects\obj_door</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Start_Room</room>
-    <room>rooms\room_boss</room>
+    <room>rooms\rm_start</room>
+    <room>rooms\rm_boss</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

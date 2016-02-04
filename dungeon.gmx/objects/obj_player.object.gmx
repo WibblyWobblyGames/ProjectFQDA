@@ -11,6 +11,26 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Player stats</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -26,9 +46,12 @@
           <argument>
             <kind>1</kind>
             <string>//sets player health to 100
-
 globalvar health_player;
 health_player = 100;
+
+//Attack for player, defined for direction they attack
+globalvar attack;
+attack = "right";
 </string>
           </argument>
         </arguments>
@@ -71,8 +94,7 @@ health_player = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Movement code for player
-
+            <string> //Movement code for player
 
 //When Keyboard is pressed, move player in direction
 if (keyboard_check(vk_nokey)){
@@ -84,12 +106,14 @@ if (keyboard_check(vk_left)){
     speed.x -= 5;
     sprite_index = spr_player_right;
     image_xscale = -1;
+    attack = "left";
 }    
 
 if (keyboard_check(vk_right)){
     speed.x += 5;
     sprite_index = spr_player_right;
     image_xscale = 1;
+    attack = "right";
 }    
 
 if (keyboard_check(vk_up)){
@@ -135,33 +159,52 @@ if (keyboard_check(vk_down)){
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
             <string>//Attack for princess
-//Timer for how often player can attack
-timer = false;
 
 //Player attacks when space is pressed
-if (keyboard_check(vk_space) and !timer){
-    sprite_index = spr_player_attack;
-    timer = true;
+if (keyboard_check(vk_space)){
+    
+    if (attack == "left"){
+        sprite_index = spr_player_attack;
+        instance_create(obj_player.x - 32, obj_player.y, obj_player_attack);
+    }
+    
+    if (attack == "right"){
+        sprite_index = spr_player_attack;
+        instance_create(obj_player.x, obj_player.y - 10, obj_player_attack);
+    }
+    
+    else {
+        instance_create(obj_player.x - 32, obj_player.y - 10, obj_player_attack);
+    }
 }
 
-//Start timer if player attacks
-if (timer){
-    alarm[0] = room_speed * 3;
-}
 
-if (alarm[0] = 0 ){
-    timer = false;
-}
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_door">
+      <action>
+        <libid>1</libid>
+        <id>222</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_next_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="4" ename="obj_shadow">
