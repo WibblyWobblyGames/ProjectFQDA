@@ -45,8 +45,13 @@
     <object>objects\obj_door</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Start_Room</room>
-    <room>rooms\room_boss</room>
+    <room>rooms\rm_start</room>
+    <room>rooms\rm_1</room>
+    <room>rooms\rm_2</room>
+    <room>rooms\rm_3</room>
+    <room>rooms\rm_4</room>
+    <room>rooms\rm_5</room>
+    <room>rooms\rm_boss</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -106,7 +106,9 @@
     <instance objName="obj_wall" x="64" y="32" name="inst_CADE4144" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="64" y="64" name="inst_E54E4E06" locked="0" code="" scaleX="0.25" scaleY="11" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="64" y="416" name="inst_71F184F0" locked="0" code="" scaleX="14" scaleY="-0.25" colour="4294967295" rotation="0"/>
-    <instance objName="BossMusic" x="640" y="288" name="inst_CA36617E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spawn" x="576" y="224" name="inst_ADDC5231" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_boss" x="192" y="224" name="inst_4D7A0E45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="BossMusic" x="576" y="256" name="inst_CA36617E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Dungeon_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10000725" name="inst_484B9CC9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
