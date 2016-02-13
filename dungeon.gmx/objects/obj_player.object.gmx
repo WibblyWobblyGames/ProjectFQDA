@@ -47,11 +47,21 @@
             <kind>1</kind>
             <string>//sets player health to 100
 globalvar health_player;
+globalvar player_sprite; 
 health_player = 100;
+//list of princess types, add new princesses to this list
+princess_list[0] = 'spr_player';
+princess_list[1] = 'spr_zombie';
+princess_list[2] = 'spr_cyclops';
 
 //Attack for player, defined for direction they attack
 globalvar attack;
 attack = "right";
+
+//select a random number in order to decide a princess
+num = random_range(0,array_length_1d(princess_list));
+player_sprite = princess_list[num];
+
 </string>
           </argument>
         </arguments>
@@ -95,35 +105,34 @@ attack = "right";
           <argument>
             <kind>1</kind>
             <string> //Movement code for player
-
 //When Keyboard is pressed, move player in direction
 if (keyboard_check(vk_nokey)){
-    sprite_index = spr_player_idle;
+    sprite_index = asset_get_index(player_sprite+'_idle');
     speed = 0;
 }   
 
 if (keyboard_check(vk_left)){
     speed.x -= 5;
-    sprite_index = spr_player_right;
+    sprite_index = asset_get_index(player_sprite+'_run');
     image_xscale = -1;
     attack = "left";
 }    
 
 if (keyboard_check(vk_right)){
     speed.x += 5;
-    sprite_index = spr_player_right;
+    sprite_index = asset_get_index(player_sprite+'_run');
     image_xscale = 1;
     attack = "right";
 }    
 
 if (keyboard_check(vk_up)){
     speed.y -= 5;
-    sprite_index = spr_player_right;
+    sprite_index = asset_get_index(player_sprite+'_run');
 }    
 
 if (keyboard_check(vk_down)){
     speed.y += 5;
-    sprite_index = spr_player_right;
+    sprite_index = asset_get_index(player_sprite+'_run');
 }    
 </string>
           </argument>
@@ -166,22 +175,17 @@ if (keyboard_check(vk_down)){
           <argument>
             <kind>1</kind>
             <string>//Attack for princess
-
 //Player attacks when space is pressed
 if (keyboard_check(vk_space)){
     
-    if (attack == "left"){
-        sprite_index = spr_player_attack;
-        instance_create(obj_player.x - 32, obj_player.y, obj_player_attack);
-    }
-    
     if (attack == "right"){
-        sprite_index = spr_player_attack;
+        sprite_index =  asset_get_index(player_sprite+'_attack');
         instance_create(obj_player.x, obj_player.y - 10, obj_player_attack);
     }
-    
-    else {
-        instance_create(obj_player.x - 32, obj_player.y - 10, obj_player_attack);
+        
+    else if (attack == "left"){
+        sprite_index =  asset_get_index(player_sprite+'_attack');
+        instance_create(obj_player.x - 32, obj_player.y, obj_player_attack);
     }
 }
 

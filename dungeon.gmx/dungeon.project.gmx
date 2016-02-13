@@ -9,12 +9,10 @@
     <sound>sound\TempSpaceWizardSound</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_player_idle</sprite>
+    <sprite>sprites\spr_attack_box</sprite>
+    <sprite>sprites\spr_boss_idle</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_door</sprite>
-    <sprite>sprites\spr_player_right</sprite>
-    <sprite>sprites\spr_player_attack</sprite>
-    <sprite>sprites\spr_boss_idle</sprite>
     <sprites name="Enemies">
       <sprites name="Shadow">
         <sprite>sprites\spr_shadow_front</sprite>
@@ -25,6 +23,23 @@
     <sprite>sprites\spr_boss_left</sprite>
     <sprite>sprites\spr_boss_right</sprite>
     <sprite>sprites\spr_space_pit</sprite>
+    <sprites name="Princesses">
+      <sprites name="normal">
+        <sprite>sprites\spr_player_idle</sprite>
+        <sprite>sprites\spr_player_run</sprite>
+        <sprite>sprites\spr_player_attack</sprite>
+      </sprites>
+      <sprites name="zombie">
+        <sprite>sprites\spr_zombie_idle</sprite>
+        <sprite>sprites\spr_zombie_run</sprite>
+        <sprite>sprites\spr_zombie_attack</sprite>
+      </sprites>
+      <sprites name="cyclops">
+        <sprite>sprites\spr_cyclops_idle</sprite>
+        <sprite>sprites\spr_cyclops_attack</sprite>
+        <sprite>sprites\spr_cyclops_run</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Dungeon_Tileset</background>
