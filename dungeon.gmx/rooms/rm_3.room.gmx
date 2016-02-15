@@ -64,6 +64,10 @@
     <instance objName="obj_space_pit" x="192" y="128" name="inst_2C7E7CD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_space_pit" x="192" y="192" name="inst_BDE58E87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_space_pit" x="256" y="192" name="inst_42ED137C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_window" x="96" y="32" name="inst_FD40DCD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_window" x="160" y="32" name="inst_FD09B140" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_window" x="224" y="32" name="inst_1FE86FF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_window" x="288" y="32" name="inst_A7237284" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Dungeon_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10001210" name="inst_FC1A7C96" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -61,6 +61,13 @@
     <instance objName="obj_wall" x="352" y="152" name="inst_C815D2AF" locked="0" code="" scaleX="1" scaleY="-3.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="352" y="320" name="inst_5AF3056F" locked="0" code="" scaleX="1" scaleY="-3.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_space_pit" x="192" y="160" name="inst_1F941290" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_window" x="192" y="32" name="inst_22F23AF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_window" x="96" y="32" name="inst_99F668CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_window" x="288" y="32" name="inst_BF4BFBAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="128" y="32" name="inst_2C72D297" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="160" y="32" name="inst_FE27ABA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="224" y="32" name="inst_DE9995E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_torch" x="256" y="32" name="inst_1D7D8B56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Dungeon_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10001210" name="inst_FC1A7C96" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
