@@ -22,6 +22,7 @@
     </sprites>
     <sprite>sprites\spr_boss_left</sprite>
     <sprite>sprites\spr_boss_right</sprite>
+    <sprite>sprites\spr_space_pit</sprite>
     <sprites name="Princesses">
       <sprites name="normal">
         <sprite>sprites\spr_player_idle</sprite>
@@ -58,10 +59,16 @@
     <object>objects\BossMusic</object>
     <object>objects\obj_player_attack</object>
     <object>objects\obj_door</object>
+    <object>objects\obj_space_pit</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Start_Room</room>
-    <room>rooms\room_boss</room>
+    <room>rooms\rm_start</room>
+    <room>rooms\rm_1</room>
+    <room>rooms\rm_2</room>
+    <room>rooms\rm_3</room>
+    <room>rooms\rm_4</room>
+    <room>rooms\rm_5</room>
+    <room>rooms\rm_boss</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
