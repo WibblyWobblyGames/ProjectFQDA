@@ -46,10 +46,18 @@
     <sprite>sprites\spr_bed</sprite>
     <sprite>sprites\spr_portrait</sprite>
     <sprite>sprites\spr_standing_torch</sprite>
+    <sprite>sprites\spr_wall_scrawl</sprite>
+    <sprite>sprites\spr_shrine</sprite>
+    <sprites name="Doors">
+      <sprite>sprites\spr_shrine_door</sprite>
+      <sprite>sprites\spr_bedroom_door</sprite>
+      <sprite>sprites\spr_blue_door</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Dungeon_Tileset</background>
     <background>background\Bedroom_Tileset</background>
+    <background>background\Shrine_Tileset</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -73,6 +81,11 @@
     <object>objects\obj_bed</object>
     <object>objects\obj_portrait</object>
     <object>objects\obj_standing_torch</object>
+    <object>objects\obj_wall_scrawl</object>
+    <object>objects\obj_shrine</object>
+    <object>objects\obj_shrine_door</object>
+    <object>objects\obj_blue_door</object>
+    <object>objects\obj_bedroom_door</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
@@ -83,7 +96,7 @@
     <room>rooms\rm_5</room>
     <room>rooms\rm_6</room>
     <room>rooms\rm_boss</room>
-    <room>rooms\room8</room>
+    <room>rooms\shrine</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

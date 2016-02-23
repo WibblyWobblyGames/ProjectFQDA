@@ -4,7 +4,7 @@
   <width>1024</width>
   <height>768</height>
   <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -54,6 +54,9 @@
     <instance objName="obj_bed" x="192" y="64" name="inst_5CD7C3FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_portrait" x="256" y="0" name="inst_046E0783" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_portrait" x="96" y="0" name="inst_B8E63BFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bedroom_door" x="239" y="335" name="inst_B731BDA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
+    <instance objName="obj_bedroom_door" x="81" y="224" name="inst_72D23169" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_bedroom_door" x="399" y="192" name="inst_4A3201D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
   </instances>
   <tiles>
     <tile bgName="Bedroom_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10001722" name="inst_BA7C565D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -83,13 +86,7 @@
     <tile bgName="Bedroom_Tileset" x="96" y="224" w="32" h="32" xo="96" yo="160" id="10001750" name="inst_0EAAFDD5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="96" y="160" w="32" h="32" xo="96" yo="160" id="10001752" name="inst_EDABA65C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="96" y="128" w="32" h="32" xo="96" yo="160" id="10001753" name="inst_2A187584" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="96" y="192" w="32" h="32" xo="96" yo="128" id="10001754" name="inst_392B5A2F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="224" y="288" w="32" h="32" xo="160" yo="192" id="10001755" name="inst_E2572B8E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="224" y="96" w="32" h="32" xo="160" yo="96" id="10001756" name="inst_CBC229D6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="352" y="192" w="32" h="32" xo="224" yo="128" id="10001757" name="inst_B2DFF7D5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="224" y="320" w="32" h="32" xo="160" yo="224" id="10001758" name="inst_9DB31FFC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="64" y="192" w="32" h="32" xo="64" yo="128" id="10001759" name="inst_57EAD626" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="64" y="160" w="32" h="32" xo="64" yo="96" id="10001762" name="inst_1A3018AD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="64" y="128" w="32" h="32" xo="64" yo="192" id="10001763" name="inst_A7C6D1B9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="64" y="96" w="32" h="32" xo="64" yo="192" id="10001764" name="inst_B45FE71A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="64" y="256" w="32" h="32" xo="64" yo="192" id="10001766" name="inst_283A0F82" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -144,10 +141,6 @@
     <tile bgName="Bedroom_Tileset" x="32" y="256" w="32" h="32" xo="32" yo="192" id="10001816" name="inst_434159C1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="32" y="288" w="32" h="32" xo="32" yo="192" id="10001817" name="inst_0E5ECB06" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="32" y="320" w="32" h="32" xo="32" yo="192" id="10001818" name="inst_8F3012D4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="64" y="224" w="32" h="32" xo="64" yo="160" id="10001819" name="inst_46CCE502" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="32" y="224" w="32" h="32" xo="32" yo="160" id="10001820" name="inst_817D9898" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="32" y="192" w="32" h="32" xo="32" yo="128" id="10001821" name="inst_14B20D85" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="32" y="160" w="32" h="32" xo="32" yo="96" id="10001822" name="inst_CB0286C7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="96" y="320" w="32" h="32" xo="96" yo="224" id="10001823" name="inst_0DE220A6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="128" y="320" w="32" h="32" xo="96" yo="224" id="10001824" name="inst_5B8B3B10" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="160" y="320" w="32" h="32" xo="96" yo="224" id="10001825" name="inst_F5FD0434" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -172,20 +165,9 @@
     <tile bgName="Bedroom_Tileset" x="352" y="352" w="32" h="32" xo="96" yo="256" id="10001845" name="inst_2A91511D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="320" y="352" w="32" h="32" xo="96" yo="256" id="10001846" name="inst_14DC115D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="288" y="352" w="32" h="32" xo="96" yo="256" id="10001847" name="inst_8505058E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="224" y="352" w="32" h="32" xo="160" yo="256" id="10001848" name="inst_8968A0E8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="192" y="352" w="32" h="32" xo="128" yo="256" id="10001849" name="inst_D7EF0B78" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="192" y="320" w="32" h="32" xo="128" yo="224" id="10001850" name="inst_1E8CAAE7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="256" y="320" w="32" h="32" xo="192" yo="224" id="10001851" name="inst_1AA0CEAC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="256" y="352" w="32" h="32" xo="192" yo="256" id="10001852" name="inst_7A315029" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="288" y="320" w="32" h="32" xo="224" yo="224" id="10001853" name="inst_E339F65E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="320" y="320" w="32" h="32" xo="224" yo="224" id="10001854" name="inst_BBFCCD20" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="352" y="320" w="32" h="32" xo="224" yo="224" id="10001855" name="inst_737C55A1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="384" y="192" w="32" h="32" xo="256" yo="128" id="10001856" name="inst_FC6115D7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="384" y="160" w="32" h="32" xo="256" yo="96" id="10001857" name="inst_D6EF8ED5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="384" y="224" w="32" h="32" xo="256" yo="160" id="10001858" name="inst_69D545FC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="416" y="160" w="32" h="32" xo="288" yo="96" id="10001859" name="inst_5A1E90E9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="416" y="192" w="32" h="32" xo="288" yo="128" id="10001860" name="inst_E1A381DA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="416" y="224" w="32" h="32" xo="288" yo="160" id="10001861" name="inst_53D60D12" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="416" y="256" w="32" h="32" xo="288" yo="192" id="10001862" name="inst_8314B014" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="416" y="288" w="32" h="32" xo="288" yo="192" id="10001863" name="inst_7657242D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="416" y="320" w="32" h="32" xo="288" yo="192" id="10001864" name="inst_0969964D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -251,6 +233,27 @@
     <tile bgName="Bedroom_Tileset" x="192" y="32" w="32" h="32" xo="224" yo="32" id="10001932" name="inst_3E2F1344" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="224" y="32" w="32" h="32" xo="224" yo="32" id="10001933" name="inst_06EDA4C1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="256" y="32" w="32" h="32" xo="224" yo="32" id="10001934" name="inst_F2AD68E6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="96" y="192" w="32" h="32" xo="96" yo="160" id="10002217" name="inst_DDA65D7C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="64" y="160" w="32" h="32" xo="64" yo="192" id="10002218" name="inst_A1B30702" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="64" y="192" w="32" h="32" xo="64" yo="192" id="10002219" name="inst_0552F283" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="64" y="224" w="32" h="32" xo="64" yo="192" id="10002220" name="inst_89250A8E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="32" y="224" w="32" h="32" xo="32" yo="192" id="10002221" name="inst_0BC70B64" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="32" y="192" w="32" h="32" xo="32" yo="192" id="10002222" name="inst_B3B3A54E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="32" y="160" w="32" h="32" xo="32" yo="192" id="10002223" name="inst_0B1BC745" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="224" y="288" w="32" h="32" xo="128" yo="192" id="10002224" name="inst_6E9B070B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="192" y="320" w="32" h="32" xo="96" yo="224" id="10002225" name="inst_2BA2D812" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="224" y="320" w="32" h="32" xo="96" yo="224" id="10002226" name="inst_CB77D4FB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="256" y="320" w="32" h="32" xo="96" yo="224" id="10002227" name="inst_4BEBC232" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="192" y="352" w="32" h="32" xo="96" yo="256" id="10002228" name="inst_4AF38975" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="224" y="352" w="32" h="32" xo="96" yo="256" id="10002229" name="inst_10B913D9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="256" y="352" w="32" h="32" xo="96" yo="256" id="10002230" name="inst_B13F576C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="352" y="192" w="32" h="32" xo="224" yo="160" id="10002231" name="inst_3B571082" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="384" y="160" w="32" h="32" xo="256" yo="192" id="10002232" name="inst_DDDD9587" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="384" y="192" w="32" h="32" xo="256" yo="192" id="10002233" name="inst_B5655A07" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="384" y="224" w="32" h="32" xo="256" yo="192" id="10002234" name="inst_3F45D603" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="416" y="160" w="32" h="32" xo="288" yo="192" id="10002235" name="inst_CBC3C3DA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="416" y="192" w="32" h="32" xo="288" yo="192" id="10002236" name="inst_1971B2C8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="416" y="224" w="32" h="32" xo="288" yo="192" id="10002237" name="inst_28BE2875" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

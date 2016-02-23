@@ -7,9 +7,9 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>5</bbox_left>
-  <bbox_right>25</bbox_right>
-  <bbox_top>2</bbox_top>
+  <bbox_left>0</bbox_left>
+  <bbox_right>31</bbox_right>
+  <bbox_top>0</bbox_top>
   <bbox_bottom>63</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -21,5 +21,14 @@
   <height>64</height>
   <frames>
     <frame index="0">images\spr_standing_torch_0.png</frame>
+    <frame index="1">images\spr_standing_torch_1.png</frame>
+    <frame index="2">images\spr_standing_torch_2.png</frame>
+    <frame index="3">images\spr_standing_torch_3.png</frame>
+    <frame index="4">images\spr_standing_torch_4.png</frame>
+    <frame index="5">images\spr_standing_torch_5.png</frame>
+    <frame index="6">images\spr_standing_torch_6.png</frame>
+    <frame index="7">images\spr_standing_torch_7.png</frame>
+    <frame index="8">images\spr_standing_torch_8.png</frame>
+    <frame index="9">images\spr_standing_torch_9.png</frame>
   </frames>
 </sprite>
