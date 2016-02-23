@@ -41,16 +41,20 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
-  <instances/>
+  <instances>
+    <instance objName="obj_bed" x="192" y="64" name="inst_5CD7C3FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_portrait" x="256" y="0" name="inst_046E0783" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_portrait" x="96" y="0" name="inst_B8E63BFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+  </instances>
   <tiles>
     <tile bgName="Bedroom_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10001722" name="inst_BA7C565D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="32" y="32" w="32" h="32" xo="32" yo="32" id="10001723" name="inst_24263FED" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -192,12 +196,6 @@
     <tile bgName="Bedroom_Tileset" x="416" y="128" w="32" h="32" xo="288" yo="192" id="10001869" name="inst_9957D711" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="416" y="96" w="32" h="32" xo="288" yo="192" id="10001870" name="inst_9FD1C059" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="416" y="64" w="32" h="32" xo="288" yo="192" id="10001871" name="inst_C1DE72D2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="224" y="64" w="32" h="32" xo="160" yo="64" id="10001872" name="inst_5F0AB98C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="192" y="64" w="32" h="32" xo="128" yo="64" id="10001873" name="inst_E638D3AA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="192" y="32" w="32" h="32" xo="128" yo="32" id="10001874" name="inst_A9FDFFEF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="224" y="32" w="32" h="32" xo="160" yo="32" id="10001875" name="inst_D8733827" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="256" y="32" w="32" h="32" xo="192" yo="32" id="10001876" name="inst_E1FA945B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Bedroom_Tileset" x="256" y="64" w="32" h="32" xo="192" yo="64" id="10001877" name="inst_A3E61DD4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="288" y="64" w="32" h="32" xo="224" yo="64" id="10001878" name="inst_D5CC2A7F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="320" y="64" w="32" h="32" xo="224" yo="64" id="10001879" name="inst_EAE6D912" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="352" y="64" w="32" h="32" xo="224" yo="64" id="10001880" name="inst_0BCF32AA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -247,6 +245,12 @@
     <tile bgName="Bedroom_Tileset" x="192" y="128" w="32" h="32" xo="192" yo="128" id="10001925" name="inst_1C20B25B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="160" y="128" w="32" h="32" xo="192" yo="128" id="10001926" name="inst_0C3B564D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Bedroom_Tileset" x="128" y="128" w="32" h="32" xo="160" yo="128" id="10001927" name="inst_DCB20A62" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="192" y="64" w="32" h="32" xo="224" yo="64" id="10001929" name="inst_A2BB5AB1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="224" y="64" w="32" h="32" xo="224" yo="64" id="10001930" name="inst_545D7D51" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="256" y="64" w="32" h="32" xo="224" yo="64" id="10001931" name="inst_7DDCA4E7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="192" y="32" w="32" h="32" xo="224" yo="32" id="10001932" name="inst_3E2F1344" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="224" y="32" w="32" h="32" xo="224" yo="32" id="10001933" name="inst_06EDA4C1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Bedroom_Tileset" x="256" y="32" w="32" h="32" xo="224" yo="32" id="10001934" name="inst_F2AD68E6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

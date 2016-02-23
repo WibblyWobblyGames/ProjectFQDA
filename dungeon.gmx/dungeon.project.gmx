@@ -43,6 +43,9 @@
     <sprite>sprites\spr_torch</sprite>
     <sprite>sprites\spr_window</sprite>
     <sprite>sprites\spr_tardis_window</sprite>
+    <sprite>sprites\spr_bed</sprite>
+    <sprite>sprites\spr_portrait</sprite>
+    <sprite>sprites\spr_standing_torch</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Dungeon_Tileset</background>
@@ -67,6 +70,9 @@
     <object>objects\obj_torch</object>
     <object>objects\obj_window</object>
     <object>objects\obj_tardis_window</object>
+    <object>objects\obj_bed</object>
+    <object>objects\obj_portrait</object>
+    <object>objects\obj_standing_torch</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
@@ -77,6 +83,7 @@
     <room>rooms\rm_5</room>
     <room>rooms\rm_6</room>
     <room>rooms\rm_boss</room>
+    <room>rooms\room8</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
