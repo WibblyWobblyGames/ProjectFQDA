@@ -1,0 +1,3 @@
+/*
+Reads the map to create doors
+*/

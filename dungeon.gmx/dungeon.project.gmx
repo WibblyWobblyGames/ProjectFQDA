@@ -19,6 +19,10 @@
         <sprite>sprites\spr_shadow_left</sprite>
         <sprite>sprites\spr_shadow_right</sprite>
       </sprites>
+      <sprites name="Robot">
+        <sprite>sprites\spr_robot_idle</sprite>
+        <sprite>sprites\spr_robot_run</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_boss_left</sprite>
     <sprite>sprites\spr_boss_right</sprite>
@@ -60,6 +64,15 @@
     <background>background\Shrine_Tileset</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\create_map.gml</script>
+    <script>scripts\search_grid.gml</script>
+    <script>scripts\print_map.gml</script>
+    <script>scripts\create_doors.gml</script>
+    <script>scripts\room_dictionary.gml</script>
+    <script>scripts\restart.gml</script>
+    <script>scripts\player_spawn.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_wall</object>
@@ -69,6 +82,7 @@
     <object>objects\obj_spawn</object>
     <objects name="Enemies">
       <object>objects\obj_shadow</object>
+      <object>objects\obj_robot</object>
     </objects>
     <object>objects\InitialMusic</object>
     <object>objects\BossMusic</object>

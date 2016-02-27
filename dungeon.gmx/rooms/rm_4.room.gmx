@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>create_doors();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -56,7 +56,7 @@
     <instance objName="obj_wall" x="32" y="320" name="inst_BF541B2F" locked="0" code="" scaleX="11" scaleY="-1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="32" y="32" name="inst_D92D5633" locked="0" code="" scaleX="11" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawn" x="416" y="160" name="inst_E7E91D51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="32" y="160" name="inst_661A019E" locked="0" code="" scaleX="1.25" scaleY="-3.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="32" y="152" name="inst_661A019E" locked="0" code="" scaleX="1.25" scaleY="-3.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="32" y="320" name="inst_252BFB45" locked="0" code="" scaleX="1.25" scaleY="-3.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="352" y="152" name="inst_C815D2AF" locked="0" code="" scaleX="1" scaleY="-3.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="352" y="320" name="inst_5AF3056F" locked="0" code="" scaleX="1" scaleY="-3.75" colour="4294967295" rotation="0"/>

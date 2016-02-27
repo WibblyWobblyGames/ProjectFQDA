@@ -66,6 +66,48 @@ player_sprite = princess_list[num];
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Initialize map and dictionary for rooms</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_dictionary();
+create_map();
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -195,20 +237,115 @@ if (keyboard_check(vk_space)){
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_door">
+    <event eventtype="4" ename="obj_space_pit">
       <action>
         <libid>1</libid>
-        <id>222</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_next_room</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>restart();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_door">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Go to correct room</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//finds correct next room based off of global.mapOfRoom
+
+height = view_hview[0];
+width = view_wview[0];
+
+
+//find which door it is  and move to correct room
+if other.x == 32{
+    //left door
+    global.dir_player = 'left';
+    global.location_player[1] -=1;
+    //show_debug_message(string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1])));
+    roomNum = ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]);
+    next_room = ds_map_find_value(global.rooms, roomNum);
+    show_debug_message("next room" + string(next_room));
+    room_goto(next_room);
+
+} else if other.x == width-64 {
+    //right door
+    global.dir_player = 'right';
+    global.location_player[1] +=1;
+    roomNum = ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]);
+    next_room = ds_map_find_value(global.rooms, roomNum);
+    show_debug_message("next room" + string(next_room));
+    room_goto(next_room);
+
+} else if other.y == height-64{ 
+    //down door
+    global.dir_player = 'down';
+    global.location_player[0] +=1;
+    roomNum = ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]);
+    next_room = ds_map_find_value(global.rooms, roomNum);
+    show_debug_message("next room" + string(next_room));
+    room_goto(next_room);
+
+} else if other.y == 32{
+    //up door
+    global.dir_player = 'up';
+    global.location_player[0] -=1;
+    roomNum = ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]);
+    next_room = ds_map_find_value(global.rooms, roomNum);
+    show_debug_message("next room" + string(next_room));
+    room_goto(next_room);
+}
+//player_spawn();
+
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="4" ename="obj_shadow">
