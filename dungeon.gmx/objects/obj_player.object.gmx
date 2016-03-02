@@ -3,7 +3,7 @@
   <spriteName>spr_player_idle</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -237,6 +237,50 @@ if (keyboard_check(vk_space)){
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_shrine">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_bed">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_space_pit">
       <action>
         <libid>1</libid>
@@ -302,46 +346,40 @@ if (keyboard_check(vk_space)){
 height = view_hview[0];
 width = view_wview[0];
 
-
+//show_debug_message('x: ' + string(other.x) + 'y: ' + string(other.y));
 //find which door it is  and move to correct room
-if other.x == 32{
+if other.x == 49 || other.x == 81{
     //left door
     global.dir_player = 'left';
     global.location_player[1] -=1;
-    //show_debug_message(string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1])));
     roomNum = ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]);
     next_room = ds_map_find_value(global.rooms, roomNum);
-    show_debug_message("next room" + string(next_room));
     room_goto(next_room);
 
-} else if other.x == width-64 {
+} else if other.x == width-49 || other.x == width - 81 {
     //right door
     global.dir_player = 'right';
     global.location_player[1] +=1;
     roomNum = ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]);
     next_room = ds_map_find_value(global.rooms, roomNum);
-    show_debug_message("next room" + string(next_room));
     room_goto(next_room);
 
-} else if other.y == height-64{ 
+} else if other.y == height-49 || other.y == height-81{ 
     //down door
     global.dir_player = 'down';
     global.location_player[0] +=1;
     roomNum = ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]);
     next_room = ds_map_find_value(global.rooms, roomNum);
-    show_debug_message("next room" + string(next_room));
     room_goto(next_room);
 
-} else if other.y == 32{
+} else if other.y == 49{
     //up door
     global.dir_player = 'up';
     global.location_player[0] -=1;
     roomNum = ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]);
     next_room = ds_map_find_value(global.rooms, roomNum);
-    show_debug_message("next room" + string(next_room));
     room_goto(next_room);
 }
-//player_spawn();
 
 </string>
           </argument>
@@ -392,6 +430,49 @@ if other.x == 32{
           <argument>
             <kind>1</kind>
             <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Creates an object for spawning</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_create(416,192,obj_room_dimensions);
+</string>
           </argument>
         </arguments>
       </action>

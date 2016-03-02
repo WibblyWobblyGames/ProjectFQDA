@@ -72,6 +72,7 @@
     <script>scripts\room_dictionary.gml</script>
     <script>scripts\restart.gml</script>
     <script>scripts\player_spawn.gml</script>
+    <script>scripts\special_door_create.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -100,6 +101,7 @@
     <object>objects\obj_shrine_door</object>
     <object>objects\obj_blue_door</object>
     <object>objects\obj_bedroom_door</object>
+    <object>objects\obj_room_dimensions</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
