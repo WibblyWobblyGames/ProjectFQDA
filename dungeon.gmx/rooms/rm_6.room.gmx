@@ -3,14 +3,14 @@
   <caption></caption>
   <width>1024</width>
   <height>768</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>create_doors();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -54,9 +54,13 @@
     <instance objName="obj_bed" x="192" y="64" name="inst_5CD7C3FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_portrait" x="256" y="0" name="inst_046E0783" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_portrait" x="96" y="0" name="inst_B8E63BFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bedroom_door" x="239" y="335" name="inst_B731BDA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
-    <instance objName="obj_bedroom_door" x="81" y="224" name="inst_72D23169" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
-    <instance objName="obj_bedroom_door" x="399" y="192" name="inst_4A3201D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_wall" x="32" y="64" name="inst_AA8A8894" locked="0" code="" scaleX="2.25" scaleY="3.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="96" y="384" name="inst_606B8521" locked="0" code="" scaleX="4" scaleY="-2.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="256" y="384" name="inst_93A42A47" locked="0" code="" scaleX="4" scaleY="-2.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="64" y="32" name="inst_DEF7D485" locked="0" code="" scaleX="11" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="32" y="352" name="inst_B6F56114" locked="0" code="" scaleX="2.25" scaleY="-3.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="448" y="352" name="inst_B4746B61" locked="0" code="" scaleX="-2.25" scaleY="-3.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="448" y="64" name="inst_D2F55A0C" locked="0" code="" scaleX="-2.25" scaleY="3.75" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Bedroom_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10001722" name="inst_BA7C565D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
