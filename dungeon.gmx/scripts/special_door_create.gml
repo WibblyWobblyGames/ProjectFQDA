@@ -32,6 +32,7 @@ switch(argument0){
                 } else {
                     //create wall
                     wall = instance_create(view_wview[0]/2 - 16, view_hview[0] - 104, obj_wall);
+                    wall.image_yscale = 1.25;
                 }
                 break;
             case 'left':
@@ -44,6 +45,8 @@ switch(argument0){
                 } else {
                     wall = instance_create(72, view_hview[0]/2-32, obj_wall); //40
                     wall.image_yscale = 2; 
+                    wall.image_xscale = 1.25;
+                    wall.x -= 8
                 }
                 break;
             case 'right':
@@ -56,6 +59,7 @@ switch(argument0){
                 } else {
                     wall = instance_create(view_wview[0]-104, view_hview[0]/2 - 32, obj_wall);
                     wall.image_yscale = 2; 
+                    wall.image_xscale = 1.25
                 }
                 break;
         }
