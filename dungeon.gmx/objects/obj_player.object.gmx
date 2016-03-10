@@ -48,7 +48,8 @@
             <string>//sets player health to 100
 globalvar health_player;
 globalvar player_sprite; 
-health_player = 100;
+health_player = 6;
+
 //list of princess types, add new princesses to this list
 princess_list[0] = 'spr_player';
 princess_list[1] = 'spr_zombie';

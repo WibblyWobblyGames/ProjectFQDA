@@ -54,15 +54,13 @@ spawn_enemies(4);</code>
   </views>
   <instances>
     <instance objName="obj_player" x="320" y="160" name="inst_C6075387" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_controller" x="400" y="160" name="inst_B068BB27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="0" y="352" name="inst_AC822554" locked="0" code="" scaleX="2.25" scaleY="-10.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_health" x="400" y="160" name="inst_B068BB27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="64" name="inst_119ACFED" locked="0" code="" scaleX="13" scaleY="-2.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawn" x="400" y="192" name="inst_AC7FFAB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="416" y="352" name="inst_7A7D695D" locked="0" code="" scaleX="-2.25" scaleY="-9.75" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="64" y="352" name="inst_23DC62BC" locked="0" code="" scaleX="4" scaleY="-2.25" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="224" y="352" name="inst_A358441D" locked="0" code="" scaleX="4" scaleY="-2.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="192" y="320" name="inst_FBFB04B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="192" y="256" name="inst_68BFE050" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_heart" x="96" y="64" name="inst_17B17DC3" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_half_heart" x="112" y="64" name="inst_D6B7543D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Dungeon_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10000003" name="inst_EE6DB164" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
