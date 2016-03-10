@@ -45,10 +45,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//sets player health to 100
-globalvar health_player;
+            <string>//sets player health to 10 (5 hearts)
+
 globalvar player_sprite; 
-health_player = 6;
+globalvar health_player;
+health_player = 10;
 
 //list of princess types, add new princesses to this list
 princess_list[0] = 'spr_player';
@@ -408,7 +409,7 @@ if other.x == 49 || other.x == 81{
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-5</string>
+            <string>-1</string>
           </argument>
         </arguments>
       </action>

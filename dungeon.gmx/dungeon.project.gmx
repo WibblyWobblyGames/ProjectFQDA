@@ -107,8 +107,6 @@
     <object>objects\obj_bedroom_door</object>
     <object>objects\obj_room_dimensions</object>
     <object>objects\obj_antispawn</object>
-    <object>objects\obj_half_heart</object>
-    <object>objects\obj_heart</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>

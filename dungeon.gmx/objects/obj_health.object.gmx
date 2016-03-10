@@ -8,6 +8,28 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,10 +47,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (health_player &lt;= 0){
-    game_restart();
+            <string>
+if ((health_player) &lt;= 0){
+    script_execute(restart);
 }
-
 </string>
           </argument>
         </arguments>
@@ -71,65 +93,73 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Draws the healthbar for player
-//Implemented from https://www.reddit.com/r/gamemaker/comments/38kcnt/making_a_health_bar/
+            <string>//Draws the healh for player
 
+//Implemented from: http://gmc.yoyogames.com/index.php?showtopic=574692
+/*
+**  Usage:
+**      draw_hearts_row(heart,bar_length,hp,max_hp,bar_x,bar_y,xoffset,yoffset)
+**
+**  Arguments:
+**      heart       sprite to use for hearts
+**      bar_length  number of hearts in each row
+**      hp          variable for current hp
+**      max_hp      variable for maximum hp
+**      bar_x       x position
+**      bar_y       y position
+**      xoffset     offset of each icon based on width
+**                      1 for normal width
+**                      -1 to draw right to left
+**      yoffset     offset of each row based on height
+**                      1 for normal height
+**                      -1 to draw extra rows upward
+**
+**  Result:
+**      draws a horizontal line of hearts / icons
+**      on multiple rows like Legend of Zelda
+**      can also be used for ammo, mana or other resources
+**
+**  GMLscripts.com
+**
+*/
 
-x1 = 30;
-y1 = 20;
-x2 = 150;
-y2 = 40;
+//make sure your sprite has:
+//a full heart icon at index 0
+//an empty heart icon at the end
 
-draw_healthbar(x1,y1,x2,y2,health_player,c_white,c_green,c_green,0,false,false);
+heart = spr_heart;
+bar_length = 5;
+max_hp = 5;
+bar_x = 0;
+bar_y = 0;
+xoffset = 1;
+yoffset = 2;
+
+parts = 2
+width = sprite_get_width(heart)
+height = sprite_get_height(heart)
+            
+index = 0
+bar = 0
+//draw full hearts
+    repeat(floor(health_player / parts)){
+        draw_sprite(heart,0-19,bar_x+width*xoffset*index,bar_y+height*yoffset*bar)
+        index += 1
+        if index = bar_length{
+            bar +=1
+            index = 0
+        }
+    }
+//draw partial heart
+    if health_player mod parts &gt;0{
+        draw_sprite(spr_half_heart,0-19,bar_x+width*xoffset*index,bar_y+height*yoffset*bar)
+        index += 1
+        if index = bar_length{
+            bar +=1
+            index = 0
+        }
+    }
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>514</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_text</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>2</kind>
-            <string>Health</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>32</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>22</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>524</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_color</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>13</kind>
-            <string>16777215</string>
           </argument>
         </arguments>
       </action>
