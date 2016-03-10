@@ -81,6 +81,10 @@
         <sprite>sprites\spr_thunderfury</sprite>
         <sprite>sprites\spr_thunderfury_attack</sprite>
       </sprites>
+      <sprites name="StraightSword">
+        <sprite>sprites\spr_straight_sword</sprite>
+        <sprite>sprites\spr_straight_sword_attack</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -154,10 +158,12 @@
         <object>objects\obj_attack_parent</object>
         <object>objects\obj_unarmed_attack</object>
         <object>objects\obj_thunderfury_attack</object>
+        <object>objects\obj_straight_sword_attack</object>
       </objects>
       <objects name="Items">
         <object>objects\obj_weapon_parent</object>
         <object>objects\obj_thunderfury</object>
+        <object>objects\obj_straight_sword</object>
       </objects>
     </objects>
   </objects>
