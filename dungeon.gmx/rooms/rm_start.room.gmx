@@ -63,6 +63,7 @@ spawn_enemies(4);</code>
     <instance objName="obj_wall" x="224" y="352" name="inst_A358441D" locked="0" code="" scaleX="4" scaleY="-2.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="192" y="320" name="inst_FBFB04B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="192" y="256" name="inst_68BFE050" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_thunderfury" x="176" y="160" name="inst_6DAAEDEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Dungeon_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10000003" name="inst_EE6DB164" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

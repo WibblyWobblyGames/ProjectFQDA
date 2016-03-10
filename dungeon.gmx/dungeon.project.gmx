@@ -58,6 +58,11 @@
       <sprite>sprites\spr_blue_door</sprite>
     </sprites>
     <sprite>sprites\spr_antispawn</sprite>
+    <sprites name="Weapons">
+      <sprites name="Thunderfury">
+        <sprite>sprites\spr_thunderfury</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Dungeon_Tileset</background>
@@ -66,6 +71,9 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="OnStartup">
+      <script>scripts\setup_weapons.gml</script>
+    </scripts>
     <script>scripts\create_map.gml</script>
     <script>scripts\search_grid.gml</script>
     <script>scripts\print_map.gml</script>
@@ -75,6 +83,7 @@
     <script>scripts\player_spawn.gml</script>
     <script>scripts\special_door_create.gml</script>
     <script>scripts\spawn_enemies.gml</script>
+    <script>scripts\equip_new_weapon.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -105,6 +114,10 @@
     <object>objects\obj_bedroom_door</object>
     <object>objects\obj_room_dimensions</object>
     <object>objects\obj_antispawn</object>
+    <objects name="Weapons">
+      <object>objects\obj_weapon_parent</object>
+      <object>objects\obj_thunderfury</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
