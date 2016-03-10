@@ -61,6 +61,7 @@
     <sprites name="Weapons">
       <sprites name="Thunderfury">
         <sprite>sprites\spr_thunderfury</sprite>
+        <sprite>sprites\spr_thunderfury_attack</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -117,6 +118,7 @@
     <objects name="Weapons">
       <object>objects\obj_weapon_parent</object>
       <object>objects\obj_thunderfury</object>
+      <object>objects\obj_thunderfury_attack</object>
     </objects>
   </objects>
   <rooms name="rooms">

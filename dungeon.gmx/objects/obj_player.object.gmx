@@ -62,6 +62,12 @@ attack = "right";
 num = random_range(0,array_length_1d(princess_list));
 player_sprite = princess_list[num];
 
+//weapon stuff
+globalvar equipped_weapon;
+equipped_weapon = 0;
+
+globalvar weapon_sprite;
+weapon_sprite = obj_player_attack;
 </string>
           </argument>
         </arguments>
@@ -218,16 +224,16 @@ if (keyboard_check(vk_down)){
             <kind>1</kind>
             <string>//Attack for princess
 //Player attacks when space is pressed
-if (keyboard_check(vk_space)){
+if (keyboard_check(vk_space)) {
     
-    if (attack == "right"){
+    if (attack == "right") {
         sprite_index =  asset_get_index(player_sprite+'_attack');
-        instance_create(obj_player.x, obj_player.y - 10, obj_player_attack);
+        instance_create(obj_player.x, obj_player.y - 10, global.weapon_sprite);
     }
         
-    else if (attack == "left"){
+    else if (attack == "left") {
         sprite_index =  asset_get_index(player_sprite+'_attack');
-        instance_create(obj_player.x - 32, obj_player.y, obj_player_attack);
+        instance_create(obj_player.x - 32, obj_player.y, global.weapon_sprite);
     }
 }
 
