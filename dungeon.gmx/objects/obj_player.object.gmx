@@ -66,8 +66,8 @@ player_sprite = princess_list[num];
 globalvar equipped_weapon;
 equipped_weapon = 0;
 
-globalvar weapon_sprite;
-weapon_sprite = obj_player_attack;
+globalvar attack_object;
+attack_object = obj_unarmed_attack;
 </string>
           </argument>
         </arguments>
@@ -228,12 +228,12 @@ if (keyboard_check(vk_space)) {
     
     if (attack == "right") {
         sprite_index =  asset_get_index(player_sprite+'_attack');
-        instance_create(obj_player.x, obj_player.y - 10, global.weapon_sprite);
+        instance_create(obj_player.x, obj_player.y - 10, global.attack_object);
     }
         
     else if (attack == "left") {
         sprite_index =  asset_get_index(player_sprite+'_attack');
-        instance_create(obj_player.x - 32, obj_player.y, global.weapon_sprite);
+        instance_create(obj_player.x - 32, obj_player.y, global.attack_object);
     }
 }
 

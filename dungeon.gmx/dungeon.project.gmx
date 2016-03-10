@@ -99,7 +99,6 @@
     </objects>
     <object>objects\InitialMusic</object>
     <object>objects\BossMusic</object>
-    <object>objects\obj_player_attack</object>
     <object>objects\obj_door</object>
     <object>objects\obj_space_pit</object>
     <object>objects\obj_torch</object>
@@ -116,9 +115,15 @@
     <object>objects\obj_room_dimensions</object>
     <object>objects\obj_antispawn</object>
     <objects name="Weapons">
-      <object>objects\obj_weapon_parent</object>
-      <object>objects\obj_thunderfury</object>
-      <object>objects\obj_thunderfury_attack</object>
+      <objects name="Attacks">
+        <object>objects\obj_attack_parent</object>
+        <object>objects\obj_unarmed_attack</object>
+        <object>objects\obj_thunderfury_attack</object>
+      </objects>
+      <objects name="Items">
+        <object>objects\obj_weapon_parent</object>
+        <object>objects\obj_thunderfury</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">

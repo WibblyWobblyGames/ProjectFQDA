@@ -80,7 +80,7 @@ alarm[0] = 15;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_player_attack">
+    <event eventtype="4" ename="obj_unarmed_attack">
       <action>
         <libid>1</libid>
         <id>203</id>
