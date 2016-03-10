@@ -57,6 +57,9 @@
       <sprite>sprites\spr_bedroom_door</sprite>
       <sprite>sprites\spr_blue_door</sprite>
     </sprites>
+    <sprite>sprites\spr_antispawn</sprite>
+    <sprite>sprites\spr_half_heart</sprite>
+    <sprite>sprites\spr_heart</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Dungeon_Tileset</background>
@@ -73,12 +76,13 @@
     <script>scripts\restart.gml</script>
     <script>scripts\player_spawn.gml</script>
     <script>scripts\special_door_create.gml</script>
+    <script>scripts\spawn_enemies.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_enemy</object>
-    <object>objects\obj_controller</object>
+    <object>objects\obj_health</object>
     <object>objects\obj_boss</object>
     <object>objects\obj_spawn</object>
     <objects name="Enemies">
@@ -102,6 +106,7 @@
     <object>objects\obj_blue_door</object>
     <object>objects\obj_bedroom_door</object>
     <object>objects\obj_room_dimensions</object>
+    <object>objects\obj_antispawn</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>

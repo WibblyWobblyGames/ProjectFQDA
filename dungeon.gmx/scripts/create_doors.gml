@@ -12,8 +12,9 @@ if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.lo
     door.image_angle = 90;
 } else {
     //create wall
-    wall = instance_create(40, view_hview[0]/2-32, obj_wall);
-    wall.image_yscale = 2;   
+    wall = instance_create(32, view_hview[0]/2-32, obj_wall); //40
+    wall.image_yscale = 2;  
+    wall.image_xscale = 1.25;
 }
 //check right
 if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1])){
@@ -29,6 +30,7 @@ if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.lo
     //create wall
     wall = instance_create(view_wview[0]-72, view_hview[0]/2 - 32, obj_wall);
     wall.image_yscale = 2;  
+    wall.image_xscale = 1.25;
 }
 //check down
 if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1])){
@@ -42,6 +44,7 @@ if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.lo
 } else {
     //create wall
     wall = instance_create(view_wview[0]/2 - 16, view_hview[0]-72, obj_wall);
+    wall.image_yscale = 1.25
 }
 //check up
 if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1])){
