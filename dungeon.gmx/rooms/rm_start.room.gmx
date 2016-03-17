@@ -57,11 +57,15 @@ spawn_enemies(4);</code>
     <instance objName="obj_health" x="400" y="160" name="inst_B068BB27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="64" name="inst_119ACFED" locked="0" code="" scaleX="13" scaleY="-2.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawn" x="400" y="192" name="inst_AC7FFAB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="192" y="320" name="inst_FBFB04B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="42" y="280" name="inst_FBFB04B7" locked="0" code="" scaleX="4.71999979019165" scaleY="0.84375" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="192" y="256" name="inst_68BFE050" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawner" x="96" y="16" name="inst_D7DB9210" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawner_door" x="96" y="16" name="inst_9D3A412A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button" x="128" y="144" name="inst_A2EC41F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="36" y="72" name="inst_A3B0615C" locked="0" code="" scaleX="1.12999999523163" scaleY="7.05999994277954" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="346" y="66" name="inst_B78B7A8E" locked="0" code="" scaleX="1.32258069515228" scaleY="7.45161294937134" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="96" y="58" name="inst_4536CCAA" locked="0" code="" scaleX="0.806451618671417" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="225" y="279" name="inst_ED11E466" locked="0" code="" scaleX="4.06451606750488" scaleY="0.935483872890472" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Dungeon_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10000003" name="inst_EE6DB164" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
