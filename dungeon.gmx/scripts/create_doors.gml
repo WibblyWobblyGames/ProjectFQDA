@@ -12,7 +12,7 @@ if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.lo
     door.image_angle = 90;
 } else {
     //create wall
-    wall = instance_create(32, view_hview[0]/2-32, obj_wall); //40
+    wall = instance_create(32, view_hview[0]/2-32, obj_wall); 
     wall.image_yscale = 2;  
     wall.image_xscale = 1.25;
 }

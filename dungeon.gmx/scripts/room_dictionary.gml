@@ -8,11 +8,18 @@ ds_map_add(global.rooms, 2, rm_2);
 ds_map_add(global.rooms, 3, rm_3);
 ds_map_add(global.rooms, 4, rm_4);
 ds_map_add(global.rooms, 5, rm_5);
-ds_map_add(global.rooms, 6, rm_boss);
+//ds_map_add(global.rooms, 6, rm_boss);
 
 //special rooms (specific doors only)
 
 ds_map_add(global.rooms, 'a', rm_start);
 ds_map_add(global.rooms, 'b', rm_6);
 ds_map_add(global.rooms, 'c', shrine);
+
+ds_map_add(global.rooms, 6, prison);
+ds_map_add(global.rooms, 7, rm_7);
+ds_map_add(global.rooms, 8, rm_8);
+
+//boss room
+ds_map_add(global.rooms, 'boss', rm_boss);
 

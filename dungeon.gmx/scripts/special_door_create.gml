@@ -78,5 +78,29 @@ switch(argument0){
                 break;
         }
         break;
+    case 6: //prison
+    case 7: //rm_7
+    case 8: //rm_8
+        switch(argument1){
+            case 'down':
+                if ds_grid_get(global.mapOfRooms, global.location_player[0]+1, global.location_player[1]) != 'x' &&
+                        ds_grid_get(global.mapOfRooms, global.location_player[0]+1, global.location_player[1]) != 'a' &&
+                        ds_grid_get(global.mapOfRooms, global.location_player[0]+1, global.location_player[1]) != 'c'{
+                    door.image_angle = 180;
+                    door = instance_create(view_wview[0]/2, view_hview[0]-81, obj_door);
+                    if argument0 == 6  || argument0 == 7{    
+                         door.sprite_index = spr_prison_door;
+                    } else if argument0 == 8 {
+                        door.sprite_index = spr_shrine_door;
+                    }
+                }
+                break;
+            case 'up':
+                break;
+            case 'right':
+                break;
+            case 'left':
+                break;
+        }
 
 }
