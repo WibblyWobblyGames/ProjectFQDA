@@ -374,7 +374,7 @@ if other.x == 49 || other.x == 81{
     next_room = ds_map_find_value(global.rooms, roomNum);
     room_goto(next_room);
 
-} else if other.y == 49{
+} else if other.y == 49 || other.y == 81{
     //up door
     global.dir_player = 'up';
     global.location_player[0] -=1;

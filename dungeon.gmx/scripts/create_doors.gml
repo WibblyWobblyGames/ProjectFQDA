@@ -1,7 +1,10 @@
 //creates doors in the current room. Call in the creation code of every room.
 
 //check left
-if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1])){
+if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1])) ||
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 6 ||
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 7 ||
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 8 {
     special_door_create(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]),'left');
 } else if !is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]-1)) || 
                 ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]-1) == 'b'{
@@ -17,8 +20,11 @@ if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.lo
     wall.image_xscale = 1.25;
 }
 //check right
-if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1])){
-    special_door_create(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]),'right');
+if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1])) ||
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 6 ||
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 7 ||
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 8 {
+    special_door_create(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]),'right');  
 } else if !is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]+1)) ||
                 ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]+1) == 'b' {
     //create right door
@@ -33,7 +39,10 @@ if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.lo
     wall.image_xscale = 1.25;
 }
 //check down
-if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1])){
+if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1])) ||
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 6 ||
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 7 ||
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 8 {
     special_door_create(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]),'down');
 } else if !is_string(ds_grid_get(global.mapOfRooms, global.location_player[0]+1, global.location_player[1])) {
     //create down door
@@ -47,7 +56,10 @@ if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.lo
     wall.image_yscale = 1.25
 }
 //check up
-if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1])){
+if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1])) ||
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 6 ||
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 7 ||
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 8 {
     special_door_create(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]),'up');
 } else if !is_string(ds_grid_get(global.mapOfRooms, global.location_player[0]-1, global.location_player[1])) ||
                 ds_grid_get(global.mapOfRooms, global.location_player[0]-1, global.location_player[1]) == 'a' ||

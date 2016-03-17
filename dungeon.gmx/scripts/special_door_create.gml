@@ -43,7 +43,7 @@ switch(argument0){
                     door.sprite_index = spr_bedroom_door;
                     door.image_angle = 90;
                 } else {
-                    wall = instance_create(72, view_hview[0]/2-32, obj_wall); //40
+                    wall = instance_create(72, view_hview[0]/2-32, obj_wall);
                     wall.image_yscale = 2; 
                     wall.image_xscale = 1.25;
                     wall.x -= 8
@@ -86,20 +86,67 @@ switch(argument0){
                 if ds_grid_get(global.mapOfRooms, global.location_player[0]+1, global.location_player[1]) != 'x' &&
                         ds_grid_get(global.mapOfRooms, global.location_player[0]+1, global.location_player[1]) != 'a' &&
                         ds_grid_get(global.mapOfRooms, global.location_player[0]+1, global.location_player[1]) != 'c'{
-                    door.image_angle = 180;
                     door = instance_create(view_wview[0]/2, view_hview[0]-81, obj_door);
+                    door.image_angle = 180;
                     if argument0 == 6  || argument0 == 7{    
                          door.sprite_index = spr_prison_door;
                     } else if argument0 == 8 {
-                        door.sprite_index = spr_shrine_door;
-                    }
+                        door.sprite_index = spr_bedroom_door;
+                        }
+                }
+                else {
+                    //create wall
+                    wall = instance_create(view_wview[0]/2 - 16, view_hview[0] - 104, obj_wall);
+                    wall.image_yscale = 1.25;
                 }
                 break;
             case 'up':
+                if ds_grid_get(global.mapOfRooms, global.location_player[0]-1, global.location_player[1]) != 'x' {
+                    door = instance_create(view_wview[0]/2, 81, obj_door);
+                    if argument0 == 6  || argument0 == 7{    
+                         door.sprite_index = spr_prison_door;
+                    } else if argument0 == 8 {
+                        door.sprite_index = spr_bedroom_door;
+                    }
+                } else {
+                    wall = instance_create(view_wview[0]/2 - 16, 65, obj_wall);
+                    wall.image_yscale = 1.25;
+                }
                 break;
             case 'right':
+                if ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]+1) != 'x' &&
+                        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]+1) != 'a' &&
+                        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]+1) != 'c' {
+                    door = instance_create(view_wview[0]-81, view_hview[0]/2, obj_door);
+                    door.image_angle = 270;
+                    if argument0 == 6  || argument0 == 7{    
+                         door.sprite_index = spr_prison_door;
+                    } else if argument0 == 8 {
+                        door.sprite_index = spr_bedroom_door;
+                    }
+                } else {
+                    wall = instance_create(view_wview[0]-104, view_hview[0]/2 - 32, obj_wall);
+                    wall.image_yscale = 2; 
+                    wall.image_xscale = 1.25
+                }
                 break;
             case 'left':
+                if ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]-1) != 'x' &&
+                        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]-1) != 'a' &&
+                        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]-1) != 'c'{
+                    door = instance_create(81, view_hview[0]/2, obj_door);
+                    door.image_angle = 90;
+                    if argument0 == 6  || argument0 == 7{    
+                         door.sprite_index = spr_prison_door;
+                    } else if argument0 == 8 {
+                        door.sprite_index = spr_bedroom_door;
+                    } 
+                } else {
+                        wall = instance_create(72, view_hview[0]/2-32, obj_wall);
+                        wall.image_yscale = 2; 
+                        wall.image_xscale = 1.25;
+                        wall.x -= 8
+                    }
                 break;
         }
 
