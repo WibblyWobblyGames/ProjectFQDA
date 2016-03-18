@@ -109,8 +109,8 @@ switch(argument0){
                         door.sprite_index = spr_bedroom_door;
                     }
                 } else {
-                    wall = instance_create(view_wview[0]/2 - 16, 65, obj_wall);
-                    wall.image_yscale = 1.25;
+                    wall = instance_create(view_wview[0]/2 - 16, 64, obj_wall);
+                    wall.image_yscale = 1;
                 }
                 break;
             case 'right':
