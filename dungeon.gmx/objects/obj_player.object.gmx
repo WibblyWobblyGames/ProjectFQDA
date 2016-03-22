@@ -60,6 +60,8 @@ princess_list[2] = 'spr_cyclops';
 globalvar attack;
 attack = "right";
 
+self.attacking = false;
+
 //select a random number in order to decide a princess
 num = random_range(0,array_length_1d(princess_list));
 player_sprite = princess_list[num];
@@ -117,6 +119,30 @@ create_map();
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>sprite_index = asset_get_index(player_sprite+'_idle');
+self.attacking = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -156,31 +182,35 @@ create_map();
             <kind>1</kind>
             <string> //Movement code for player
 //When Keyboard is pressed, move player in direction
-if (keyboard_check(vk_nokey)){
+if (self.attacking) {
+    exit;
+}
+
+if (keyboard_check(vk_nokey)) {
     sprite_index = asset_get_index(player_sprite+'_idle');
     speed = 0;
 }   
 
-if (keyboard_check(vk_left)){
+if (keyboard_check(vk_left)) {
     speed.x -= 5;
     sprite_index = asset_get_index(player_sprite+'_run');
     image_xscale = -1;
     attack = "left";
 }    
 
-if (keyboard_check(vk_right)){
+if (keyboard_check(vk_right)) {
     speed.x += 5;
     sprite_index = asset_get_index(player_sprite+'_run');
     image_xscale = 1;
     attack = "right";
 }    
 
-if (keyboard_check(vk_up)){
+if (keyboard_check(vk_up)) {
     speed.y -= 5;
     sprite_index = asset_get_index(player_sprite+'_run');
 }    
 
-if (keyboard_check(vk_down)){
+if (keyboard_check(vk_down)) {
     speed.y += 5;
     sprite_index = asset_get_index(player_sprite+'_run');
 }    
@@ -227,16 +257,23 @@ if (keyboard_check(vk_down)){
             <string>//Attack for princess
 //Player attacks when space is pressed
 if (keyboard_check(vk_space)) {
+    self.attacking = true;
     
+    var attack_obj;
     if (attack == "right") {
-        sprite_index =  asset_get_index(player_sprite+'_attack');
-        instance_create(obj_player.x, obj_player.y - 10, global.attack_object);
+        sprite_index = asset_get_index(player_sprite+'_attack');
+        image_speed = 0.5;
+        attack_obj = instance_create(obj_player.x, obj_player.y - 10, global.attack_object);
     }
         
     else if (attack == "left") {
-        sprite_index =  asset_get_index(player_sprite+'_attack');
-        instance_create(obj_player.x - 32, obj_player.y, global.attack_object);
+        sprite_index = asset_get_index(player_sprite+'_attack');
+        attack_obj = instance_create(obj_player.x - 32, obj_player.y, global.attack_object);
     }
+    
+    image_speed = 0.5;
+    attack_obj.image_speed = 0.5;
+    alarm[0] = 8;
 }
 
 
