@@ -209,31 +209,35 @@ if (self.attacking) {
 if (keyboard_check(vk_nokey)) {
     sprite_index = asset_get_index(player_sprite+'_idle');
     speed = 0;
-}   
+} else {
 
-if (keyboard_check(vk_left)) {
-    speed.x -= 5;
-    sprite_index = asset_get_index(player_sprite+'_run');
-    image_xscale = -1;
-    attack = "left";
-}    
-
-if (keyboard_check(vk_right)) {
-    speed.x += 5;
-    sprite_index = asset_get_index(player_sprite+'_run');
-    image_xscale = 1;
-    attack = "right";
-}    
-
-if (keyboard_check(vk_up)) {
-    speed.y -= 5;
-    sprite_index = asset_get_index(player_sprite+'_run');
-}    
-
-if (keyboard_check(vk_down)) {
-    speed.y += 5;
-    sprite_index = asset_get_index(player_sprite+'_run');
-}    
+    run_sprite = asset_get_index(player_sprite+'_run');
+    mv_speed = 5;
+    
+    if (keyboard_check(vk_left)) {
+        speed.x -= mv_speed;
+        sprite_index = run_sprite;
+        image_xscale = -1;
+        attack = "left";
+    }    
+    
+    if (keyboard_check(vk_right)) {
+        speed.x += mv_speed;
+        sprite_index = run_sprite;
+        image_xscale = 1;
+        attack = "right";
+    }    
+    
+    if (keyboard_check(vk_up)) {
+        speed.y -= mv_speed;
+        sprite_index = run_sprite;
+    }    
+    
+    if (keyboard_check(vk_down)) {
+        speed.y += mv_speed;
+        sprite_index = run_sprite;
+    }    
+}
 </string>
           </argument>
         </arguments>
@@ -289,6 +293,7 @@ if (keyboard_check(vk_space)) {
     else if (attack == "left") {
         sprite_index = asset_get_index(player_sprite+'_attack');
         attack_obj = instance_create(obj_player.x, obj_player.y, global.attack_object);
+        attack_obj.image_xscale = -1;
     }
     
     image_speed = 0.5;

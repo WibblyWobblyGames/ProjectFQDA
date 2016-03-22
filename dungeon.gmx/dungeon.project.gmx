@@ -121,6 +121,7 @@
     <objects name="Enemies">
       <object>objects\obj_shadow</object>
       <object>objects\obj_robot</object>
+      <object>objects\obj_enemy_parent</object>
     </objects>
     <object>objects\InitialMusic</object>
     <object>objects\BossMusic</object>
