@@ -122,6 +122,26 @@ create_map();
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Attack done; return to idle animation</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -263,12 +283,12 @@ if (keyboard_check(vk_space)) {
     if (attack == "right") {
         sprite_index = asset_get_index(player_sprite+'_attack');
         image_speed = 0.5;
-        attack_obj = instance_create(obj_player.x, obj_player.y - 10, global.attack_object);
+        attack_obj = instance_create(obj_player.x, obj_player.y, global.attack_object);
     }
         
     else if (attack == "left") {
         sprite_index = asset_get_index(player_sprite+'_attack');
-        attack_obj = instance_create(obj_player.x - 32, obj_player.y, global.attack_object);
+        attack_obj = instance_create(obj_player.x, obj_player.y, global.attack_object);
     }
     
     image_speed = 0.5;

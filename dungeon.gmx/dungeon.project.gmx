@@ -107,7 +107,9 @@
     <script>scripts\player_spawn.gml</script>
     <script>scripts\special_door_create.gml</script>
     <script>scripts\spawn_enemies.gml</script>
-    <script>scripts\equip_new_weapon.gml</script>
+    <scripts name="Player">
+      <script>scripts\equip_new_weapon.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
