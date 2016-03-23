@@ -73,6 +73,7 @@
       <sprite>sprites\spr_tube_cyclops</sprite>
       <sprite>sprites\spr_tube_rare</sprite>
       <sprite>sprites\spr_weapon_platform</sprite>
+      <sprite>sprites\spr_teleporter</sprite>
       <sprite>sprites\spr_button</sprite>
       <sprite>sprites\spr_spawner</sprite>
       <sprite>sprites\spr_spawner_door</sprite>
@@ -172,6 +173,7 @@
       <object>objects\obj_crawl_8</object>
       <object>objects\obj_skip</object>
     </objects>
+    <object>objects\obj_teleporter</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\opening_screen</room>
@@ -187,6 +189,7 @@
     <room>rooms\prison</room>
     <room>rooms\rm_7</room>
     <room>rooms\rm_8</room>
+    <room>rooms\rm_teleporter</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
