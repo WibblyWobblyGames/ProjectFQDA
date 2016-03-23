@@ -78,6 +78,16 @@
       <sprite>sprites\spr_spawner</sprite>
       <sprite>sprites\spr_spawner_door</sprite>
     </sprites>
+<<<<<<< HEAD
+    <sprites name="Weapons">
+      <sprites name="Thunderfury">
+        <sprite>sprites\spr_thunderfury</sprite>
+        <sprite>sprites\spr_thunderfury_attack</sprite>
+      </sprites>
+      <sprites name="StraightSword">
+        <sprite>sprites\spr_straight_sword</sprite>
+        <sprite>sprites\spr_straight_sword_attack</sprite>
+=======
     <sprites name="TitleScreen Sprites">
       <sprite>sprites\spr_stars_title</sprite>
       <sprite>sprites\spr_skip</sprite>
@@ -92,16 +102,7 @@
         <sprite>sprites\spr_crawl_6</sprite>
         <sprite>sprites\spr_crawl_7</sprite>
         <sprite>sprites\spr_crawl_8</sprite>
-      </sprites>
-    </sprites>
-    <sprites name="Weapons">
-      <sprites name="Thunderfury">
-        <sprite>sprites\spr_thunderfury</sprite>
-        <sprite>sprites\spr_thunderfury_attack</sprite>
-      </sprites>
-      <sprites name="StraightSword">
-        <sprite>sprites\spr_straight_sword</sprite>
-        <sprite>sprites\spr_straight_sword_attack</sprite>
+>>>>>>> master
       </sprites>
     </sprites>
   </sprites>
@@ -176,6 +177,21 @@
       <object>objects\obj_spawner</object>
       <object>objects\obj_spawner_door</object>
     </objects>
+<<<<<<< HEAD
+    <objects name="Weapons">
+      <objects name="Attacks">
+        <object>objects\obj_attack_parent</object>
+        <object>objects\obj_unarmed_attack</object>
+        <object>objects\obj_thunderfury_attack</object>
+        <object>objects\obj_straight_sword_attack</object>
+      </objects>
+      <objects name="Items">
+        <object>objects\obj_weapon_parent</object>
+        <object>objects\obj_thunderfury</object>
+        <object>objects\obj_straight_sword</object>
+      </objects>
+    </objects>
+=======
     <objects name="TitleScreenObjects">
       <object>objects\obj_stars_title</object>
       <object>objects\obj_castle_title</object>
@@ -191,19 +207,7 @@
       <object>objects\obj_skip</object>
     </objects>
     <object>objects\obj_teleporter</object>
-    <objects name="Weapons">
-      <objects name="Attacks">
-        <object>objects\obj_attack_parent</object>
-        <object>objects\obj_unarmed_attack</object>
-        <object>objects\obj_thunderfury_attack</object>
-        <object>objects\obj_straight_sword_attack</object>
-      </objects>
-      <objects name="Items">
-        <object>objects\obj_weapon_parent</object>
-        <object>objects\obj_thunderfury</object>
-        <object>objects\obj_straight_sword</object>
-      </objects>
-    </objects>
+>>>>>>> master
   </objects>
   <rooms name="rooms">
     <room>rooms\opening_screen</room>

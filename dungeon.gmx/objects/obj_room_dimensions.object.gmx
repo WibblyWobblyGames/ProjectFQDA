@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_spawn(room);
+            <string>if room != opening_screen{
+    player_spawn(room);
+}
 
 </string>
           </argument>
