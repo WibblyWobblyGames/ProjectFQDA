@@ -56,22 +56,17 @@ princess_list[0] = 'spr_player';
 princess_list[1] = 'spr_zombie';
 princess_list[2] = 'spr_cyclops';
 
-//Attack for player, defined for direction they attack
-globalvar attack;
-attack = "right";
-
-self.attacking = false;
-
 //select a random number in order to decide a princess
 num = random_range(0,array_length_1d(princess_list));
 player_sprite = princess_list[num];
 
 //weapon stuff
-globalvar equipped_weapon;
 equipped_weapon = 0;
-
-globalvar attack_object;
 attack_object = obj_unarmed_attack;
+
+//Attack for player, defined for direction they attack
+attack = "right";
+attacking = false;
 </string>
           </argument>
         </arguments>
@@ -202,7 +197,7 @@ self.attacking = false;
             <kind>1</kind>
             <string> //Movement code for player
 //When Keyboard is pressed, move player in direction
-if (self.attacking) {
+if (attacking) {
     exit;
 }
 
@@ -210,8 +205,7 @@ if (keyboard_check(vk_nokey)) {
     sprite_index = asset_get_index(player_sprite+'_idle');
     speed = 0;
 } else {
-
-    run_sprite = asset_get_index(player_sprite+'_run');
+    var run_sprite = asset_get_index(player_sprite+'_run');
     mv_speed = 5;
     
     if (keyboard_check(vk_left)) {
@@ -264,45 +258,41 @@ if (keyboard_check(vk_nokey)) {
       </action>
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
-        <whoName>other</whoName>
+        <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>//Attack for princess
-//Player attacks when space is pressed
-if (keyboard_check(vk_space)) {
-    self.attacking = true;
-    
-    var attack_obj;
-    if (attack == "right") {
-        sprite_index = asset_get_index(player_sprite+'_attack');
-        image_speed = 0.5;
-        attack_obj = instance_create(obj_player.x, obj_player.y, global.attack_object);
-    }
-        
-    else if (attack == "left") {
-        sprite_index = asset_get_index(player_sprite+'_attack');
-        attack_obj = instance_create(obj_player.x, obj_player.y, global.attack_object);
-        attack_obj.image_xscale = -1;
-    }
-    
-    image_speed = 0.5;
-    attack_obj.image_speed = 0.5;
-    alarm[0] = 8;
-}
-
-
-</string>
+            <kind>9</kind>
+            <script>player_attack</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -456,7 +446,7 @@ if other.x == 49 || other.x == 81{
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_shadow">
+    <event eventtype="4" ename="obj_enemy_parent">
       <action>
         <libid>1</libid>
         <id>611</id>
