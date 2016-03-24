@@ -95,22 +95,6 @@ alarm[0] = 15;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_unarmed_attack">
-      <action>
-        <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-    </event>
     <event eventtype="4" ename="obj_wall">
       <action>
         <libid>1</libid>
@@ -154,6 +138,22 @@ alarm[0] = 15;
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_unarmed_attack">
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>

@@ -144,6 +144,7 @@
   <scripts name="scripts">
     <scripts name="Player">
       <script>scripts\player_attack.gml</script>
+      <script>scripts\player_move.gml</script>
     </scripts>
     <scripts name="Weapons">
       <script>scripts\equip_this_weapon.gml</script>

@@ -2,7 +2,7 @@
 //Player attacks when space is pressed
 
 with (obj_player) {
-    if (keyboard_check(vk_space)) {
+    if (!attacking and keyboard_check(vk_space)) {
         attacking = true;
         
         var attack_instance;
