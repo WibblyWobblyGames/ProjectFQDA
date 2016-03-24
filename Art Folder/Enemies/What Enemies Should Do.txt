@@ -1,0 +1,19 @@
+Mimic -
+
+Stay still until player is close. Then emerge. Then start attacking like normal enemy.
+
+Robot -
+
+Chase player and swing at them.
+
+Shadow -
+
+Wander aimlessly. On collision deal damage.
+
+Ninja -
+
+Invulnerable while spinning.
+
+Vulnerable while not spinning.
+
+Spin at player every few seconds.
