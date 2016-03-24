@@ -43,6 +43,7 @@
         <sprite>sprites\spr_cyclops_attack</sprite>
         <sprite>sprites\spr_cyclops_run</sprite>
       </sprites>
+      <sprite>sprites\spr_princess_death</sprite>
     </sprites>
     <sprites name="Doors">
       <sprite>sprites\spr_shrine_door</sprite>
@@ -72,9 +73,26 @@
       <sprite>sprites\spr_tube_cyclops</sprite>
       <sprite>sprites\spr_tube_rare</sprite>
       <sprite>sprites\spr_weapon_platform</sprite>
+      <sprite>sprites\spr_teleporter</sprite>
       <sprite>sprites\spr_button</sprite>
       <sprite>sprites\spr_spawner</sprite>
       <sprite>sprites\spr_spawner_door</sprite>
+    </sprites>
+    <sprites name="TitleScreen Sprites">
+      <sprite>sprites\spr_stars_title</sprite>
+      <sprite>sprites\spr_skip</sprite>
+      <sprite>sprites\spr_start</sprite>
+      <sprite>sprites\spr_castle_title</sprite>
+      <sprites name="spr_crawl_group">
+        <sprite>sprites\spr_crawl_1</sprite>
+        <sprite>sprites\spr_crawl_2</sprite>
+        <sprite>sprites\spr_crawl_3</sprite>
+        <sprite>sprites\spr_crawl_4</sprite>
+        <sprite>sprites\spr_crawl_5</sprite>
+        <sprite>sprites\spr_crawl_6</sprite>
+        <sprite>sprites\spr_crawl_7</sprite>
+        <sprite>sprites\spr_crawl_8</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -82,6 +100,7 @@
     <background>background\Bedroom_Tileset</background>
     <background>background\Shrine_Tileset</background>
     <background>background\Prison_Tileset</background>
+    <background>background\Start_Screen</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -140,8 +159,24 @@
       <object>objects\obj_spawner</object>
       <object>objects\obj_spawner_door</object>
     </objects>
+    <objects name="TitleScreenObjects">
+      <object>objects\obj_stars_title</object>
+      <object>objects\obj_castle_title</object>
+      <object>objects\obj_start</object>
+      <object>objects\obj_crawl_1</object>
+      <object>objects\obj_crawl_2</object>
+      <object>objects\obj_crawl_3</object>
+      <object>objects\obj_crawl_4</object>
+      <object>objects\obj_crawl_5</object>
+      <object>objects\obj_crawl_6</object>
+      <object>objects\obj_crawl_7</object>
+      <object>objects\obj_crawl_8</object>
+      <object>objects\obj_skip</object>
+    </objects>
+    <object>objects\obj_teleporter</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\opening_screen</room>
     <room>rooms\rm_start</room>
     <room>rooms\rm_1</room>
     <room>rooms\rm_2</room>
@@ -154,6 +189,7 @@
     <room>rooms\prison</room>
     <room>rooms\rm_7</room>
     <room>rooms\rm_8</room>
+    <room>rooms\rm_teleporter</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
