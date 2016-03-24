@@ -1,0 +1,9 @@
+Straight Sword - Decent damage, decent attack speed.
+Caestus - Same as fists but much higher damage.
+Dagger - Make this swing faster than straight sword but lower damage.
+Demon's Great Hammer - VERY SLOW SWING SPEED. Damage should be quite high.
+Eye Blade - Make it slower than straight sword, but heal half a heart if enemy is killed?
+Ricard's Rapier - Damage should be about the same as Straight Sword, but it jabs very quickly. (Disadvantage is that it's only a jab.)
+Thunderfury - Just make this a better straight sword.
+Zweihander - Lower the swing speed a bit (faster than Hammer) but make the damage high (lower than hammer.)
+
