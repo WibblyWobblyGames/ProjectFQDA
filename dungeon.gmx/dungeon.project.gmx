@@ -129,7 +129,6 @@
     <script>scripts\player_spawn.gml</script>
     <script>scripts\special_door_create.gml</script>
     <script>scripts\spawn_enemies.gml</script>
-    <script>scripts\script12.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
