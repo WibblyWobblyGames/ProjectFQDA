@@ -78,9 +78,9 @@ switch(argument0){
                 break;
         }
         break;
-    case 6: //prison
-    case 7: //rm_7
-    case 8: //rm_8
+    case 7: //prison
+    case 8: //rm_7
+    case 9: //rm_8
         switch(argument1){
             case 'down':
                 if ds_grid_get(global.mapOfRooms, global.location_player[0]+1, global.location_player[1]) != 'x' &&
@@ -88,9 +88,9 @@ switch(argument0){
                         ds_grid_get(global.mapOfRooms, global.location_player[0]+1, global.location_player[1]) != 'c'{
                     door = instance_create(view_wview[0]/2, view_hview[0]-81, obj_door);
                     door.image_angle = 180;
-                    if argument0 == 6  || argument0 == 7{    
+                    if argument0 == 7  || argument0 == 8{    
                          door.sprite_index = spr_prison_door;
-                    } else if argument0 == 8 {
+                    } else if argument0 == 9 {
                         door.sprite_index = spr_bedroom_door;
                         }
                 }
@@ -103,9 +103,9 @@ switch(argument0){
             case 'up':
                 if ds_grid_get(global.mapOfRooms, global.location_player[0]-1, global.location_player[1]) != 'x' {
                     door = instance_create(view_wview[0]/2, 81, obj_door);
-                    if argument0 == 6  || argument0 == 7{    
+                    if argument0 == 7  || argument0 == 8{    
                          door.sprite_index = spr_prison_door;
-                    } else if argument0 == 8 {
+                    } else if argument0 == 9 {
                         door.sprite_index = spr_bedroom_door;
                     }
                 } else {
@@ -119,9 +119,9 @@ switch(argument0){
                         ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]+1) != 'c' {
                     door = instance_create(view_wview[0]-81, view_hview[0]/2, obj_door);
                     door.image_angle = 270;
-                    if argument0 == 6  || argument0 == 7{    
+                    if argument0 == 7  || argument0 == 8{    
                          door.sprite_index = spr_prison_door;
-                    } else if argument0 == 8 {
+                    } else if argument0 == 9 {
                         door.sprite_index = spr_bedroom_door;
                     }
                 } else {
@@ -136,9 +136,9 @@ switch(argument0){
                         ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]-1) != 'c'{
                     door = instance_create(81, view_hview[0]/2, obj_door);
                     door.image_angle = 90;
-                    if argument0 == 6  || argument0 == 7{    
+                    if argument0 == 7  || argument0 == 8{    
                          door.sprite_index = spr_prison_door;
-                    } else if argument0 == 8 {
+                    } else if argument0 == 9 {
                         door.sprite_index = spr_bedroom_door;
                     } 
                 } else {

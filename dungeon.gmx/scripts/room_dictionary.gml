@@ -16,9 +16,9 @@ ds_map_add(global.rooms, 'a', rm_start);
 ds_map_add(global.rooms, 'b', rm_6);
 ds_map_add(global.rooms, 'c', shrine);
 
-ds_map_add(global.rooms, 6, prison);
-ds_map_add(global.rooms, 7, rm_7);
-ds_map_add(global.rooms, 8, rm_8);
+ds_map_add(global.rooms, 7, prison);
+ds_map_add(global.rooms, 8, rm_7);
+ds_map_add(global.rooms, 9, rm_8);
 
 //boss room
 ds_map_add(global.rooms, 'boss', rm_boss);

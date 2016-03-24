@@ -4,7 +4,7 @@ There cannot be more than one of each room
 */
 
 //number rooms to build including specials
-global.numRooms = 11;
+global.numRooms = 12;
 n = global.numRooms;
 //any special rooms
 special = 3;

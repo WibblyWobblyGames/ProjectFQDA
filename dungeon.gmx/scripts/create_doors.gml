@@ -2,9 +2,9 @@
 
 //check left
 if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1])) ||
-        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 6 ||
         ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 7 ||
-        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 8 {
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 8 ||
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 9 {
     special_door_create(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]),'left');
 } else if !is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]-1)) || 
                 ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]-1) == 'b'{
@@ -21,9 +21,9 @@ if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.lo
 }
 //check right
 if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1])) ||
-        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 6 ||
         ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 7 ||
-        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 8 {
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 8 ||
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 9 {
     special_door_create(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]),'right');  
 } else if !is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]+1)) ||
                 ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]+1) == 'b' {
@@ -40,9 +40,9 @@ if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.lo
 }
 //check down
 if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1])) ||
-        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 6 ||
         ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 7 ||
-        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 8 {
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 8 ||
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 9 {
     special_door_create(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]),'down');
 } else if !is_string(ds_grid_get(global.mapOfRooms, global.location_player[0]+1, global.location_player[1])) {
     //create down door
@@ -57,9 +57,9 @@ if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.lo
 }
 //check up
 if is_string(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1])) ||
-        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 6 ||
         ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 7 ||
-        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 8 {
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 8 ||
+        ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]) == 9 {
     special_door_create(ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]),'up');
 } else if !is_string(ds_grid_get(global.mapOfRooms, global.location_player[0]-1, global.location_player[1])) ||
                 ds_grid_get(global.mapOfRooms, global.location_player[0]-1, global.location_player[1]) == 'a' ||
