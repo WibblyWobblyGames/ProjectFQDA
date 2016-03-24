@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-11</depth>
   <persistent>0</persistent>
-  <parentName>obj_attack_parent</parentName>
+  <parentName>obj_weapon_attack_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events/>
   <PhysicsObject>0</PhysicsObject>
