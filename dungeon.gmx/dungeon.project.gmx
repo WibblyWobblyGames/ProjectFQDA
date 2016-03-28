@@ -170,6 +170,7 @@
       <object>objects\obj_shadow</object>
       <object>objects\obj_robot</object>
       <object>objects\obj_enemy_parent</object>
+      <object>objects\obj_boss</object>
     </objects>
     <objects name="Room Objects">
       <object>objects\obj_bed</object>
@@ -239,7 +240,6 @@
     <object>objects\obj_wall</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_health</object>
-    <object>objects\obj_boss</object>
     <object>objects\obj_spawn</object>
     <object>objects\InitialMusic</object>
     <object>objects\BossMusic</object>

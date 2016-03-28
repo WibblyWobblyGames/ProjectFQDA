@@ -60,31 +60,42 @@ direction = choose(0, 270, 180, 90);
 switch (direction) {
     //right
     case 0:
-        sprite_index = spr_boss_idle_right;
         if place_meeting(x+16, y, obj_player){
-            health_player -=10;
-            
+            health_player -=2;
+            sprite_index = spr_boss_atkh_right;
+        } else 
+        {
+            sprite_index = spr_boss_idle_right;
         }
         break;
     //down    
     case 270:
-        sprite_index = spr_boss_idle_forward;
         if place_meeting(x, y-16, obj_player){
-            health_player -=10;
+            health_player -=2;
+            sprite_index = spr_boss_atkh_forward;
+        } else 
+        {
+            sprite_index = spr_boss_idle_forward;
         }
         break;
     //left    
     case 180:
-        sprite_index = spr_boss_idle_left;
         if place_meeting(x-16, y, obj_player){
-            health_player -=10;
+            health_player -=2;
+            sprite_index = spr_boss_atkh_left;
+        } else 
+        {
+            sprite_index = spr_boss_idle_left;
         }
         break;
     //up
     case 90:
-        sprite_index = spr_boss_idle_forward;
         if place_meeting(x, y+16, obj_player){
-            health_player -=10;
+            health_player -=2;
+            sprite_index = spr_boss_atkh_forward;
+        } else 
+        {
+            sprite_index = spr_boss_idle_forward;
         }
         break;    
 }
