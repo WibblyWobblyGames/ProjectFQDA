@@ -8,7 +8,7 @@ height = view_hview[0];
 width = view_wview[0];
 
 //rooms with bigger walls
-if argument0 == 6 || argument0 == 8 {
+if argument0 == 7 || argument0 == 9 || argument0 == 10 || argument0 == 11 || argument0 ==12 {
     if (global.dir_player == 'left'){
         //player went left, show up on right of room
         obj_player.x = width-116;

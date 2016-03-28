@@ -56,14 +56,17 @@ princess_list[0] = 'spr_player';
 princess_list[1] = 'spr_zombie';
 princess_list[2] = 'spr_cyclops';
 
-//Attack for player, defined for direction they attack
-globalvar attack;
-attack = "right";
-
 //select a random number in order to decide a princess
 num = random_range(0,array_length_1d(princess_list));
 player_sprite = princess_list[num];
 
+//weapon stuff
+equipped_weapon = 0;
+attack_object = obj_unarmed_attack;
+
+//Attack for player, defined for direction they attack
+attack = "right";
+attacking = false;
 </string>
           </argument>
         </arguments>
@@ -111,6 +114,50 @@ create_map();
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Attack done; return to idle animation</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>sprite_index = asset_get_index(player_sprite+'_idle');
+self.attacking = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -134,51 +181,41 @@ create_map();
       </action>
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string> //Movement code for player
-//When Keyboard is pressed, move player in direction
-if (keyboard_check(vk_nokey)){
-    sprite_index = asset_get_index(player_sprite+'_idle');
-    speed = 0;
-}   
-
-if (keyboard_check(vk_left)){
-    speed.x -= 5;
-    sprite_index = asset_get_index(player_sprite+'_run');
-    image_xscale = -1;
-    attack = "left";
-}    
-
-if (keyboard_check(vk_right)){
-    speed.x += 5;
-    sprite_index = asset_get_index(player_sprite+'_run');
-    image_xscale = 1;
-    attack = "right";
-}    
-
-if (keyboard_check(vk_up)){
-    speed.y -= 5;
-    sprite_index = asset_get_index(player_sprite+'_run');
-}    
-
-if (keyboard_check(vk_down)){
-    speed.y += 5;
-    sprite_index = asset_get_index(player_sprite+'_run');
-}    
-</string>
+            <kind>9</kind>
+            <script>player_move</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -204,80 +241,40 @@ if (keyboard_check(vk_down)){
       </action>
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>other</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//Attack for princess
-//Player attacks when space is pressed
-if (keyboard_check(vk_space)){
-    
-    if (attack == "right"){
-        sprite_index =  asset_get_index(player_sprite+'_attack');
-        instance_create(obj_player.x, obj_player.y - 10, obj_player_attack);
-    }
-        
-    else if (attack == "left"){
-        sprite_index =  asset_get_index(player_sprite+'_attack');
-        instance_create(obj_player.x - 32, obj_player.y, obj_player_attack);
-    }
-}
-
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_shrine">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
+            <kind>9</kind>
+            <script>player_attack</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
             <string></string>
           </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_bed">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
           <argument>
-            <kind>1</kind>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
             <string></string>
           </argument>
         </arguments>
@@ -374,7 +371,7 @@ if other.x == 49 || other.x == 81{
     next_room = ds_map_find_value(global.rooms, roomNum);
     room_goto(next_room);
 
-} else if other.y == 49{
+} else if other.y == 49 || other.y == 81{
     //up door
     global.dir_player = 'up';
     global.location_player[0] -=1;
@@ -406,6 +403,76 @@ if other.x == 49 || other.x == 81{
           <argument>
             <kind>1</kind>
             <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_shrine">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_bed">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_enemy_parent">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>health_player</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-1</string>
           </argument>
         </arguments>
       </action>
