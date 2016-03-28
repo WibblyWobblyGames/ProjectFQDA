@@ -23,6 +23,8 @@
         <sprite>sprites\spr_robot_idle</sprite>
         <sprite>sprites\spr_robot_run</sprite>
       </sprites>
+      <sprite>sprites\spr_space_orc_idle</sprite>
+      <sprite>sprites\spr_space_orc_push</sprite>
     </sprites>
     <sprite>sprites\spr_boss_left</sprite>
     <sprite>sprites\spr_boss_right</sprite>
@@ -120,6 +122,9 @@
     <script>scripts\special_door_create.gml</script>
     <script>scripts\spawn_enemies.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_default</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_wall</object>
@@ -130,6 +135,7 @@
     <objects name="Enemies">
       <object>objects\obj_shadow</object>
       <object>objects\obj_robot</object>
+      <object>objects\obj_space_orc</object>
     </objects>
     <object>objects\InitialMusic</object>
     <object>objects\BossMusic</object>
