@@ -237,6 +237,12 @@
     <sprite>sprites\spr_antispawn</sprite>
     <sprite>sprites\spr_half_heart</sprite>
     <sprite>sprites\spr_heart</sprite>
+    <sprites name="Journal entries">
+      <sprite>sprites\spr_journal_entry_1</sprite>
+      <sprite>sprites\spr_journal_entry_2</sprite>
+      <sprite>sprites\spr_journal_entry_3</sprite>
+      <sprite>sprites\spr_journal_pickup</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Dungeon_Tileset</background>
@@ -352,6 +358,14 @@
     <object>objects\obj_antispawn</object>
     <object>objects\obj_teleporter</object>
     <object>objects\obj_princess_death</object>
+    <objects name="Journal Entries">
+      <object>objects\obj_journal_entry_1</object>
+      <object>objects\obj_journal_entry_2</object>
+      <object>objects\obj_journal_entry_3</object>
+      <object>objects\obj_journal_1</object>
+      <object>objects\obj_journal_2</object>
+      <object>objects\obj_journal_3</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\opening_screen</room>
