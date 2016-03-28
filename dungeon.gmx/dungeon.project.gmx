@@ -94,6 +94,12 @@
         <sprite>sprites\spr_crawl_8</sprite>
       </sprites>
     </sprites>
+    <sprites name="Journal entries">
+      <sprite>sprites\spr_journal_entry_1</sprite>
+      <sprite>sprites\spr_journal_entry_2</sprite>
+      <sprite>sprites\spr_journal_entry_3</sprite>
+      <sprite>sprites\spr_journal_pickup</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Dungeon_Tileset</background>
@@ -134,6 +140,7 @@
     <object>objects\obj_blue_door</object>
     <object>objects\obj_bedroom_door</object>
     <object>objects\obj_prison_door</object>
+    <object>objects\obj_teleporter</object>
     <object>objects\obj_room_dimensions</object>
     <object>objects\obj_antispawn</object>
     <objects name="Room Objects">
@@ -173,7 +180,14 @@
       <object>objects\obj_crawl_8</object>
       <object>objects\obj_skip</object>
     </objects>
-    <object>objects\obj_teleporter</object>
+    <objects name="Journal Entries">
+      <object>objects\obj_journal_entry_1</object>
+      <object>objects\obj_journal_entry_2</object>
+      <object>objects\obj_journal_entry_3</object>
+      <object>objects\obj_journal_1</object>
+      <object>objects\obj_journal_2</object>
+      <object>objects\obj_journal_3</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\opening_screen</room>
