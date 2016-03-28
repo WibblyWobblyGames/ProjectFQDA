@@ -19,6 +19,15 @@
         <sprite>sprites\spr_robot_idle</sprite>
         <sprite>sprites\spr_robot_run</sprite>
       </sprites>
+      <sprites name="SpaceWizard">
+        <sprite>sprites\spr_boss_idle_left</sprite>
+        <sprite>sprites\spr_boss_idle_right</sprite>
+        <sprite>sprites\spr_boss_idle_forward</sprite>
+        <sprite>sprites\spr_boss_atkh_left</sprite>
+        <sprite>sprites\spr_boss_atkh_right</sprite>
+        <sprite>sprites\spr_boss_atkh_forward</sprite>
+        <sprite>sprites\spr_boss_atkw_forward</sprite>
+      </sprites>
     </sprites>
     <sprites name="Princesses">
       <sprites name="normal">
@@ -123,11 +132,8 @@
       </sprites>
     </sprites>
     <sprite>sprites\spr_attack_box</sprite>
-    <sprite>sprites\spr_boss_idle</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_door</sprite>
-    <sprite>sprites\spr_boss_left</sprite>
-    <sprite>sprites\spr_boss_right</sprite>
     <sprite>sprites\spr_space_pit</sprite>
     <sprite>sprites\spr_antispawn</sprite>
     <sprite>sprites\spr_half_heart</sprite>
