@@ -473,7 +473,7 @@ if other.x == 49 || other.x == 81{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(416,192,obj_room_dimensions);
+            <string>instance_create(208,96,obj_room_dimensions);
 </string>
           </argument>
         </arguments>
