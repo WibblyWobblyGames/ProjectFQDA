@@ -36,6 +36,51 @@
         <sprite>sprites\spr_cyclops_attack</sprite>
         <sprite>sprites\spr_cyclops_run</sprite>
       </sprites>
+      <sprites name="angel">
+        <sprite>sprites\spr_angel_idle</sprite>
+        <sprite>sprites\spr_angel_attack</sprite>
+        <sprite>sprites\spr_angel_run</sprite>
+      </sprites>
+      <sprites name="brunette">
+        <sprite>sprites\spr_brunette_idle</sprite>
+        <sprite>sprites\spr_brunette_attack</sprite>
+        <sprite>sprites\spr_brunette_run</sprite>
+      </sprites>
+      <sprites name="cat">
+        <sprite>sprites\spr_cat_idle</sprite>
+        <sprite>sprites\spr_cat_attack</sprite>
+        <sprite>sprites\spr_cat_run</sprite>
+      </sprites>
+      <sprites name="clear">
+        <sprite>sprites\spr_clear_idle</sprite>
+        <sprite>sprites\spr_clear_attack</sprite>
+        <sprite>sprites\spr_clear_run</sprite>
+      </sprites>
+      <sprites name="demon">
+        <sprite>sprites\spr_demon_idle</sprite>
+        <sprite>sprites\spr_demon_attack</sprite>
+        <sprite>sprites\spr_demon_run</sprite>
+      </sprites>
+      <sprites name="error">
+        <sprite>sprites\spr_error_idle</sprite>
+        <sprite>sprites\spr_error_attack</sprite>
+        <sprite>sprites\spr_error_run</sprite>
+      </sprites>
+      <sprites name="blob">
+        <sprite>sprites\spr_blob_idle</sprite>
+        <sprite>sprites\spr_blob_attack</sprite>
+        <sprite>sprites\spr_blob_run</sprite>
+      </sprites>
+      <sprites name="faceless">
+        <sprite>sprites\spr_faceless_idle</sprite>
+        <sprite>sprites\spr_faceless_attack</sprite>
+        <sprite>sprites\spr_faceless_run</sprite>
+      </sprites>
+      <sprites name="gold">
+        <sprite>sprites\spr_gold_idle</sprite>
+        <sprite>sprites\spr_gold_attack</sprite>
+        <sprite>sprites\spr_gold_run</sprite>
+      </sprites>
       <sprite>sprites\spr_princess_death</sprite>
     </sprites>
     <sprites name="Doors">
