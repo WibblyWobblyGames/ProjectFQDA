@@ -21,6 +21,7 @@
       </sprites>
       <sprite>sprites\spr_space_orc_idle</sprite>
       <sprite>sprites\spr_space_orc_push</sprite>
+      <sprite>sprites\spr_doris</sprite>
     </sprites>
     <sprites name="Princesses">
       <sprites name="normal">
@@ -272,6 +273,7 @@
     <script>scripts\search_grid.gml</script>
     <script>scripts\spawn_enemies.gml</script>
     <script>scripts\special_door_create.gml</script>
+    <script>scripts\scr_text.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
@@ -282,6 +284,7 @@
       <object>objects\obj_robot</object>
       <object>objects\obj_enemy_parent</object>
       <object>objects\obj_space_orc</object>
+      <object>objects\obj_doris</object>
     </objects>
     <objects name="Room Objects">
       <object>objects\obj_bed</object>
@@ -375,6 +378,7 @@
       <object>objects\obj_journal_3</object>
     </objects>
     <object>objects\obj_first_spawn</object>
+    <object>objects\obj_text</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\opening_screen</room>
