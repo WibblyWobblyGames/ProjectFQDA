@@ -49,8 +49,14 @@
             <kind>1</kind>
             <string>
 if ((health_player) &lt;= 0){
-    script_execute(restart);
+    with (obj_player){
+        speed = 0;
+        instance_change(obj_princess_death, true);
+        exit;
+    }
 }
+
+
 </string>
           </argument>
         </arguments>

@@ -246,6 +246,7 @@
     <object>objects\obj_room_dimensions</object>
     <object>objects\obj_antispawn</object>
     <object>objects\obj_teleporter</object>
+    <object>objects\obj_princess_death</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\opening_screen</room>
