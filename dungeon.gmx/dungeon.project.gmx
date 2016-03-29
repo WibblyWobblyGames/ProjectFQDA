@@ -138,6 +138,7 @@
     <sprite>sprites\spr_antispawn</sprite>
     <sprite>sprites\spr_half_heart</sprite>
     <sprite>sprites\spr_heart</sprite>
+    <sprite>sprites\spr_fireball</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Dungeon_Tileset</background>
@@ -171,6 +172,7 @@
       <object>objects\obj_robot</object>
       <object>objects\obj_enemy_parent</object>
       <object>objects\obj_boss</object>
+      <object>objects\obj_fireball</object>
     </objects>
     <objects name="Room Objects">
       <object>objects\obj_bed</object>

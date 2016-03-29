@@ -58,7 +58,7 @@ friction = 0;
 speed = 0;
 //if there is a collision on square to the randomly chosen side, deal damage
 //otherwise do nothing - later add in animation
-switch (direction) {
+/*switch (direction) {
     //right
     case 0:
         if place_meeting(x+16, y, obj_player){
@@ -140,11 +140,104 @@ alarm[0] = 15;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>2</string>
+            <string>1</string>
           </argument>
           <argument>
             <kind>4</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//direction = point_direction(x,y,obj_player.x,obj_player.y)- 90
+
+    //right
+if direction &gt;= 0 and direction &lt; 90 {
+    if place_meeting(x+16, y, obj_player){
+        //health_player -=1;
+        sprite_index = spr_boss_atkh_right;
+        //obj_player.knockback = 3;
+        //obj_player.knockback_time = 20;
+    } else 
+    {
+        sprite_index = spr_boss_idle_right;
+    }
+    //break;
+    }
+    //down    
+    if direction &gt;= 270{
+        if place_meeting(x, y-16, obj_player){
+            //health_player -=1;
+            sprite_index = spr_boss_atkh_forward;
+            //obj_player.knockback = 3;
+            //obj_player.knockback_time = 20;
+        } else 
+        {
+            sprite_index = spr_boss_idle_forward;
+        }
+        //break;
+        }
+    //left    
+    if direction &gt;= 180 and direction &lt; 270{
+        if place_meeting(x-16, y, obj_player){
+            //health_player -=1;
+            sprite_index = spr_boss_atkh_left;
+            //obj_player.knockback = 3;
+            //obj_player.knockback_time = 20;
+        } else 
+        {
+            sprite_index = spr_boss_idle_left;
+        }
+        //break;
+        }
+    //up
+    if direction &gt;= 90 and direction &lt; 180{
+        if place_meeting(x, y+16, obj_player){
+            //health_player -=1;
+            sprite_index = spr_boss_atkh_forward;
+            //obj_player.knockback = 3;
+            //obj_player.knockback_time = 20;
+        } else 
+        {
+            sprite_index = spr_boss_idle_forward;
+        }
+       // break; 
+        }   
+
+//Face Up
+/*if floor(yprevious) &gt; floor(y) 
+{
+    sprite_index = spr_boss_idle_forward;
+}
+//Face Down
+else if floor(yprevious) &lt; floor(y)
+{
+    sprite_index = spr_boss_idle_forward;
+}
+//Face Left
+else if floor(yprevious) == floor(y) 
+{
+    if xprevious &lt; x {sprite_index = spr_boss_idle_left} else
+
+//Face Right
+    if xprevious &gt; x  {sprite_index = spr_boss_idle_right}
+}*/
+</string>
           </argument>
         </arguments>
       </action>
