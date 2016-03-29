@@ -81,6 +81,66 @@
         <sprite>sprites\spr_gold_attack</sprite>
         <sprite>sprites\spr_gold_run</sprite>
       </sprites>
+      <sprites name="ice_demon">
+        <sprite>sprites\spr_ice_demon_idle</sprite>
+        <sprite>sprites\spr_ice_demon_attack</sprite>
+        <sprite>sprites\spr_ice_demon_run</sprite>
+      </sprites>
+      <sprites name="mermaid">
+        <sprite>sprites\spr_mermaid_idle</sprite>
+        <sprite>sprites\spr_mermaid_attack</sprite>
+        <sprite>sprites\spr_mermaid_run</sprite>
+      </sprites>
+      <sprites name="monochrome">
+        <sprite>sprites\spr_monochrome_idle</sprite>
+        <sprite>sprites\spr_monochrome_attack</sprite>
+        <sprite>sprites\spr_monochrome_run</sprite>
+      </sprites>
+      <sprites name="muscle">
+        <sprite>sprites\spr_muscle_idle</sprite>
+        <sprite>sprites\spr_muscle_attack</sprite>
+        <sprite>sprites\spr_muscle_run</sprite>
+      </sprites>
+      <sprites name="negative">
+        <sprite>sprites\spr_negative_idle</sprite>
+        <sprite>sprites\spr_negative_attack</sprite>
+        <sprite>sprites\spr_negative_run</sprite>
+      </sprites>
+      <sprites name="pixelated">
+        <sprite>sprites\spr_pixelated_idle</sprite>
+        <sprite>sprites\spr_pixelated_attack</sprite>
+        <sprite>sprites\spr_pixelated_run</sprite>
+      </sprites>
+      <sprites name="rare">
+        <sprite>sprites\spr_rare_idle</sprite>
+        <sprite>sprites\spr_rare_attack</sprite>
+        <sprite>sprites\spr_rare_run</sprite>
+      </sprites>
+      <sprites name="robo">
+        <sprite>sprites\spr_robo_idle</sprite>
+        <sprite>sprites\spr_robo_attack</sprite>
+        <sprite>sprites\spr_robo_run</sprite>
+      </sprites>
+      <sprites name="shoop_da_whoop">
+        <sprite>sprites\spr_shoop_da_whoop_idle</sprite>
+        <sprite>sprites\spr_shoop_da_whoop_attack</sprite>
+        <sprite>sprites\spr_shoop_da_whoop_run</sprite>
+      </sprites>
+      <sprites name="tiny_head">
+        <sprite>sprites\spr_tiny_head_idle</sprite>
+        <sprite>sprites\spr_tiny_head_attack</sprite>
+        <sprite>sprites\spr_tiny_head_run</sprite>
+      </sprites>
+      <sprites name="vampire">
+        <sprite>sprites\spr_vampire_idle</sprite>
+        <sprite>sprites\spr_vampire_attack</sprite>
+        <sprite>sprites\spr_vampire_run</sprite>
+      </sprites>
+      <sprites name="woops">
+        <sprite>sprites\spr_woops_idle</sprite>
+        <sprite>sprites\spr_woops_attack</sprite>
+        <sprite>sprites\spr_woops_run</sprite>
+      </sprites>
       <sprite>sprites\spr_princess_death</sprite>
     </sprites>
     <sprites name="Doors">
