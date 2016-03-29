@@ -25,6 +25,7 @@
       </sprites>
       <sprite>sprites\spr_space_orc_idle</sprite>
       <sprite>sprites\spr_space_orc_push</sprite>
+      <sprite>sprites\spr_doris</sprite>
     </sprites>
     <sprite>sprites\spr_boss_left</sprite>
     <sprite>sprites\spr_boss_right</sprite>
@@ -122,6 +123,7 @@
     <script>scripts\player_spawn.gml</script>
     <script>scripts\special_door_create.gml</script>
     <script>scripts\spawn_enemies.gml</script>
+    <script>scripts\scr_text.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
@@ -137,6 +139,7 @@
       <object>objects\obj_shadow</object>
       <object>objects\obj_robot</object>
       <object>objects\obj_space_orc</object>
+      <object>objects\obj_doris</object>
     </objects>
     <object>objects\InitialMusic</object>
     <object>objects\BossMusic</object>
@@ -197,6 +200,7 @@
       <object>objects\obj_journal_3</object>
     </objects>
     <object>objects\obj_first_spawn</object>
+    <object>objects\obj_text</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\opening_screen</room>
