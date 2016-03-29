@@ -173,6 +173,7 @@
       <object>objects\obj_enemy_parent</object>
       <object>objects\obj_boss</object>
       <object>objects\obj_fireball</object>
+      <object>objects\obj_enemy_boss</object>
     </objects>
     <objects name="Room Objects">
       <object>objects\obj_bed</object>
