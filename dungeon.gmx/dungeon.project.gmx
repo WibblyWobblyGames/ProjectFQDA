@@ -19,6 +19,9 @@
         <sprite>sprites\spr_robot_idle</sprite>
         <sprite>sprites\spr_robot_run</sprite>
       </sprites>
+      <sprite>sprites\spr_space_orc_idle</sprite>
+      <sprite>sprites\spr_space_orc_push</sprite>
+      <sprite>sprites\spr_doris</sprite>
     </sprites>
     <sprites name="Princesses">
       <sprites name="normal">
@@ -237,6 +240,13 @@
     <sprite>sprites\spr_antispawn</sprite>
     <sprite>sprites\spr_half_heart</sprite>
     <sprite>sprites\spr_heart</sprite>
+    <sprites name="Journal entries">
+      <sprite>sprites\spr_journal_entry_1</sprite>
+      <sprite>sprites\spr_journal_entry_2</sprite>
+      <sprite>sprites\spr_journal_entry_3</sprite>
+      <sprite>sprites\spr_journal_pickup</sprite>
+    </sprites>
+    <sprite>sprites\spr_logo</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Dungeon_Tileset</background>
@@ -263,12 +273,18 @@
     <script>scripts\search_grid.gml</script>
     <script>scripts\spawn_enemies.gml</script>
     <script>scripts\special_door_create.gml</script>
+    <script>scripts\scr_text.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_default</font>
+  </fonts>
   <objects name="objects">
     <objects name="Enemies">
       <object>objects\obj_shadow</object>
       <object>objects\obj_robot</object>
       <object>objects\obj_enemy_parent</object>
+      <object>objects\obj_space_orc</object>
+      <object>objects\obj_doris</object>
     </objects>
     <objects name="Room Objects">
       <object>objects\obj_bed</object>
@@ -306,6 +322,7 @@
       <object>objects\obj_crawl_7</object>
       <object>objects\obj_crawl_8</object>
       <object>objects\obj_skip</object>
+      <object>objects\obj_logo</object>
     </objects>
     <objects name="Weapons">
       <objects name="Attacks">
@@ -352,6 +369,16 @@
     <object>objects\obj_antispawn</object>
     <object>objects\obj_teleporter</object>
     <object>objects\obj_princess_death</object>
+    <objects name="Journal Entries">
+      <object>objects\obj_journal_entry_1</object>
+      <object>objects\obj_journal_entry_2</object>
+      <object>objects\obj_journal_entry_3</object>
+      <object>objects\obj_journal_1</object>
+      <object>objects\obj_journal_2</object>
+      <object>objects\obj_journal_3</object>
+    </objects>
+    <object>objects\obj_first_spawn</object>
+    <object>objects\obj_text</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\opening_screen</room>
