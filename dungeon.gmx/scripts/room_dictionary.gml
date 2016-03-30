@@ -9,6 +9,7 @@ ds_map_add(global.rooms, 3, rm_3);
 ds_map_add(global.rooms, 4, rm_4);
 ds_map_add(global.rooms, 5, rm_5);
 ds_map_add(global.rooms, 6, rm_teleporter);
+ds_map_add(global.rooms, 10, rm_9);
 
 //special rooms (specific doors only)
 

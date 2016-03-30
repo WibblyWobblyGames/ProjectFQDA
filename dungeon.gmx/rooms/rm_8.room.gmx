@@ -4,7 +4,7 @@
   <width>1024</width>
   <height>768</height>
   <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>-1</persistent>
@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_broken_stargate" x="208" y="192" name="inst_1C3C0AF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_broken_stargate" x="128" y="128" name="inst_1C3C0AF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="0" name="inst_A40B8295" locked="0" code="" scaleX="3.25" scaleY="6.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="480" name="inst_86B4DE0E" locked="0" code="" scaleX="3.25" scaleY="-6.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="192" name="inst_1CCBA79A" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
@@ -68,6 +68,12 @@
     <instance objName="obj_antispawn" x="224" y="96" name="inst_7BA100EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="352" y="224" name="inst_C64FADF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="224" y="352" name="inst_8EDD4B29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_server" x="180" y="288" name="inst_0CC9D332" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_server" x="160" y="288" name="inst_DA9B1382" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_server" x="140" y="288" name="inst_01C02A61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_eye_plant" x="288" y="256" name="inst_4BD7244B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hanging_robo" x="288" y="32" name="inst_14795631" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hanging_robo" x="320" y="32" name="inst_E296C6D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Bedroom_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10002756" name="inst_EC0BCB12" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

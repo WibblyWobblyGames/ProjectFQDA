@@ -399,6 +399,7 @@
     <room>rooms\rm_8</room>
     <room>rooms\rm_teleporter</room>
     <room>rooms\rm_win</room>
+    <room>rooms\rm_9</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
