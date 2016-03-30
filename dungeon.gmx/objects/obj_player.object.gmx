@@ -49,6 +49,7 @@
 
 globalvar player_sprite; 
 globalvar health_player;
+//globalvar princess_type;
 health_player = 10;
 
 //list of princess types, add new princesses to this list
@@ -79,8 +80,9 @@ princess_list[23] = 'spr_woops';
 
 
 //select a random number in order to decide a princess
-num = random_range(0,array_length_1d(princess_list));
+num = irandom_range(0,array_length_1d(princess_list));
 player_sprite = princess_list[num];
+global.princess_type = num;
 
 //weapon stuff
 equipped_weapon = 0;

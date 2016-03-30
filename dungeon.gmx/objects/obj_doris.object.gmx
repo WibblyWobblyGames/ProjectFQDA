@@ -70,7 +70,7 @@ switch (irandom(3))
 {
     case 0: str = "I hate Mondays.";break;
     case 1: str = "I wonder what Space Orc#brought for lunch today.";break;
-    case 2: str = "For every dollar, blah blah.";break;
+    case 2: str = "Death reports#on the puce#paper.";break;
     case 3: str = "Who keeps taking#my space stapler?!";break;
     default: str = "Ughh.";break;
 }
