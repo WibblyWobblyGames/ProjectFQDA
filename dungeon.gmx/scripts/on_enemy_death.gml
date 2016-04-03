@@ -1,7 +1,11 @@
 ///on_enemy_death()
 // Called right before enemy dies, so it's still included in count
-var enemies_left_in_room = instance_number(object_index);
+var enemies_left_in_room = 0;
+
+with (obj_enemy_parent) {
+    enemies_left_in_room += 1;
+}
 
 if (enemies_left_in_room == 1) {
-    spawn_weapon();
+    spawn_weapon(x, y);
 }
