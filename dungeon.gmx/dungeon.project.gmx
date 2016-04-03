@@ -247,6 +247,7 @@
       <sprite>sprites\spr_journal_pickup</sprite>
     </sprites>
     <sprite>sprites\spr_logo</sprite>
+    <sprite>sprites\spr_credits</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Dungeon_Tileset</background>
@@ -254,6 +255,7 @@
     <background>background\Shrine_Tileset</background>
     <background>background\Prison_Tileset</background>
     <background>background\Start_Screen</background>
+    <background>background\End_Screen</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -379,6 +381,7 @@
     </objects>
     <object>objects\obj_first_spawn</object>
     <object>objects\obj_text</object>
+    <object>objects\obj_credits</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\opening_screen</room>
@@ -395,6 +398,8 @@
     <room>rooms\rm_7</room>
     <room>rooms\rm_8</room>
     <room>rooms\rm_teleporter</room>
+    <room>rooms\rm_win</room>
+    <room>rooms\rm_9</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
