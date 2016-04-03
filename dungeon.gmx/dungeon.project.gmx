@@ -263,8 +263,12 @@
       <script>scripts\player_attack.gml</script>
       <script>scripts\player_move.gml</script>
     </scripts>
+    <scripts name="Enemies">
+      <script>scripts\on_enemy_death.gml</script>
+    </scripts>
     <scripts name="Weapons">
       <script>scripts\equip_this_weapon.gml</script>
+      <script>scripts\spawn_weapon.gml</script>
     </scripts>
     <script>scripts\create_doors.gml</script>
     <script>scripts\create_map.gml</script>
