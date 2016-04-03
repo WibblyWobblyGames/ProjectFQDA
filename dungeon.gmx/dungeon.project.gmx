@@ -269,6 +269,7 @@
     <scripts name="Weapons">
       <script>scripts\equip_this_weapon.gml</script>
       <script>scripts\spawn_weapon.gml</script>
+      <script>scripts\setup_weapons_list.gml</script>
     </scripts>
     <script>scripts\create_doors.gml</script>
     <script>scripts\create_map.gml</script>
