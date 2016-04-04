@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spacewiz_health = 10;
+            <string>spacewiz_health = 15;
 </string>
           </argument>
         </arguments>
@@ -186,8 +186,47 @@ alarm[0] = 15;
           <argument>
             <kind>1</kind>
             <string>//direction = point_direction(x,y,obj_player.x,obj_player.y)- 90
-
-    //right
+/*
+if place_meeting(x+16, y, obj_player){
+    //health_player -=1;
+    sprite_index = spr_boss_atkh_right;
+    //obj_player.knockback = 3;
+    //obj_player.knockback_time = 20;
+} else 
+{
+    sprite_index = spr_boss_idle_right;
+}
+//down    
+if place_meeting(x, y-16, obj_player){
+    //health_player -=1;
+    sprite_index = spr_boss_atkh_forward;
+    //obj_player.knockback = 3;
+    //obj_player.knockback_time = 20;
+} else 
+{
+    sprite_index = spr_boss_idle_forward;
+}
+//left    
+if place_meeting(x-16, y, obj_player){
+    //health_player -=1;
+    sprite_index = spr_boss_atkh_left;
+    //obj_player.knockback = 3;
+    //obj_player.knockback_time = 20;
+} else 
+{
+    sprite_index = spr_boss_idle_left;
+}
+//up
+if place_meeting(x, y+16, obj_player){
+    //health_player -=1;
+    sprite_index = spr_boss_atkh_forward;
+    //obj_player.knockback = 3;
+    //obj_player.knockback_time = 20;
+} else 
+{
+    sprite_index = spr_boss_idle_forward;
+}
+//right
 if direction &gt;= 0 and direction &lt; 90 {
     if place_meeting(x+16, y, obj_player){
         //health_player -=1;
@@ -239,7 +278,7 @@ if direction &gt;= 0 and direction &lt; 90 {
         }
        // break; 
         }   
-
+*/
 //Face Up
 /*if floor(yprevious) &gt; floor(y) 
 {

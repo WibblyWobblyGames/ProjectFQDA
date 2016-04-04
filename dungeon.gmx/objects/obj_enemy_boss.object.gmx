@@ -25,13 +25,33 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if spacewiz_health &gt;= 0 
+            <string>if spacewiz_health &lt;= 7 and spacewiz_health &gt; 4
 {
-    spacewiz_health -= 1;
-} else 
+    if global.SFX and !audio_is_playing(SWBPt2)
+       {
+        audio_stop_all();
+        global.SFX = audio_play_sound(SWBPt2, 10, true);
+       }
+} else if spacewiz_health &lt;= 4 and spacewiz_health &gt; 1
+{
+    if global.SFX and !audio_is_playing(SWBPt3)
+    {
+       audio_stop_all();
+       global.SFX = audio_play_sound(SWBPt3, 10, true);
+    }
+} else if spacewiz_health &lt;= 1 and spacewiz_health &gt; 0
+{
+    if global.SFX and !audio_is_playing(SWBPt4)
+    {
+       audio_stop_all();
+       global.SFX = audio_play_sound(SWBPt4, 10, true);
+    }
+} else if spacewiz_health &lt;= 0
 {
     instance_destroy();
 }
+spacewiz_health -= 1;
+
 </string>
           </argument>
         </arguments>
