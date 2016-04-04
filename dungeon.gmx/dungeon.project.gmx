@@ -180,6 +180,7 @@
       <sprite>sprites\spr_stars_title</sprite>
       <sprite>sprites\spr_skip</sprite>
       <sprite>sprites\spr_start</sprite>
+      <sprite>sprites\spr_controls</sprite>
       <sprite>sprites\spr_castle_title</sprite>
       <sprites name="spr_crawl_group">
         <sprite>sprites\spr_crawl_1</sprite>
@@ -325,6 +326,7 @@
       <object>objects\obj_crawl_8</object>
       <object>objects\obj_skip</object>
       <object>objects\obj_logo</object>
+      <object>objects\obj_controls</object>
     </objects>
     <objects name="Weapons">
       <objects name="Attacks">
