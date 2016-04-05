@@ -16,8 +16,12 @@
         <sprite>sprites\spr_shadow_right</sprite>
       </sprites>
       <sprites name="Robot">
-        <sprite>sprites\spr_robot_idle</sprite>
-        <sprite>sprites\spr_robot_run</sprite>
+        <sprite>sprites\spr_robot_idle_right</sprite>
+        <sprite>sprites\spr_robot_run_right</sprite>
+        <sprite>sprites\spr_robot_idle_left</sprite>
+        <sprite>sprites\spr_robot_run_left</sprite>
+        <sprite>sprites\spr_robot_atk_right</sprite>
+        <sprite>sprites\spr_robot_atk_left</sprite>
       </sprites>
       <sprite>sprites\spr_space_orc_idle</sprite>
       <sprite>sprites\spr_space_orc_push</sprite>
