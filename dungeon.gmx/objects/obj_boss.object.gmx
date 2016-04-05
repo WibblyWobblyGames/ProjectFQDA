@@ -95,7 +95,7 @@ alarm[0] = 15;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_wall">
+    <event eventtype="4" ename="obj_collision_parent">
       <action>
         <libid>1</libid>
         <id>603</id>
