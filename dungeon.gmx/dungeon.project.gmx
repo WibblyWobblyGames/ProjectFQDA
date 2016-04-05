@@ -391,6 +391,7 @@
       <object>objects\obj_weapon_item_parent</object>
     </objects>
     <object>objects\obj_player</object>
+    <object>objects\obj_collision_parent</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_health</object>
