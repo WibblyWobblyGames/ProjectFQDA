@@ -82,6 +82,8 @@ spawn_enemies(4);</code>
     <instance objName="obj_antispawn" x="256" y="96" name="inst_A80AC2A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="416" y="192" name="inst_640C7379" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="256" y="288" name="inst_ABF6F91C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_antispawn" x="160" y="224" name="inst_B7D7A637" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_antispawn" x="160" y="128" name="inst_67CC19D8" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Prison_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10002535" name="inst_E79B3B1F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
