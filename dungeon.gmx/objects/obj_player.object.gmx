@@ -49,6 +49,7 @@
 
 globalvar player_sprite; 
 globalvar health_player;
+//globalvar princess_type;
 health_player = 10;
 knockback_time = 0;
 
@@ -56,10 +57,33 @@ knockback_time = 0;
 princess_list[0] = 'spr_player';
 princess_list[1] = 'spr_zombie';
 princess_list[2] = 'spr_cyclops';
+princess_list[3] = 'spr_angel';
+princess_list[4] = 'spr_brunette';
+princess_list[5] = 'spr_cat';
+princess_list[6] = 'spr_clear';
+princess_list[7] = 'spr_demon';
+princess_list[8] = 'spr_error';
+princess_list[9] = 'spr_blob';
+princess_list[10] = 'spr_faceless';
+princess_list[11] = 'spr_gold';
+princess_list[12] = 'spr_ice_demon';
+princess_list[13] = 'spr_mermaid';
+princess_list[14] = 'spr_monochrome';
+princess_list[15] = 'spr_muscle';
+princess_list[16] = 'spr_negative';
+princess_list[17] = 'spr_pixelated';
+princess_list[18] = 'spr_rare';
+princess_list[19] = 'spr_robo';
+princess_list[20] = 'spr_shoop_da_whoop';
+princess_list[21] = 'spr_tiny_head';
+princess_list[22] = 'spr_vampire';
+princess_list[23] = 'spr_woops';
+
 
 //select a random number in order to decide a princess
-num = random_range(0,array_length_1d(princess_list));
+num = irandom_range(0,array_length_1d(princess_list));
 player_sprite = princess_list[num];
+global.princess_type = num;
 
 //weapon stuff
 equipped_weapon = 0;
@@ -111,6 +135,46 @@ attacking = false;
             <string>room_dictionary();
 create_map();
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>setup_weapons_list</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -372,7 +436,7 @@ if other.x == 49 || other.x == 81{
     next_room = ds_map_find_value(global.rooms, roomNum);
     room_goto(next_room);
 
-} else if other.y == 49{
+} else if other.y == 49 || other.y == 81{
     //up door
     global.dir_player = 'up';
     global.location_player[0] -=1;
@@ -489,7 +553,7 @@ if other.x == 49 || other.x == 81{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(416,192,obj_room_dimensions);
+            <string>instance_create(208,96,obj_room_dimensions);
 </string>
           </argument>
         </arguments>

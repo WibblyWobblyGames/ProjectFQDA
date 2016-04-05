@@ -4,7 +4,7 @@ There cannot be more than one of each room
 */
 
 //number rooms to build including specials
-global.numRooms = 9;
+global.numRooms = 12;
 n = global.numRooms;
 //any special rooms
 special = 3;
@@ -20,7 +20,22 @@ for(i = 2; i <= n - special; i++){
     //add room i to map 
     ds_grid_set(global.mapOfRooms, vals[0], vals[1], i);
 }
+/*
+//set prison
+vals[] = search_grid('x');
+//prison can go anywhere
+ds_grid_set(global.mapOfRooms, vals[0], vals[1], 'd');
 
+//set rm_7
+vals[] = search_grid('x');
+//rm_7 can go anywhere
+ds_grid_set(global.mapOfRooms, vals[0], vals[1], 'e');
+
+//set rm_8
+vals[] = search_grid('x');
+//rm_8 can go anywhere
+ds_grid_set(global.mapOfRooms, vals[0], vals[1], 'f');
+*/
 //set start room
 found = false;
 while !found {
@@ -34,6 +49,7 @@ while !found {
         found = true;
     }
 }
+
 //set shrine
 found = false;
 while !found {

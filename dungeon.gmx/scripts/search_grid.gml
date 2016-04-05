@@ -4,7 +4,7 @@ that is beside at least 1 other room.
 */
 
 //makes random() actually random - comment out for debugging
-//randomize();
+randomize();
 
 success = false;
 
