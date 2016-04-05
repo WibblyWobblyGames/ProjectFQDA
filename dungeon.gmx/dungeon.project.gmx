@@ -266,6 +266,7 @@
     </scripts>
     <scripts name="Enemies">
       <script>scripts\on_enemy_death.gml</script>
+      <script>scripts\spawn_enemies.gml</script>
     </scripts>
     <scripts name="Weapons">
       <script>scripts\equip_this_weapon.gml</script>
@@ -279,9 +280,9 @@
     <script>scripts\restart.gml</script>
     <script>scripts\room_dictionary.gml</script>
     <script>scripts\search_grid.gml</script>
-    <script>scripts\spawn_enemies.gml</script>
     <script>scripts\special_door_create.gml</script>
     <script>scripts\scr_text.gml</script>
+    <script>scripts\teleporter_check.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
@@ -316,6 +317,7 @@
       <object>objects\obj_button</object>
       <object>objects\obj_spawner</object>
       <object>objects\obj_spawner_door</object>
+      <object>objects\obj_teleporter_working</object>
     </objects>
     <objects name="TitleScreenObjects">
       <object>objects\obj_stars_title</object>
@@ -389,6 +391,7 @@
     <object>objects\obj_first_spawn</object>
     <object>objects\obj_text</object>
     <object>objects\obj_credits</object>
+    <object>objects\obj_boss_door</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\opening_screen</room>

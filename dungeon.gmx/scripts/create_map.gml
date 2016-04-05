@@ -73,5 +73,8 @@ while !found {
     }
 }
 
+//reset number of rooms with all enemies killed
+global.rooms_cleared = 0;
+
 //print out the map of the rooms
 print_map();
