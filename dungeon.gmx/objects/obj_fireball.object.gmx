@@ -25,8 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>direction = point_direction(x,y,obj_player.x,obj_player.y);
-speed=4;
+            <string>if (!instance_exists(obj_player)) {
+    instance_destroy();
+} else {
+    direction = point_direction(x, y, obj_player.x, obj_player.y);
+    speed = 4;
+}
 </string>
           </argument>
         </arguments>
