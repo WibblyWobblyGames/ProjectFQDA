@@ -7,6 +7,7 @@
   <sounds name="sound">
     <sound>sound\TemporaryMainSound</sound>
     <sound>sound\TempSpaceWizardSound</sound>
+    <sound>sound\MimicSound</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Enemies">
@@ -22,6 +23,18 @@
       <sprite>sprites\spr_space_orc_idle</sprite>
       <sprite>sprites\spr_space_orc_push</sprite>
       <sprite>sprites\spr_doris</sprite>
+      <sprites name="Mimic">
+        <sprite>sprites\spr_mimic_idle_left</sprite>
+        <sprite>sprites\spr_mimic_atk_left</sprite>
+        <sprite>sprites\spr_mimic_emerge_left</sprite>
+        <sprite>sprites\spr_mimic_idle_right</sprite>
+        <sprite>sprites\spr_mimic_atk_right</sprite>
+        <sprite>sprites\spr_mimic_emerge_right</sprite>
+        <sprite>sprites\spr_mimic_emergedidle_left</sprite>
+        <sprite>sprites\spr_mimic_emergedidle_right</sprite>
+        <sprite>sprites\spr_mimic_walk_left</sprite>
+        <sprite>sprites\spr_mimic_walk_right</sprite>
+      </sprites>
     </sprites>
     <sprites name="Princesses">
       <sprites name="normal">
@@ -293,6 +306,7 @@
       <object>objects\obj_enemy_parent</object>
       <object>objects\obj_space_orc</object>
       <object>objects\obj_doris</object>
+      <object>objects\obj_mimic</object>
     </objects>
     <objects name="Room Objects">
       <object>objects\obj_bed</object>
