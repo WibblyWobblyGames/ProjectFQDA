@@ -11,6 +11,8 @@
     <sound>sound\SWBPt2</sound>
     <sound>sound\SWBPt3</sound>
     <sound>sound\SWBPt4</sound>
+    <sound>sound\SpaceWizardWand</sound>
+    <sound>sound\SpaceWizardHammer</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Enemies">
