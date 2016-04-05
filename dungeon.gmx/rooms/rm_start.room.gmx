@@ -12,7 +12,6 @@
   <showcolour>-1</showcolour>
   <code>create_doors();
 instance_create(416, 192, InitialMusic);
-spawn_enemies(4);
 
 //testing text
 //scr_text("this is a test string",0.5,160,160)</code>

@@ -239,6 +239,7 @@
     <sprite>sprites\spr_boss_right</sprite>
     <sprite>sprites\spr_space_pit</sprite>
     <sprite>sprites\spr_antispawn</sprite>
+    <sprite>sprites\spr_teleporter_door</sprite>
     <sprite>sprites\spr_half_heart</sprite>
     <sprite>sprites\spr_heart</sprite>
     <sprites name="Journal entries">
