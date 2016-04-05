@@ -32,6 +32,30 @@
       </action>
       <action>
         <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>facing</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>301</id>
         <kind>0</kind>
         <userelative>-1</userelative>
@@ -47,6 +71,48 @@
           <argument>
             <kind>0</kind>
             <string>15</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>532</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_effect</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>obj_boss.x</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>obj_boss.y</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>13</kind>
+            <string>255</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -139,38 +205,6 @@ alarm[0] = 15;
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
-        <id>120</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_linear_step</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>obj_player.x</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>obj_player.y</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -185,7 +219,55 @@ alarm[0] = 15;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//direction = point_direction(x,y,obj_player.x,obj_player.y)- 90
+            <string>if instance_exists(obj_player) {
+    direction = point_direction(x,y,obj_player.x,obj_player.y)- 90
+    move_towards_point(obj_player.x,obj_player.y, 1);
+    //right
+    if direction &gt;= 0 and direction &lt; 90 {
+        if place_meeting(x+16, y, obj_player){
+            sprite_index = spr_boss_atkh_right;
+        } else 
+        {
+            sprite_index = spr_boss_idle_right;
+        }
+        facing = 0;
+    }
+    //down    
+    if direction &gt;= 270{
+        if place_meeting(x, y-16, obj_player){
+            sprite_index = spr_boss_atkh_forward;
+        } else 
+        {
+            sprite_index = spr_boss_idle_forward;
+        }
+        facing = 1;
+        }
+    //left    
+    if direction &gt;= 180 and direction &lt; 270{
+        if place_meeting(x-16, y, obj_player){
+            sprite_index = spr_boss_atkh_left;
+        } else 
+        {
+            sprite_index = spr_boss_idle_left;
+        }
+        facing = 2;
+        }
+    //up
+    if direction &gt;= 90 and direction &lt; 180{
+        if place_meeting(x, y+16, obj_player){
+            sprite_index = spr_boss_atkh_forward;
+        } else 
+        {
+            sprite_index = spr_boss_idle_forward;
+        }
+        facing = 1;
+        }    
+}
+
+
+
+
+//direction = point_direction(x,y,obj_player.x,obj_player.y)- 90
 /*
 if place_meeting(x+16, y, obj_player){
     //health_player -=1;
@@ -389,35 +471,18 @@ if random(60)&lt;=1
             <kind>1</kind>
             <string>//health_player -=10;
 image_speed = .5;
-switch (sprite_index) {
-    //right
-    case spr_boss_idle_right:
-        health_player -=1;
-        sprite_index = spr_boss_atkh_right;
-        if image_index = 3
-        {
-            image_speed = 0
-        }
-        break;
+if facing == 0 {
+    health_player -=1;
+    sprite_index = spr_boss_atkh_right;
+} else if facing == 1 {
     //up/down
-    case spr_boss_idle_forward:
-        health_player -=1;
-        sprite_index = spr_boss_atkh_forward;
-        if image_index = 3
-        {
-            image_speed = 0
-        }
-        break;
-    //left
-    case spr_boss_idle_left:
-        health_player -=1;
-        sprite_index = spr_boss_atkh_left;
-        if image_index = 3
-        {
-            image_speed = 0
-        }
-        break;
+    health_player -=1;
+    sprite_index = spr_boss_atkh_forward;
+} else if facing == 2 {
+    health_player -=1;
+    sprite_index = spr_boss_atkh_left;
 }
+
 </string>
           </argument>
         </arguments>
