@@ -406,8 +406,8 @@
     </objects>
     <object>objects\obj_first_spawn</object>
     <object>objects\obj_text</object>
-    <object>objects\obj_credits</object>
     <object>objects\obj_boss_door</object>
+    <object>objects\obj_credits</object>
     <object>objects\explosion</object>
   </objects>
   <rooms name="rooms">
