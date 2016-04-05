@@ -8,6 +8,32 @@
   <parentName>obj_enemy_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>face_right</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="1" enumb="0">
       <action>
         <libid>1</libid>
@@ -62,6 +88,7 @@ if instance_exists(obj_player) {
         {
             sprite_index = spr_robot_idle_right;
         }
+        face_right = 1;
     }
     //down    
     if direction &gt;= 270{
@@ -71,6 +98,7 @@ if instance_exists(obj_player) {
         {
             sprite_index = spr_robot_idle_right;
         }
+        face_right = 1;
     }
     //left    
     if direction &gt;= 180 and direction &lt; 270{
@@ -80,6 +108,7 @@ if instance_exists(obj_player) {
         {
             sprite_index = spr_robot_idle_left;
         }
+        face_right = 0;
     //up
     if direction &gt;= 90 and direction &lt; 180{
         if place_meeting(x, y+16, obj_player){
@@ -88,6 +117,7 @@ if instance_exists(obj_player) {
         {
             sprite_index = spr_robot_idle_left;
         }
+        face_right = 0;
         }    
 }
 }
@@ -119,6 +149,15 @@ if instance_exists(obj_player) {
     speed = 10;
     friction = 0.5;
     alarm[0] = room_speed;
+}
+
+if face_right 
+{
+    sprite_index = spr_robot_atk_right;
+}
+else 
+{
+    sprite_index = spr_robot_atk_left;
 }
 </string>
           </argument>
