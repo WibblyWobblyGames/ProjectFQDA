@@ -25,45 +25,74 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if mimic_attack and instance_exists(obj_player) {
+            <string>image_speed = 0.5
+if instance_exists(obj_player) {
     direction = point_direction(x,y,obj_player.x,obj_player.y)- 90
     move_towards_point(obj_player.x,obj_player.y, 1);
     if direction &gt;= 0 and direction &lt; 90 {
         if place_meeting(x+16, y, obj_player){
-            sprite_index = spr_mimic_atk_right;
+            sprite_index = spr_robot_atk_right;
         } else 
         {
-            sprite_index = spr_mimic_emergedidle_right;
+            sprite_index = spr_robot_idle_right;
         }
     }
     //down    
     if direction &gt;= 270{
         if place_meeting(x, y-16, obj_player){
-            sprite_index = spr_mimic_atk_right;
+            sprite_index = spr_robot_atk_right;
         } else 
         {
-            sprite_index = spr_mimic_emergedidle_right;
+            sprite_index = spr_robot_idle_right;
         }
-        //break;
-        }
+    }
     //left    
     if direction &gt;= 180 and direction &lt; 270{
         if place_meeting(x-16, y, obj_player){
-          sprite_index = spr_mimic_atk_left;
+          sprite_index = spr_robot_atk_left;
         } else 
         {
-            sprite_index = spr_mimic_emergedidle_left;
+            sprite_index = spr_robot_idle_left;
         }
     //up
     if direction &gt;= 90 and direction &lt; 180{
         if place_meeting(x, y+16, obj_player){
-          sprite_index = spr_mimic_atk_left;
+          sprite_index = spr_robot_atk_left;
         } else 
         {
-            sprite_index = spr_mimic_emergedidle_left;
-        } 
+            sprite_index = spr_robot_idle_left;
+        }
         }    
 }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_player">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with (other)
+{
+    direction = point_direction(other.x, other.y, x, y); //note that since with() pushes the code over to other, it is now the enemy that is "other" within that construct
+    speed = 10;
+    friction = 0.5;
+    alarm[0] = room_speed;
 }
 </string>
           </argument>
