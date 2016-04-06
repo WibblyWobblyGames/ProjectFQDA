@@ -50,6 +50,12 @@
         <sprite>sprites\spr_mimic_walk_left</sprite>
         <sprite>sprites\spr_mimic_walk_right</sprite>
       </sprites>
+      <sprites name="Ninja">
+        <sprite>sprites\spr_ninja_idle_left</sprite>
+        <sprite>sprites\spr_ninja_idle_right</sprite>
+        <sprite>sprites\spr_ninja_spin_left</sprite>
+        <sprite>sprites\spr_ninja_spin_right</sprite>
+      </sprites>
     </sprites>
     <sprites name="Princesses">
       <sprites name="normal">
@@ -323,6 +329,8 @@
       <object>objects\obj_space_orc</object>
       <object>objects\obj_doris</object>
       <object>objects\obj_mimic</object>
+      <object>objects\obj_ninja</object>
+      <object>objects\object_ninja_parent</object>
     </objects>
     <objects name="Room Objects">
       <object>objects\obj_bed</object>
