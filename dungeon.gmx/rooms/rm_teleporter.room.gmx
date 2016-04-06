@@ -56,6 +56,14 @@
     <instance objName="obj_window" x="96" y="32" name="inst_71A4CFD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_window" x="384" y="224" name="inst_4C1C7632" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
     <instance objName="obj_window" x="384" y="96" name="inst_442CB21C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
+    <instance objName="obj_collision_parent" x="2" y="150" name="inst_E867DE21" locked="0" code="" scaleX="2.22000002861023" scaleY="-4.71875" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="1" y="351" name="inst_26EB7E3B" locked="0" code="" scaleX="2.22000002861023" scaleY="-4.71875" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="343" y="151" name="inst_39D3A1F4" locked="0" code="" scaleX="2.22000002861023" scaleY="-4.71875" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="0" y="0" name="inst_D1B87338" locked="0" code="" scaleX="6" scaleY="1.8400000333786" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="224" y="0" name="inst_F307DA17" locked="0" code="" scaleX="6" scaleY="1.8400000333786" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="0" y="277" name="inst_00EBF556" locked="0" code="" scaleX="6" scaleY="2.33999991416931" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="224" y="277" name="inst_3CD43ED4" locked="0" code="" scaleX="6" scaleY="2.33999991416931" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="345" y="350" name="inst_784FD827" locked="0" code="" scaleX="2.22000002861023" scaleY="-4.71875" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Prison_Tileset" x="288" y="32" w="32" h="32" xo="96" yo="32" id="10003095" name="inst_B376A9F9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
