@@ -409,6 +409,7 @@
     <object>objects\obj_boss_door</object>
     <object>objects\obj_credits</object>
     <object>objects\explosion</object>
+    <object>objects\obj_fade_to_black</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\opening_screen</room>
