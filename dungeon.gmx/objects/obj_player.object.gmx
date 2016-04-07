@@ -493,7 +493,12 @@ if other.x == 49 || other.x == 81{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(208,96,obj_room_dimensions);
+            <string>if room != rm_boss {
+instance_create(208,96,obj_room_dimensions);
+} else {
+    obj_player.x = 288;
+    obj_player.y = 240;
+}
 </string>
           </argument>
         </arguments>
