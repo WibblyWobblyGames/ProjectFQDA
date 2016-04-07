@@ -38,11 +38,17 @@
       <sprite>sprites\spr_space_orc_idle</sprite>
       <sprite>sprites\spr_space_orc_push</sprite>
       <sprite>sprites\spr_doris</sprite>
-      <sprites name="Ninja">
-        <sprite>sprites\spr_ninja_idle_left</sprite>
-        <sprite>sprites\spr_ninja_idle_right</sprite>
-        <sprite>sprites\spr_ninja_spin_left</sprite>
-        <sprite>sprites\spr_ninja_spin_right</sprite>
+      <sprites name="Mimic">
+        <sprite>sprites\spr_mimic_idle_left</sprite>
+        <sprite>sprites\spr_mimic_atk_left</sprite>
+        <sprite>sprites\spr_mimic_emerge_left</sprite>
+        <sprite>sprites\spr_mimic_idle_right</sprite>
+        <sprite>sprites\spr_mimic_atk_right</sprite>
+        <sprite>sprites\spr_mimic_emerge_right</sprite>
+        <sprite>sprites\spr_mimic_emergedidle_left</sprite>
+        <sprite>sprites\spr_mimic_emergedidle_right</sprite>
+        <sprite>sprites\spr_mimic_walk_left</sprite>
+        <sprite>sprites\spr_mimic_walk_right</sprite>
       </sprites>
     </sprites>
     <sprites name="Princesses">
@@ -316,8 +322,7 @@
       <object>objects\obj_enemy_boss</object>
       <object>objects\obj_space_orc</object>
       <object>objects\obj_doris</object>
-      <object>objects\obj_ninja</object>
-      <object>objects\object_ninja_parent</object>
+      <object>objects\obj_mimic</object>
     </objects>
     <objects name="Room Objects">
       <object>objects\obj_bed</object>
@@ -386,6 +391,7 @@
       <object>objects\obj_weapon_item_parent</object>
     </objects>
     <object>objects\obj_player</object>
+    <object>objects\obj_collision_parent</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_health</object>
@@ -413,6 +419,7 @@
     <object>objects\obj_first_spawn</object>
     <object>objects\obj_text</object>
     <object>objects\obj_credits</object>
+    <object>objects\explosion</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\opening_screen</room>

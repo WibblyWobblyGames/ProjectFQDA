@@ -52,6 +52,18 @@
   </views>
   <instances>
     <instance objName="obj_broken_stargate" x="128" y="128" name="inst_1C3C0AF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="0" y="0" name="inst_A40B8295" locked="0" code="" scaleX="3.25" scaleY="6.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="0" y="480" name="inst_86B4DE0E" locked="0" code="" scaleX="3.25" scaleY="-6.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="0" y="192" name="inst_1CCBA79A" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="480" y="0" name="inst_6090FDF8" locked="0" code="" scaleX="-3.25" scaleY="6.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="480" y="256" name="inst_23D29234" locked="0" code="" scaleX="-3.25" scaleY="6.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="96" y="0" name="inst_7BFE8CCA" locked="0" code="" scaleX="4" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="416" y="192" name="inst_CCE58CE9" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="256" y="0" name="inst_4F1ED416" locked="0" code="" scaleX="4" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="224" y="0" name="inst_64B4D746" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="96" y="480" name="inst_5DCD4E11" locked="0" code="" scaleX="4" scaleY="-3.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="256" y="480" name="inst_614BFC39" locked="0" code="" scaleX="4" scaleY="-3.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="224" y="416" name="inst_598D3267" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="96" y="224" name="inst_ACD6B22D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="224" y="96" name="inst_7BA100EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="352" y="224" name="inst_C64FADF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
