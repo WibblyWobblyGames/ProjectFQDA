@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>//show_debug_message("audio is playing: " + string(audio_is_playing(SWBPt1)));
-if !audio_is_playing(TemporaryMainSound){
+if !audio_is_playing(MainSound){
     //play music
     global.SFX = audio_play_sound(SWBPt1, 10, true);
 } 

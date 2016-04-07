@@ -82,41 +82,59 @@
     <event eventtype="1" enumb="0">
       <action>
         <libid>1</libid>
-        <id>532</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_effect</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <kind>1</kind>
+            <string>
+if instance_exists(obj_boss){
+    i = 0;
+    if global.SFX and !audio_is_playing(BossClear)
+    {
+       audio_stop_all();
+       global.SFX = audio_play_sound(BossClear, 10, false);
+    }
+alarm[1] = 60;
+}
+</string>
           </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
           <argument>
-            <kind>0</kind>
-            <string>obj_boss.x</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>obj_boss.y</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>13</kind>
-            <string>255</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <kind>1</kind>
+            <string>if global.SFX and !audio_is_playing(MainFinalTheme)
+{
+    audio_stop_all();
+    global.SFX = audio_play_sound(MainFinalTheme, 10, false);
+}
+room_goto(rm_win);
+</string>
           </argument>
         </arguments>
       </action>
