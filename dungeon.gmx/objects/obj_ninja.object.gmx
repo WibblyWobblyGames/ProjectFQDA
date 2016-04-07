@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>object_ninja_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -77,43 +77,80 @@
     move_towards_point(obj_player.x,obj_player.y, 1);
     if direction &gt;= 0 and direction &lt; 90 {
         if spinning {
-            sprite_index = spr_ninja_spin_right;
+            sprite_index = spr_ninja_idle_right;
+            spinning = 0;
         } else 
         {
-            sprite_index = spr_ninja_idle_right;
+            sprite_index = spr_ninja_spin_right;
+            spinning = 1;
         }
     }
     //down    
     if direction &gt;= 270{
         if spinning {
-            sprite_index = spr_ninja_spin_right;
+            sprite_index = spr_ninja_idle_right;
+            spinning = 0;
         } else 
         {
-            sprite_index = spr_ninja_idle_right;
+            sprite_index = spr_ninja_spin_right;
+            spinning = 1;
         }
         }
     //left    
     if direction &gt;= 180 and direction &lt; 270{
         if spinning {
-            sprite_index = spr_ninja_spin_left;
+            sprite_index = spr_ninja_idle_left;
+            spinning = 0;
         } else 
         {
-            sprite_index = spr_ninja_idle_left;
+            sprite_index = spr_ninja_spin_left;
+            spinning = 1;
         }
         }
     //up
     if direction &gt;= 90 and direction &lt; 180{
         if spinning {
-            sprite_index = spr_ninja_spin_left;
+            sprite_index = spr_ninja_idle_left;
+            spinning = 0;
         } else 
         {
-            sprite_index = spr_ninja_idle_left;
+            sprite_index = spr_ninja_spin_left;
+            spinning = 1;
         }
         } 
-spinning = !spinning;  
 alarm[0] = 30; 
 }
 
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_player">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with (other)
+{
+    direction = point_direction(other.x, other.y, x, y); //note that since with() pushes the code over to other, it is now the enemy that is "other" within that construct
+    speed = 10;
+    friction = 0.5;
+    alarm[1] = room_speed;
+}
 
 </string>
           </argument>
