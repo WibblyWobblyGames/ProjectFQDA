@@ -72,15 +72,14 @@ princess_list[11] = 'spr_gold';
 princess_list[12] = 'spr_ice_demon';
 princess_list[13] = 'spr_mermaid';
 princess_list[14] = 'spr_monochrome';
-princess_list[15] = 'spr_muscle';
-princess_list[16] = 'spr_negative';
-princess_list[17] = 'spr_pixelated';
-princess_list[18] = 'spr_rare';
-princess_list[19] = 'spr_robo';
-princess_list[20] = 'spr_shoop_da_whoop';
-princess_list[21] = 'spr_tiny_head';
-princess_list[22] = 'spr_vampire';
-princess_list[23] = 'spr_woops';
+princess_list[15] = 'spr_negative';
+princess_list[16] = 'spr_pixelated';
+princess_list[17] = 'spr_rare';
+princess_list[18] = 'spr_robo';
+princess_list[19] = 'spr_shoop_da_whoop';
+princess_list[20] = 'spr_tiny_head';
+princess_list[21] = 'spr_vampire';
+princess_list[22] = 'spr_woops';
 
 
 //select a random number in order to decide a princess
