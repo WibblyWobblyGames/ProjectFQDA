@@ -84,7 +84,8 @@ princess_list[22] = 'spr_woops';
 
 
 //select a random number in order to decide a princess
-num = irandom_range(0,array_length_1d(princess_list)-1);
+//num = irandom_range(0,array_length_1d(princess_list)-1);
+num = 7;
 player_sprite = princess_list[num];
 global.princess_type = num;
 

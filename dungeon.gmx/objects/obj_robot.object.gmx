@@ -159,6 +159,8 @@ else
 {
     sprite_index = spr_robot_atk_left;
 }
+
+health_player -= 1;
 </string>
           </argument>
         </arguments>
