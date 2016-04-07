@@ -19,6 +19,7 @@
       <sound>sound\NinjaSpin</sound>
       <sound>sound\MimicSound</sound>
       <sound>sound\RobotSound</sound>
+      <sound>sound\ShadowMovement</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
