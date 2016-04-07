@@ -52,6 +52,7 @@ globalvar player_sprite;
 globalvar health_player;
 //globalvar princess_type;
 health_player = 10;
+knockback_time = 0;
 
 //randomizes the seed
 randomize();
@@ -425,32 +426,6 @@ if other.x == 49 || other.x == 81{
 }
 
 </string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_enemy_parent">
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>health_player</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-1</string>
           </argument>
         </arguments>
       </action>
