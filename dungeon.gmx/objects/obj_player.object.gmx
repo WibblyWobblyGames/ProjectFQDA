@@ -89,8 +89,9 @@ player_sprite = princess_list[num];
 global.princess_type = num;
 
 //weapon stuff
-equipped_weapon = 0;
-attack_object = obj_unarmed_attack;
+equipped_weapon = noone;
+primary_attack = obj_unarmed_attack;
+secondary_attack = noone;
 
 //Attack for player, defined for direction they attack
 attack = "right";
