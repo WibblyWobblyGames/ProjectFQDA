@@ -7,6 +7,13 @@
   <sounds name="sound">
     <sound>sound\TemporaryMainSound</sound>
     <sound>sound\TempSpaceWizardSound</sound>
+    <sound>sound\RobotSound</sound>
+    <sound>sound\SWBPt1</sound>
+    <sound>sound\SWBPt2</sound>
+    <sound>sound\SWBPt3</sound>
+    <sound>sound\SWBPt4</sound>
+    <sound>sound\SpaceWizardWand</sound>
+    <sound>sound\SpaceWizardHammer</sound>
     <sound>sound\MimicSound</sound>
   </sounds>
   <sprites name="sprites">
@@ -17,8 +24,21 @@
         <sprite>sprites\spr_shadow_right</sprite>
       </sprites>
       <sprites name="Robot">
-        <sprite>sprites\spr_robot_idle</sprite>
-        <sprite>sprites\spr_robot_run</sprite>
+        <sprite>sprites\spr_robot_idle_right</sprite>
+        <sprite>sprites\spr_robot_run_right</sprite>
+        <sprite>sprites\spr_robot_idle_left</sprite>
+        <sprite>sprites\spr_robot_run_left</sprite>
+        <sprite>sprites\spr_robot_atk_right</sprite>
+        <sprite>sprites\spr_robot_atk_left</sprite>
+      </sprites>
+      <sprites name="SpaceWizard">
+        <sprite>sprites\spr_boss_idle_left</sprite>
+        <sprite>sprites\spr_boss_idle_right</sprite>
+        <sprite>sprites\spr_boss_idle_forward</sprite>
+        <sprite>sprites\spr_boss_atkh_left</sprite>
+        <sprite>sprites\spr_boss_atkh_right</sprite>
+        <sprite>sprites\spr_boss_atkh_forward</sprite>
+        <sprite>sprites\spr_boss_atkw_forward</sprite>
       </sprites>
       <sprite>sprites\spr_space_orc_idle</sprite>
       <sprite>sprites\spr_space_orc_push</sprite>
@@ -34,6 +54,12 @@
         <sprite>sprites\spr_mimic_emergedidle_right</sprite>
         <sprite>sprites\spr_mimic_walk_left</sprite>
         <sprite>sprites\spr_mimic_walk_right</sprite>
+      </sprites>
+      <sprites name="Ninja">
+        <sprite>sprites\spr_ninja_idle_left</sprite>
+        <sprite>sprites\spr_ninja_idle_right</sprite>
+        <sprite>sprites\spr_ninja_spin_left</sprite>
+        <sprite>sprites\spr_ninja_spin_right</sprite>
       </sprites>
     </sprites>
     <sprites name="Princesses">
@@ -181,6 +207,7 @@
       <sprite>sprites\spr_server</sprite>
       <sprite>sprites\spr_broken_stargate</sprite>
       <sprite>sprites\spr_tube_basic</sprite>
+      <sprite>sprites\spr_tube_muscle</sprite>
       <sprite>sprites\spr_tube_cyclops</sprite>
       <sprite>sprites\spr_tube_rare</sprite>
       <sprite>sprites\spr_weapon_platform</sprite>
@@ -245,16 +272,14 @@
       </sprites>
     </sprites>
     <sprite>sprites\spr_attack_box</sprite>
-    <sprite>sprites\spr_boss_idle</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_door</sprite>
-    <sprite>sprites\spr_boss_left</sprite>
-    <sprite>sprites\spr_boss_right</sprite>
     <sprite>sprites\spr_space_pit</sprite>
     <sprite>sprites\spr_antispawn</sprite>
     <sprite>sprites\spr_teleporter_door</sprite>
     <sprite>sprites\spr_half_heart</sprite>
     <sprite>sprites\spr_heart</sprite>
+    <sprite>sprites\spr_fireball</sprite>
     <sprites name="Journal entries">
       <sprite>sprites\spr_journal_entry_1</sprite>
       <sprite>sprites\spr_journal_entry_2</sprite>
@@ -306,9 +331,14 @@
       <object>objects\obj_shadow</object>
       <object>objects\obj_robot</object>
       <object>objects\obj_enemy_parent</object>
+      <object>objects\obj_boss</object>
+      <object>objects\obj_fireball</object>
+      <object>objects\obj_enemy_boss</object>
       <object>objects\obj_space_orc</object>
       <object>objects\obj_doris</object>
       <object>objects\obj_mimic</object>
+      <object>objects\obj_ninja</object>
+      <object>objects\object_ninja_parent</object>
     </objects>
     <objects name="Room Objects">
       <object>objects\obj_bed</object>
@@ -326,6 +356,7 @@
       <object>objects\obj_server</object>
       <object>objects\obj_broken_stargate</object>
       <object>objects\obj_tube_basic</object>
+      <object>objects\obj_tube_muscle</object>
       <object>objects\obj_tube_cyclops</object>
       <object>objects\obj_tube_rare</object>
       <object>objects\obj_weapon_platform</object>
@@ -382,7 +413,6 @@
     <object>objects\obj_wall</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_health</object>
-    <object>objects\obj_boss</object>
     <object>objects\obj_spawn</object>
     <object>objects\InitialMusic</object>
     <object>objects\BossMusic</object>

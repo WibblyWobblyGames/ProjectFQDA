@@ -52,6 +52,7 @@ globalvar player_sprite;
 globalvar health_player;
 //globalvar princess_type;
 health_player = 10;
+knockback_time = 0;
 
 //randomizes the seed
 randomize();
@@ -72,15 +73,14 @@ princess_list[11] = 'spr_gold';
 princess_list[12] = 'spr_ice_demon';
 princess_list[13] = 'spr_mermaid';
 princess_list[14] = 'spr_monochrome';
-princess_list[15] = 'spr_muscle';
-princess_list[16] = 'spr_negative';
-princess_list[17] = 'spr_pixelated';
-princess_list[18] = 'spr_rare';
-princess_list[19] = 'spr_robo';
-princess_list[20] = 'spr_shoop_da_whoop';
-princess_list[21] = 'spr_tiny_head';
-princess_list[22] = 'spr_vampire';
-princess_list[23] = 'spr_woops';
+princess_list[15] = 'spr_negative';
+princess_list[16] = 'spr_pixelated';
+princess_list[17] = 'spr_rare';
+princess_list[18] = 'spr_robo';
+princess_list[19] = 'spr_shoop_da_whoop';
+princess_list[20] = 'spr_tiny_head';
+princess_list[21] = 'spr_vampire';
+princess_list[22] = 'spr_woops';
 
 
 //select a random number in order to decide a princess
@@ -426,32 +426,6 @@ if other.x == 49 || other.x == 81{
 }
 
 </string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_enemy_parent">
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>health_player</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-1</string>
           </argument>
         </arguments>
       </action>
