@@ -25,15 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_boss);
+            <string>//room_goto(rm_boss);
 
-/*
+
 var eff;
 
 eff = instance_create( 0, 0, obj_fade_to_black );
-show_debug_message(room_height);
 eff.newRoom = rm_boss;
-*/
+
 </string>
           </argument>
         </arguments>
