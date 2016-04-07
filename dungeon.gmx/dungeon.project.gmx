@@ -23,6 +23,7 @@
       <sound>sound\TempSpaceWizardSound</sound>
       <sound>sound\TemporaryMainSound</sound>
       <sound>sound\SpaceWizBedroom</sound>
+      <sound>sound\SpaceWizTheme</sound>
     </sounds>
     <sounds name="Objects">
       <sound>sound\TARDIS</sound>
