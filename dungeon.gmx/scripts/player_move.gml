@@ -1,6 +1,5 @@
 //Movement code for player
 //When Keyboard is pressed, move player in direction
-//Checks for collisions with wall objects 
 with (obj_player) {
     if (attacking or (!keyboard_check(vk_left) and !keyboard_check(vk_right) and !keyboard_check(vk_up) and !keyboard_check(vk_down))) {
         if (!attacking) {
@@ -44,7 +43,7 @@ with (obj_player) {
             sprite_index = run_sprite;
         }    
     }
-    
+
 //Collision script from: https://www.youtube.com/watch?v=IysShLIaosk&feature=youtu.be    
 //Horizontal Collision
 if (place_meeting(x+hspeed,y,obj_collision_parent))
