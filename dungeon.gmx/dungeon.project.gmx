@@ -7,6 +7,12 @@
   <sounds name="sound">
     <sound>sound\TemporaryMainSound</sound>
     <sound>sound\TempSpaceWizardSound</sound>
+    <sound>sound\SWBPt1</sound>
+    <sound>sound\SWBPt2</sound>
+    <sound>sound\SWBPt3</sound>
+    <sound>sound\SWBPt4</sound>
+    <sound>sound\SpaceWizardWand</sound>
+    <sound>sound\SpaceWizardHammer</sound>
     <sound>sound\MimicSound</sound>
   </sounds>
   <sprites name="sprites">
@@ -19,6 +25,15 @@
       <sprites name="Robot">
         <sprite>sprites\spr_robot_idle</sprite>
         <sprite>sprites\spr_robot_run</sprite>
+      </sprites>
+      <sprites name="SpaceWizard">
+        <sprite>sprites\spr_boss_idle_left</sprite>
+        <sprite>sprites\spr_boss_idle_right</sprite>
+        <sprite>sprites\spr_boss_idle_forward</sprite>
+        <sprite>sprites\spr_boss_atkh_left</sprite>
+        <sprite>sprites\spr_boss_atkh_right</sprite>
+        <sprite>sprites\spr_boss_atkh_forward</sprite>
+        <sprite>sprites\spr_boss_atkw_forward</sprite>
       </sprites>
       <sprite>sprites\spr_space_orc_idle</sprite>
       <sprite>sprites\spr_space_orc_push</sprite>
@@ -246,15 +261,13 @@
       </sprites>
     </sprites>
     <sprite>sprites\spr_attack_box</sprite>
-    <sprite>sprites\spr_boss_idle</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_door</sprite>
-    <sprite>sprites\spr_boss_left</sprite>
-    <sprite>sprites\spr_boss_right</sprite>
     <sprite>sprites\spr_space_pit</sprite>
     <sprite>sprites\spr_antispawn</sprite>
     <sprite>sprites\spr_half_heart</sprite>
     <sprite>sprites\spr_heart</sprite>
+    <sprite>sprites\spr_fireball</sprite>
     <sprites name="Journal entries">
       <sprite>sprites\spr_journal_entry_1</sprite>
       <sprite>sprites\spr_journal_entry_2</sprite>
@@ -305,6 +318,9 @@
       <object>objects\obj_shadow</object>
       <object>objects\obj_robot</object>
       <object>objects\obj_enemy_parent</object>
+      <object>objects\obj_boss</object>
+      <object>objects\obj_fireball</object>
+      <object>objects\obj_enemy_boss</object>
       <object>objects\obj_space_orc</object>
       <object>objects\obj_doris</object>
       <object>objects\obj_mimic</object>
@@ -381,7 +397,6 @@
     <object>objects\obj_wall</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_health</object>
-    <object>objects\obj_boss</object>
     <object>objects\obj_spawn</object>
     <object>objects\InitialMusic</object>
     <object>objects\BossMusic</object>
