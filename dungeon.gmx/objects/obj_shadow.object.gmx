@@ -3,7 +3,7 @@
   <spriteName>spr_shadow_front</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>-10</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>obj_enemy_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -150,7 +150,7 @@ alarm[0] = 15;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_collision_parent">
+    <event eventtype="4" ename="obj_wall">
       <action>
         <libid>1</libid>
         <id>603</id>
