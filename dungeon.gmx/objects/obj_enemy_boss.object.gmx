@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="4" ename="obj_weapon_attack_parent">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,31 +25,36 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-//show_debug_message("audio is playing: " + string(audio_is_playing(TemporaryMainSound)));
-if !audio_is_playing(TemporaryMainSound){
-    //play music
-    global.SFX = audio_play_sound(TemporaryMainSound, 10, true);
-} 
-//do nothing otherwise
+            <string>if spacewiz_health &lt;= 7 and spacewiz_health &gt; 4
+{
+    if global.SFX and !audio_is_playing(SWBPt2)
+       {
+        audio_stop_all();
+        global.SFX = audio_play_sound(SWBPt2, 10, true);
+       }
+} else if spacewiz_health &lt;= 4 and spacewiz_health &gt; 1
+{
+    if global.SFX and !audio_is_playing(SWBPt3)
+    {
+       audio_stop_all();
+       global.SFX = audio_play_sound(SWBPt3, 10, true);
+    }
+} else if spacewiz_health &lt;= 1 and spacewiz_health &gt; 0
+{
+    if global.SFX and !audio_is_playing(SWBPt4)
+    {
+       audio_stop_all();
+       global.SFX = audio_play_sound(SWBPt4, 10, true);
+    }
+} else if spacewiz_health &lt;= 0
+{
+    instance_destroy();
+}
+spacewiz_health -= 1;
 
 </string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
   </events>
