@@ -26,6 +26,7 @@
     </sounds>
     <sounds name="Objects">
       <sound>sound\TARDIS</sound>
+      <sound>sound\DialUp</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
