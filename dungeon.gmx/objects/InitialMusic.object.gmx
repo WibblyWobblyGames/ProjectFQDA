@@ -29,7 +29,7 @@
 //show_debug_message("audio is playing: " + string(audio_is_playing(TemporaryMainSound)));
 if !audio_is_playing(TemporaryMainSound){
     //play music
-    audio_play_sound(TemporaryMainSound, 10, true);
+    global.SFX = audio_play_sound(TemporaryMainSound, 10, true);
 } 
 //do nothing otherwise
 

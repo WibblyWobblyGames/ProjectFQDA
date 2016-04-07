@@ -51,10 +51,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="&lt;undefined&gt;" x="32" y="152" name="inst_661A019E" locked="0" code="" scaleX="1.25" scaleY="-3.75" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="32" y="320" name="inst_252BFB45" locked="0" code="" scaleX="1.25" scaleY="-3.75" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="384" y="152" name="inst_C815D2AF" locked="0" code="" scaleX="-1.25" scaleY="-3.75" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="384" y="320" name="inst_5AF3056F" locked="0" code="" scaleX="-1.25" scaleY="-3.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_space_pit" x="192" y="160" name="inst_1F941290" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_window" x="96" y="32" name="inst_99F668CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_window" x="288" y="32" name="inst_BF4BFBAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -62,14 +58,6 @@
     <instance objName="obj_torch" x="160" y="32" name="inst_FE27ABA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="224" y="32" name="inst_DE9995E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="256" y="32" name="inst_1D7D8B56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="64" y="64" name="inst_84C75E08" locked="0" code="" scaleX="4" scaleY="-1.25" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="224" y="64" name="inst_991F1713" locked="0" code="" scaleX="4" scaleY="-1.25" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="64" y="320" name="inst_959BADF8" locked="0" code="" scaleX="4" scaleY="-1.25" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="224" y="320" name="inst_1DDA34B7" locked="0" code="" scaleX="4" scaleY="-1.25" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="0" y="0" name="inst_C3E87E1B" locked="0" code="" scaleX="13" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="0" y="320" name="inst_E220AF61" locked="0" code="" scaleX="13" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="0" y="32" name="inst_A6A69547" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="384" y="32" name="inst_0CE7639B" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="64" y="160" name="inst_353EFEC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="192" y="64" name="inst_833676A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="320" y="160" name="inst_504662AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
