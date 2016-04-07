@@ -299,6 +299,7 @@
       <object>objects\obj_enemy_parent</object>
       <object>objects\obj_space_orc</object>
       <object>objects\obj_doris</object>
+      <object>objects\obj_ninja</object>
     </objects>
     <objects name="Room Objects">
       <object>objects\obj_bed</object>
