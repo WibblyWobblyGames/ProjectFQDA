@@ -1,7 +1,8 @@
 //Attack for princess
 //Player attacks when space is pressed
 
-var attack_speed = 0.125;
+var attack_speed = 0.5;
+var weapon_attack_speed = attack_speed/2 * 3/4;
 var animation_time = 12 * (1/attack_speed);
 
 with (obj_player) {
@@ -9,7 +10,7 @@ with (obj_player) {
         attacking = true;
         
         var attack_instance = instance_create(obj_player.x, obj_player.y, primary_attack);
-        attack_instance.image_speed = attack_speed;
+        attack_instance.image_speed = weapon_attack_speed;
         attack_instance.image_index = 0;
         
         sprite_index = asset_get_index(player_sprite+'_attack');
@@ -22,7 +23,7 @@ with (obj_player) {
         
         if (secondary_attack != noone) {
             var secondary_attack_instance = instance_create(obj_player.x, obj_player.y, secondary_attack);
-            secondary_attack_instance.image_speed = attack_speed;
+            secondary_attack_instance.image_speed = weapon_attack_speed;
         
             if (attack == "left") {
                 secondary_attack_instance.image_xscale = -1;
