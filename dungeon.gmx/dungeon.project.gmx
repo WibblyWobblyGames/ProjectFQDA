@@ -7,14 +7,19 @@
   <sounds name="sound">
     <sound>sound\TemporaryMainSound</sound>
     <sound>sound\TempSpaceWizardSound</sound>
-    <sound>sound\RobotSound</sound>
-    <sound>sound\SWBPt1</sound>
-    <sound>sound\SWBPt2</sound>
-    <sound>sound\SWBPt3</sound>
-    <sound>sound\SWBPt4</sound>
-    <sound>sound\SpaceWizardWand</sound>
-    <sound>sound\SpaceWizardHammer</sound>
-    <sound>sound\MimicSound</sound>
+    <sounds name="SpaceWizBattle">
+      <sound>sound\SWBPt3</sound>
+      <sound>sound\SWBPt4</sound>
+      <sound>sound\SpaceWizardHammer</sound>
+      <sound>sound\SWBPt2</sound>
+      <sound>sound\SWBPt1</sound>
+      <sound>sound\SpaceWizardWand</sound>
+    </sounds>
+    <sounds name="Enemies">
+      <sound>sound\NinjaSpin</sound>
+      <sound>sound\MimicSound</sound>
+      <sound>sound\RobotSound</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Enemies">

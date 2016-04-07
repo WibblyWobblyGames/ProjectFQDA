@@ -131,6 +131,10 @@
             spinning = 0;
         } else 
         {
+            if global.SFX
+            {
+                global.SFX = audio_play_sound(NinjaSpin, 10, false);
+            }
             sprite_index = spr_ninja_spin_right;
             spinning = 1;
         }
@@ -142,6 +146,10 @@
             spinning = 0;
         } else 
         {
+            if global.SFX
+            {
+                global.SFX = audio_play_sound(NinjaSpin, 10, false);
+            }
             sprite_index = spr_ninja_spin_right;
             spinning = 1;
         }
@@ -153,6 +161,10 @@
             spinning = 0;
         } else 
         {
+            if global.SFX
+            {
+                global.SFX = audio_play_sound(NinjaSpin, 10, false);
+            }
             sprite_index = spr_ninja_spin_left;
             spinning = 1;
         }
@@ -164,6 +176,10 @@
             spinning = 0;
         } else 
         {
+            if global.SFX
+            {
+                global.SFX = audio_play_sound(NinjaSpin, 10, false);
+            }
             sprite_index = spr_ninja_spin_left;
             spinning = 1;
         }
