@@ -104,36 +104,9 @@ if instance_exists(obj_boss){
        audio_stop_all();
        global.SFX = audio_play_sound(BossClear, 10, false);
     }
-alarm[1] = 60;
+    instance_create(0,0,obj_trigger_end);
+    alarm[1] = 60;
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if global.SFX and !audio_is_playing(MainFinalTheme)
-{
-    audio_stop_all();
-    global.SFX = audio_play_sound(MainFinalTheme, 10, false);
-}
-room_goto(rm_win);
 </string>
           </argument>
         </arguments>

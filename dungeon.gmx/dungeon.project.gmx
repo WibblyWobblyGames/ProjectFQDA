@@ -424,6 +424,7 @@
     <object>objects\obj_text</object>
     <object>objects\obj_credits</object>
     <object>objects\obj_explosion</object>
+    <object>objects\obj_trigger_end</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\opening_screen</room>
