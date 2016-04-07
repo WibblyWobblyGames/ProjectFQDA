@@ -5,8 +5,6 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\TemporaryMainSound</sound>
-    <sound>sound\TempSpaceWizardSound</sound>
     <sounds name="SpaceWizBattle">
       <sound>sound\SWBPt3</sound>
       <sound>sound\SWBPt4</sound>
@@ -20,6 +18,14 @@
       <sound>sound\MimicSound</sound>
       <sound>sound\RobotSound</sound>
       <sound>sound\ShadowMovement</sound>
+    </sounds>
+    <sounds name="Rooms">
+      <sound>sound\TempSpaceWizardSound</sound>
+      <sound>sound\TemporaryMainSound</sound>
+      <sound>sound\SpaceWizBedroom</sound>
+    </sounds>
+    <sounds name="Objects">
+      <sound>sound\TARDIS</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -446,6 +452,7 @@
     <object>objects\obj_credits</object>
     <object>objects\explosion</object>
     <object>objects\obj_fade_to_black</object>
+    <object>objects\obj_space_wiz_room</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\opening_screen</room>
