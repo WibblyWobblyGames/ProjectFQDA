@@ -264,14 +264,15 @@ if instance_exists(obj_player) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (other)
+            <string>/*
+with (other)
 {
-    //direction = point_direction(other.x, other.y, x, y); //note that since with() pushes the code over to other, it is now the enemy that is "other" within that construct
+    direction = point_direction(other.x, other.y, x, y); //note that since with() pushes the code over to other, it is now the enemy that is "other" within that construct
     speed = 10;
     friction = 0.5;
     alarm[0] = room_speed;
 }
-
+*/
 if face_right 
 {
     sprite_index = spr_robot_atk_right;
@@ -282,6 +283,30 @@ else
 }
 
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>115</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_bounce</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>

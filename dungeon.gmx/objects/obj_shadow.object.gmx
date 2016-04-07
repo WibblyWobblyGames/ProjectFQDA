@@ -260,12 +260,14 @@ alarm[0] = 15;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (other)
+            <string>/*
+with (other)
 {
-   //direction = point_direction(other.x, other.y, x, y); //note that since with() pushes the code over to other, it is now the enemy that is "other" within that construct
+   direction = point_direction(other.x, other.y, x, y); //note that since with() pushes the code over to other, it is now the enemy that is "other" within that construct
    speed = 10;
    friction = 0.5;
 }
+*/
 </string>
           </argument>
         </arguments>
