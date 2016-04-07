@@ -12,7 +12,6 @@
   <showcolour>-1</showcolour>
   <code>create_doors();
 instance_create(416, 192, InitialMusic);
-spawn_enemies(1);
 
 //testing text
 //scr_text("this is a test string",0.5,160,160)</code>
@@ -60,7 +59,7 @@ spawn_enemies(1);
     <instance objName="obj_health" x="400" y="160" name="inst_B068BB27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="0" y="64" name="inst_119ACFED" locked="0" code="" scaleX="13" scaleY="-2.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawn" x="400" y="192" name="inst_AC7FFAB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="42" y="280" name="inst_FBFB04B7" locked="0" code="" scaleX="4.4193549156189" scaleY="1.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="64" y="320" name="inst_FBFB04B7" locked="0" code="" scaleX="4" scaleY="-1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="192" y="256" name="inst_68BFE050" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawner" x="96" y="16" name="inst_D7DB9210" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawner_door" x="96" y="16" name="inst_9D3A412A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -85,7 +84,7 @@ spawn_enemies(1);
     <instance objName="obj_wall" x="96" y="320" name="inst_2202D545" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="128" y="320" name="inst_A33B8968" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="160" y="320" name="inst_FD3422C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="224" y="320" name="inst_AD6FAB59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="192" y="320" name="inst_AD6FAB59" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="256" y="320" name="inst_EE9BFA3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="288" y="320" name="inst_E06A0A4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="320" y="320" name="inst_29D62156" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

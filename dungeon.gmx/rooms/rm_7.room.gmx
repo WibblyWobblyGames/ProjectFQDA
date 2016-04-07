@@ -10,7 +10,8 @@
   <persistent>-1</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>create_doors();</code>
+  <code>create_doors();
+spawn_enemies(2);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -51,16 +52,13 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_tube_basic" x="160" y="207" name="inst_A1EFD684" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tube_basic" x="160" y="208" name="inst_A1EFD684" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tube_basic" x="160" y="128" name="inst_733D1C04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tube_basic" x="192" y="207" name="inst_C1BDBBB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tube_cyclops" x="192" y="128" name="inst_681A814F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tube_cyclops" x="224" y="207" name="inst_C3C55457" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tube_cyclops" x="224" y="208" name="inst_C3C55457" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tube_rare" x="224" y="128" name="inst_95B6EA05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tube_rare" x="256" y="206" name="inst_B69369EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tube_rare" x="256" y="208" name="inst_B69369EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tube_basic" x="256" y="128" name="inst_E96EEC44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tube_basic" x="288" y="128" name="inst_98E71CF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tube_basic" x="320" y="128" name="inst_86CCB46C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tube_basic" x="352" y="128" name="inst_A9E1E1C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tube_rare" x="320" y="207" name="inst_247AEF33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tube_cyclops" x="288" y="207" name="inst_41AC5632" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -81,6 +79,10 @@
     <instance objName="obj_antispawn" x="256" y="96" name="inst_A80AC2A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="416" y="192" name="inst_640C7379" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="256" y="288" name="inst_ABF6F91C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_antispawn" x="160" y="224" name="inst_B7D7A637" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_antispawn" x="160" y="128" name="inst_67CC19D8" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tube_muscle" x="288" y="128" name="inst_DC496831" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tube_muscle" x="320" y="208" name="inst_CA667C34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Prison_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10002535" name="inst_E79B3B1F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

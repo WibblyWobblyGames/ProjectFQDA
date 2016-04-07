@@ -10,7 +10,7 @@
   <persistent>-1</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>create_doors();</code>
+  <code>create_doors(4);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -64,9 +64,12 @@
     <instance objName="obj_collision_parent" x="0" y="277" name="inst_00EBF556" locked="0" code="" scaleX="6" scaleY="2.33999991416931" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="224" y="277" name="inst_3CD43ED4" locked="0" code="" scaleX="6" scaleY="2.33999991416931" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="345" y="350" name="inst_784FD827" locked="0" code="" scaleX="2.22000002861023" scaleY="-4.71875" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="0" y="128" name="inst_1DDFAE90" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="192" y="320" name="inst_E034E87D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="384" y="128" name="inst_71DD7479" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="192" y="0" name="inst_77A52E30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="Prison_Tileset" x="288" y="32" w="32" h="32" xo="96" yo="32" id="10003095" name="inst_B376A9F9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Dungeon_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10003127" name="inst_76900134" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Dungeon_Tileset" x="0" y="32" w="32" h="32" xo="0" yo="32" id="10003128" name="inst_FBA31387" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Dungeon_Tileset" x="0" y="64" w="32" h="32" xo="0" yo="32" id="10003129" name="inst_F71C7D13" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -209,6 +212,7 @@
     <tile bgName="Dungeon_Tileset" x="320" y="224" w="32" h="32" xo="160" yo="128" id="10003354" name="inst_7A65FF76" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Dungeon_Tileset" x="320" y="96" w="32" h="32" xo="160" yo="128" id="10003355" name="inst_79442038" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Dungeon_Tileset" x="320" y="64" w="32" h="32" xo="160" yo="64" id="10003356" name="inst_02580969" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Dungeon_Tileset" x="288" y="32" w="32" h="32" xo="64" yo="32" id="10003508" name="inst_CDC89BF9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

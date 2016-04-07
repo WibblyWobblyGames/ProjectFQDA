@@ -8,4 +8,5 @@ with (obj_enemy_parent) {
 
 if (enemies_left_in_room == 1) {
     spawn_weapon(x, y);
+    global.rooms_cleared ++;
 }
