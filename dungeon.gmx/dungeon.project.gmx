@@ -181,6 +181,7 @@
       <sprite>sprites\spr_server</sprite>
       <sprite>sprites\spr_broken_stargate</sprite>
       <sprite>sprites\spr_tube_basic</sprite>
+      <sprite>sprites\spr_tube_muscle</sprite>
       <sprite>sprites\spr_tube_cyclops</sprite>
       <sprite>sprites\spr_tube_rare</sprite>
       <sprite>sprites\spr_weapon_platform</sprite>
@@ -324,6 +325,7 @@
       <object>objects\obj_server</object>
       <object>objects\obj_broken_stargate</object>
       <object>objects\obj_tube_basic</object>
+      <object>objects\obj_tube_muscle</object>
       <object>objects\obj_tube_cyclops</object>
       <object>objects\obj_tube_rare</object>
       <object>objects\obj_weapon_platform</object>
