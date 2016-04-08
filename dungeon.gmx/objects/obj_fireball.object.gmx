@@ -53,7 +53,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>health_player -= 1;
+            <string>damage_player(1);
 instance_destroy();
 </string>
           </argument>
