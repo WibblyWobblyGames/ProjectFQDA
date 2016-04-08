@@ -266,9 +266,9 @@
         <sprite>sprites\spr_demons_great_hammer</sprite>
         <sprite>sprites\spr_demons_great_hammer_attack</sprite>
       </sprites>
-      <sprites name="Eye Blade">
-        <sprite>sprites\spr_eye_blade</sprite>
-        <sprite>sprites\spr_eye_blade_attack</sprite>
+      <sprites name="Fish">
+        <sprite>sprites\spr_fish</sprite>
+        <sprite>sprites\spr_fish_attack</sprite>
       </sprites>
       <sprites name="Ricard's Rapier">
         <sprite>sprites\spr_ricards_rapier</sprite>
@@ -409,7 +409,7 @@
         <object>objects\obj_caestus_attack</object>
         <object>objects\obj_dagger_attack</object>
         <object>objects\obj_demons_great_hammer_attack</object>
-        <object>objects\obj_eye_blade_attack</object>
+        <object>objects\obj_fish_attack</object>
         <object>objects\obj_ricards_rapier_attack</object>
         <object>objects\obj_straight_sword_attack</object>
         <object>objects\obj_thunderfury_attack</object>
@@ -421,7 +421,7 @@
         <object>objects\obj_caestus</object>
         <object>objects\obj_dagger</object>
         <object>objects\obj_demons_great_hammer</object>
-        <object>objects\obj_eye_blade</object>
+        <object>objects\obj_fish</object>
         <object>objects\obj_ricards_rapier</object>
         <object>objects\obj_straight_sword</object>
         <object>objects\obj_thunderfury</object>
