@@ -221,7 +221,7 @@ if (instance_exists(obj_player))
           <argument>
             <kind>1</kind>
             <string>if (attack){
-    health_player -= 1;
+    damage_player(1);
 }
 </string>
           </argument>

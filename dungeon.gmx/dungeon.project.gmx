@@ -302,6 +302,7 @@
     <scripts name="Player">
       <script>scripts\player_attack.gml</script>
       <script>scripts\player_move.gml</script>
+      <script>scripts\damage_player.gml</script>
     </scripts>
     <scripts name="Enemies">
       <script>scripts\on_enemy_death.gml</script>

@@ -384,14 +384,14 @@ if global.SFX and !audio_is_playing(SpaceWizardHammer)
     global.SFX = audio_play_sound(SpaceWizardHammer, 10, false);
 }
 if facing == 0 {
-    health_player -=1;
+    damage_player(1);
     sprite_index = spr_boss_atkh_right;
 } else if facing == 1 {
     //up/down
-    health_player -=1;
+    damage_player(1);
     sprite_index = spr_boss_atkh_forward;
 } else if facing == 2 {
-    health_player -=1;
+    damage_player(1);
     sprite_index = spr_boss_atkh_left;
 }
 
