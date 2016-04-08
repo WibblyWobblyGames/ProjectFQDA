@@ -394,39 +394,34 @@ width = view_wview[0];
 
 //show_debug_message('x: ' + string(other.x) + 'y: ' + string(other.y));
 //find which door it is  and move to correct room
-if other.x == 49 || other.x == 81{
+if (other.x == 49 || other.x == 81) {
     //left door
     global.dir_player = 'left';
     global.location_player[1] -=1;
-    roomNum = ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]);
-    next_room = ds_map_find_value(global.rooms, roomNum);
-    room_goto(next_room);
-
-} else if other.x == width-49 || other.x == width - 81 {
+} else if (other.x == width-49 || other.x == width - 81) {
     //right door
     global.dir_player = 'right';
     global.location_player[1] +=1;
-    roomNum = ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]);
-    next_room = ds_map_find_value(global.rooms, roomNum);
-    room_goto(next_room);
-
-} else if other.y == height-49 || other.y == height-81{ 
+} else if (other.y == height-49 || other.y == height-81) { 
     //down door
     global.dir_player = 'down';
     global.location_player[0] +=1;
-    roomNum = ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]);
-    next_room = ds_map_find_value(global.rooms, roomNum);
-    room_goto(next_room);
-
-} else if other.y == 49 || other.y == 81{
+} else if (other.y == 49 || other.y == 81) {
     //up door
     global.dir_player = 'up';
     global.location_player[0] -=1;
-    roomNum = ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]);
-    next_room = ds_map_find_value(global.rooms, roomNum);
-    room_goto(next_room);
 }
 
+var roomNum = ds_grid_get(global.mapOfRooms, global.location_player[0], global.location_player[1]);
+var next_room = ds_map_find_value(global.rooms, roomNum);
+room_goto(next_room);
+
+if (ds_map_exists(global.room_music, roomNum)) {
+    audio_stop_all();
+    global.SFX = audio_play_sound(ds_map_find_value(global.room_music, roomNum), 10, false);
+} else {
+    play_main_music();
+}
 </string>
           </argument>
         </arguments>

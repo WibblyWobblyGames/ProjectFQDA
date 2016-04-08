@@ -327,6 +327,9 @@
       <script>scripts\spawn_weapon.gml</script>
       <script>scripts\setup_weapons_list.gml</script>
     </scripts>
+    <scripts name="Music">
+      <script>scripts\play_main_music.gml</script>
+    </scripts>
     <script>scripts\create_doors.gml</script>
     <script>scripts\create_map.gml</script>
     <script>scripts\player_spawn.gml</script>
