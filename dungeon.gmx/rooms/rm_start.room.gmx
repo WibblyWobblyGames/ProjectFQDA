@@ -59,7 +59,6 @@ create_doors();</code>
     <instance objName="obj_spawner" x="96" y="16" name="inst_D7DB9210" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawner_door" x="96" y="16" name="inst_9D3A412A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button" x="128" y="144" name="inst_A2EC41F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="96" y="58" name="inst_4536CCAA" locked="0" code="" scaleX="7" scaleY="2.25806450843811" colour="4294967295" rotation="0"/>
     <instance objName="obj_space_orc" x="112" y="144" name="inst_BEAE57B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_first_spawn" x="320" y="160" name="inst_96A017DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="64" name="inst_E84AB4F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -111,6 +110,8 @@ create_doors();</code>
     <instance objName="obj_collision_parent" x="64" y="288" name="inst_51669AB1" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="224" y="288" name="inst_A03D5BD9" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="352" y="64" name="inst_5D3494B3" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="96" y="64" name="inst_7C361E8C" locked="0" code="" scaleX="3" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="224" y="64" name="inst_A59A2F3A" locked="0" code="" scaleX="3" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Dungeon_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10000003" name="inst_EE6DB164" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
