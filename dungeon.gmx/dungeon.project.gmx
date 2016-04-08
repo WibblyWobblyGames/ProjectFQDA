@@ -21,7 +21,7 @@
     </sounds>
     <sounds name="Rooms">
       <sound>sound\TempSpaceWizardSound</sound>
-      <sound>sound\TemporaryMainSound</sound>
+      <sound>sound\MainSound</sound>
       <sound>sound\SpaceWizBedroom</sound>
       <sound>sound\SpaceWizTheme</sound>
     </sounds>
@@ -29,6 +29,8 @@
       <sound>sound\TARDIS</sound>
       <sound>sound\DialUp</sound>
     </sounds>
+    <sound>sound\BossClear</sound>
+    <sound>sound\MainFinalTheme</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Enemies">
@@ -302,6 +304,8 @@
     </sprites>
     <sprite>sprites\spr_logo</sprite>
     <sprite>sprites\spr_credits</sprite>
+    <sprite>sprites\sprite169</sprite>
+    <sprite>sprites\sprite170</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Dungeon_Tileset</background>
@@ -454,7 +458,8 @@
     <object>objects\obj_text</object>
     <object>objects\obj_boss_door</object>
     <object>objects\obj_credits</object>
-    <object>objects\explosion</object>
+    <object>objects\obj_explosion</object>
+    <object>objects\obj_trigger_end</object>
     <object>objects\obj_fade_to_black</object>
     <object>objects\obj_space_wiz_room</object>
   </objects>

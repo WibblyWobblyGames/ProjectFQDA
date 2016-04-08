@@ -80,7 +80,7 @@ spawn_enemies(2);</code>
     <instance objName="obj_collision_parent" x="96" y="320" name="inst_59D584C8" locked="0" code="" scaleX="5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="288" y="320" name="inst_C1772CF2" locked="0" code="" scaleX="5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="448" y="224" name="inst_E12E189E" locked="0" code="" scaleX="3" scaleY="6" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="448" y="0" name="inst_EE2DF032" locked="0" code="" scaleX="2" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="448" y="0" name="inst_EE2DF032" locked="0" code="" scaleX="3" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="288" y="0" name="inst_6DC1B1B6" locked="0" code="" scaleX="5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="96" y="0" name="inst_42FABB69" locked="0" code="" scaleX="5" scaleY="3" colour="4294967295" rotation="0"/>
   </instances>
