@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>attack_object = obj_demons_great_hammer_attack;
+            <string>primary_attack = obj_demons_great_hammer_attack;
+secondary_attack = noone;
 </string>
           </argument>
         </arguments>

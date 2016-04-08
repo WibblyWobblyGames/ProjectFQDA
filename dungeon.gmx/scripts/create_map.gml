@@ -4,7 +4,7 @@ There cannot be more than one of each room
 */
 
 //number rooms to build including specials
-global.numRooms = 12;
+global.numRooms = 13;
 n = global.numRooms;
 //any special rooms
 special = 3;
@@ -72,6 +72,9 @@ while !found {
         found = true;
     }
 }
+
+//reset number of rooms with all enemies killed
+global.rooms_cleared = 0;
 
 //print out the map of the rooms
 print_map();

@@ -1,5 +1,9 @@
-//create a map of all rooms to numbers for the room grid
+///room_dictionary()
+// create a map of all rooms to numbers for the room grid
 global.rooms = ds_map_create();
+// create a map with entries for non-default music
+global.room_music = ds_map_create();
+
 
 //normal rooms - these are the numbers that will show up in the map of the rooms
 ds_map_add(global.rooms, 'x', "no room - door error");
@@ -24,3 +28,4 @@ ds_map_add(global.rooms, 9, rm_8);
 //boss room
 ds_map_add(global.rooms, 'boss', rm_boss);
 
+ds_map_add(global.room_music, 'b', SpaceWizBedroom);

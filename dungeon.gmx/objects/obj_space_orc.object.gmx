@@ -61,15 +61,14 @@ switch (global.princess_type)
     case 12: flavour = "Hell has frozen over."; break;
     case 13: flavour = "Somethings fishy..."; break;
     case 14: flavour = "Because colour is soo last season."; break;
-    case 15: flavour = "PRINCESS SMASSSHHHHH"; break;
-    case 16: flavour = "Inversion successful."; break;
-    case 17: flavour = "You just feel out of focus."; break;
-    case 18: flavour = "The rarest of them all."; break;
-    case 19: flavour = "Princess.dll launched successfully."; break;
-    case 20: flavour = "Shoop da whoooop!"; break;
-    case 21: flavour = "Who needs proportions anyways."; break;
-    case 22: flavour = "Thirsty for blood, averse to fire."; break;
-    case 23: flavour = "It's a feature not a bug."; break;
+    case 15: flavour = "Inversion successful."; break;
+    case 16: flavour = "You just feel out of focus."; break;
+    case 17: flavour = "The rarest of them all."; break;
+    case 18: flavour = "Princess.dll launched successfully."; break;
+    case 19: flavour = "Shoop da whoooop!"; break;
+    case 20: flavour = "Who needs proportions anyways."; break;
+    case 21: flavour = "Thirsty for blood, averse to fire."; break;
+    case 22: flavour = "It's a feature not a bug."; break;
     default: flavour = "Pulling from switch"; break;    
 }
 

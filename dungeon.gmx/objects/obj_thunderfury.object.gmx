@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>obj_weapon_item_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>attack_object = obj_thunderfury_attack;
+            <string>primary_attack = obj_thunderfury_attack;
+secondary_attack = noone;
 </string>
           </argument>
         </arguments>
