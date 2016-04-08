@@ -67,24 +67,14 @@ spawn_enemies(3);</code>
     <instance objName="obj_collision_parent" x="288" y="32" name="inst_12301294" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="320" y="32" name="inst_4B645037" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="352" y="32" name="inst_EBEDF63D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="384" y="64" name="inst_505B26D5" locked="0" code="" scaleX="-1.25" scaleY="2.75" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="384" y="288" name="inst_F163D4A5" locked="0" code="" scaleX="-1.25" scaleY="-2.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="352" y="288" name="inst_25F002D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="224" y="320" name="inst_0F85927C" locked="0" code="" scaleX="4" scaleY="-1.25" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="64" y="320" name="inst_89F6962B" locked="0" code="" scaleX="4" scaleY="-1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="32" y="288" name="inst_F9F0BFD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="32" y="288" name="inst_4D7CD9E1" locked="0" code="" scaleX="1.25" scaleY="-2.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="384" y="96" name="inst_EA9C6E2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="32" y="64" name="inst_9FC06756" locked="0" code="" scaleX="1.25" scaleY="2.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="32" y="32" name="inst_B378618D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="160" y="0" name="inst_395F72D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="96" y="0" name="inst_C0ACC426" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="128" y="0" name="inst_97CE4503" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="64" y="0" name="inst_E9000ED3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="32" y="0" name="inst_62025DA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="0" y="0" name="inst_0F04D5B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="0" y="32" name="inst_48C66E8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="0" y="64" name="inst_4F92A2DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="0" y="96" name="inst_1DEBB7FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="0" y="128" name="inst_DE77D81D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="0" y="192" name="inst_522B63CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -120,6 +110,16 @@ spawn_enemies(3);</code>
     <instance objName="obj_collision_parent" x="288" y="0" name="inst_F78E844B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="224" y="0" name="inst_BE8A42FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="96" y="128" name="inst_8529808B" locked="0" code="" scaleX="7" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="0" y="0" name="inst_7BC82127" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="32" y="0" name="inst_D8B85667" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="0" y="32" name="inst_3BBB57EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="0" y="64" name="inst_CF6855C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="32" y="64" name="inst_60010A81" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="32" y="192" name="inst_A7D43597" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="352" y="64" name="inst_2C8A4D65" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="352" y="192" name="inst_20413726" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="224" y="288" name="inst_583E0259" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="64" y="288" name="inst_19822744" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Dungeon_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10003357" name="inst_E707F817" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

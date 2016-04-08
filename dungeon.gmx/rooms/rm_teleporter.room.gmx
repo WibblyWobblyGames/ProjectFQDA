@@ -56,18 +56,18 @@
     <instance objName="obj_window" x="96" y="32" name="inst_71A4CFD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_window" x="384" y="224" name="inst_4C1C7632" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
     <instance objName="obj_window" x="384" y="96" name="inst_442CB21C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
-    <instance objName="obj_collision_parent" x="2" y="150" name="inst_E867DE21" locked="0" code="" scaleX="2.22000002861023" scaleY="-4.71875" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="1" y="351" name="inst_26EB7E3B" locked="0" code="" scaleX="2.22000002861023" scaleY="-4.71875" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="343" y="151" name="inst_39D3A1F4" locked="0" code="" scaleX="2.22000002861023" scaleY="-4.71875" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="0" y="0" name="inst_D1B87338" locked="0" code="" scaleX="6" scaleY="1.8400000333786" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="224" y="0" name="inst_F307DA17" locked="0" code="" scaleX="6" scaleY="1.8400000333786" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="0" y="277" name="inst_00EBF556" locked="0" code="" scaleX="6" scaleY="2.33999991416931" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="224" y="277" name="inst_3CD43ED4" locked="0" code="" scaleX="6" scaleY="2.33999991416931" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="345" y="350" name="inst_784FD827" locked="0" code="" scaleX="2.22000002861023" scaleY="-4.71875" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="0" y="128" name="inst_1DDFAE90" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="192" y="320" name="inst_E034E87D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="384" y="128" name="inst_71DD7479" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="192" y="0" name="inst_77A52E30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="384" y="160" name="inst_6A93882F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="0" y="160" name="inst_135A649E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="192" y="0" name="inst_4071F2B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="0" y="0" name="inst_7AC2F471" locked="0" code="" scaleX="2" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="0" y="192" name="inst_BAE81DBA" locked="0" code="" scaleX="2" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="64" y="288" name="inst_672C0D20" locked="0" code="" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="224" y="288" name="inst_B4C91BC0" locked="0" code="" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="352" y="192" name="inst_20F16489" locked="0" code="" scaleX="2" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="352" y="0" name="inst_33B42077" locked="0" code="" scaleX="2" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="224" y="0" name="inst_3B62A8B9" locked="0" code="" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="64" y="0" name="inst_FE7BB3BD" locked="0" code="" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Dungeon_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10003127" name="inst_76900134" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -51,16 +51,10 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_collision_parent" x="544" y="272" name="inst_EE72DBC9" locked="0" code="" scaleX="-1.25" scaleY="5.75" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="544" y="32" name="inst_24DB664F" locked="0" code="" scaleX="-1.25" scaleY="7.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_boss" x="192" y="224" name="inst_4D7A0E45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="BossMusic" x="576" y="256" name="inst_CA36617E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="32" y="32" name="inst_B7122CB9" locked="0" code="" scaleX="1.25" scaleY="7.75" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="32" y="272" name="inst_E4C296E0" locked="0" code="" scaleX="1.25" scaleY="5.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="32" y="32" name="inst_D5A45867" locked="0" code="" scaleX="8.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="544" y="32" name="inst_D277D66C" locked="0" code="" scaleX="-7.5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="32" y="448" name="inst_F8BA9F3D" locked="0" code="" scaleX="8.5" scaleY="-1.25" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="544" y="448" name="inst_9397AF5B" locked="0" code="" scaleX="-7.5" scaleY="-1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="0" y="448" name="inst_EE2E790F" locked="0" code="" scaleX="18" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="0" y="0" name="inst_2D359920" locked="0" code="" scaleX="18" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="0" y="32" name="inst_333EA15E" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="0"/>
@@ -75,6 +69,9 @@
     <instance objName="obj_antispawn" x="480" y="256" name="inst_7639DA7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="480" y="192" name="inst_DC5DAB26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_antispawn" x="64" y="192" name="inst_3D5EE4AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="32" y="64" name="inst_65A2C934" locked="0" code="" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="32" y="416" name="inst_C1755D39" locked="0" code="" scaleX="15" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="512" y="64" name="inst_4705A097" locked="0" code="" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Dungeon_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10000725" name="inst_484B9CC9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
