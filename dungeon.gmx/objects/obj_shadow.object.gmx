@@ -148,7 +148,7 @@ if global.SFX
     global.SFX = audio_play_sound(ShadowMovement, 10, false);
 }
 
-alarm[0] = 15;
+alarm[0] = 30;
 </string>
           </argument>
         </arguments>
