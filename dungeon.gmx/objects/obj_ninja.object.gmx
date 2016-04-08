@@ -221,7 +221,7 @@ alarm[0] = 30;
           <argument>
             <kind>1</kind>
             <string>if (ninja_attack and !spinning){
-    health_player -= 1;
+    damage_player(1);
 }
 </string>
           </argument>

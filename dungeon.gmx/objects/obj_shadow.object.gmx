@@ -190,7 +190,7 @@ alarm[0] = 15;
           <argument>
             <kind>1</kind>
             <string>if (shadow_attack){
-    health_player -= 1;
+    damage_player(1);
 }
 </string>
           </argument>
