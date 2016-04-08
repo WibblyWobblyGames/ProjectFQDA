@@ -52,10 +52,6 @@ spawn_enemies(5);</code>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_collision_parent" x="32" y="152" name="inst_661A019E" locked="0" code="" scaleX="1.25" scaleY="-3.75" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="32" y="320" name="inst_252BFB45" locked="0" code="" scaleX="1.25" scaleY="-3.75" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="384" y="152" name="inst_C815D2AF" locked="0" code="" scaleX="-1.25" scaleY="-3.75" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="384" y="320" name="inst_5AF3056F" locked="0" code="" scaleX="-1.25" scaleY="-3.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_space_pit" x="192" y="160" name="inst_1F941290" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_window" x="96" y="32" name="inst_99F668CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_window" x="288" y="32" name="inst_BF4BFBAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -65,8 +61,6 @@ spawn_enemies(5);</code>
     <instance objName="obj_torch" x="256" y="32" name="inst_1D7D8B56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="64" y="64" name="inst_84C75E08" locked="0" code="" scaleX="4" scaleY="-1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="224" y="64" name="inst_991F1713" locked="0" code="" scaleX="4" scaleY="-1.25" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="64" y="320" name="inst_959BADF8" locked="0" code="" scaleX="4" scaleY="-1.25" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_parent" x="224" y="320" name="inst_1DDA34B7" locked="0" code="" scaleX="4" scaleY="-1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="0" y="0" name="inst_C3E87E1B" locked="0" code="" scaleX="13" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="0" y="320" name="inst_E220AF61" locked="0" code="" scaleX="13" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_parent" x="0" y="32" name="inst_A6A69547" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
@@ -77,6 +71,12 @@ spawn_enemies(5);</code>
     <instance objName="obj_antispawn" x="192" y="256" name="inst_D3B9A629" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_eye_plant" x="128" y="128" name="inst_F5470784" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_eye_plant" x="256" y="128" name="inst_B1BC1067" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="32" y="32" name="inst_770623FA" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="32" y="192" name="inst_BEB44BD4" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="64" y="288" name="inst_E3EE62D8" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="224" y="288" name="inst_67C56CE7" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="352" y="32" name="inst_BE296BF1" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_parent" x="352" y="192" name="inst_140DB0D1" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Dungeon_Tileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10001210" name="inst_FC1A7C96" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

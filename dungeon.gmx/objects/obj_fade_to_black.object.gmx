@@ -150,6 +150,8 @@ fadeAlpha += 0.05;
 if ( fadeAlpha &gt;= 0.6 )
 {
     room_goto(newRoom);
+    audio_stop_all();
+    global.SFX = audio_play_sound(SpaceWizTheme, 10, false);
     instance_destroy();
 }
 </string>

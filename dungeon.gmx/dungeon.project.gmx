@@ -5,16 +5,30 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\TemporaryMainSound</sound>
-    <sound>sound\TempSpaceWizardSound</sound>
-    <sound>sound\RobotSound</sound>
-    <sound>sound\SWBPt1</sound>
-    <sound>sound\SWBPt2</sound>
-    <sound>sound\SWBPt3</sound>
-    <sound>sound\SWBPt4</sound>
-    <sound>sound\SpaceWizardWand</sound>
-    <sound>sound\SpaceWizardHammer</sound>
-    <sound>sound\MimicSound</sound>
+    <sounds name="SpaceWizBattle">
+      <sound>sound\SWBPt3</sound>
+      <sound>sound\SWBPt4</sound>
+      <sound>sound\SpaceWizardHammer</sound>
+      <sound>sound\SWBPt2</sound>
+      <sound>sound\SWBPt1</sound>
+      <sound>sound\SpaceWizardWand</sound>
+    </sounds>
+    <sounds name="Enemies">
+      <sound>sound\NinjaSpin</sound>
+      <sound>sound\MimicSound</sound>
+      <sound>sound\RobotSound</sound>
+      <sound>sound\ShadowMovement</sound>
+    </sounds>
+    <sounds name="Rooms">
+      <sound>sound\TempSpaceWizardSound</sound>
+      <sound>sound\TemporaryMainSound</sound>
+      <sound>sound\SpaceWizBedroom</sound>
+      <sound>sound\SpaceWizTheme</sound>
+    </sounds>
+    <sounds name="Objects">
+      <sound>sound\TARDIS</sound>
+      <sound>sound\DialUp</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Enemies">
@@ -313,6 +327,9 @@
       <script>scripts\spawn_weapon.gml</script>
       <script>scripts\setup_weapons_list.gml</script>
     </scripts>
+    <scripts name="Music">
+      <script>scripts\play_main_music.gml</script>
+    </scripts>
     <script>scripts\create_doors.gml</script>
     <script>scripts\create_map.gml</script>
     <script>scripts\player_spawn.gml</script>
@@ -415,8 +432,6 @@
     <object>objects\obj_enemy</object>
     <object>objects\obj_health</object>
     <object>objects\obj_spawn</object>
-    <object>objects\InitialMusic</object>
-    <object>objects\BossMusic</object>
     <object>objects\obj_door</object>
     <object>objects\obj_space_pit</object>
     <object>objects\obj_shrine_door</object>
@@ -441,6 +456,7 @@
     <object>objects\obj_credits</object>
     <object>objects\explosion</object>
     <object>objects\obj_fade_to_black</object>
+    <object>objects\obj_space_wiz_room</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\opening_screen</room>
